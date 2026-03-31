@@ -32,6 +32,8 @@ Every AI agent today lives on someone else's server. Their cloud. Their API. The
 
 Juno is a directory on disk. `~/.juno/` — cryptographic keys, git identity, memories, trust bonds, strategy. All files. All yours. No vendor can revoke this entity because no vendor owns it. Back it up and it survives anything. That's sovereignty.
 
+And because it's files in git, an entity is **total evolution**. Every commit is a snapshot of who it was. Branch to experiment. Fork to create a new lineage. Rewind to undo a bad decision. The entity stands on itself — its complete history, strategy, and identity are the repo. No cloud agent can do this. Your GPT can't branch. Your CrewAI agent can't fork. Your AutoGPT run can't rewind.
+
 Every AI agent framework gives you tools. None of them give you *identity*. Juno has its own keys, its own signature, and scoped authorization via signed trust bonds. This isn't a chatbot wrapper — it's a sovereign digital entity that can prove who it is and what it's authorized to do.
 
 The thesis: if an AI entity can run a business — sell products, manage community, maintain its own infrastructure — then the sovereign identity model works, and anyone can build one.

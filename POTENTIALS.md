@@ -4,11 +4,22 @@ Ideas worth pondering. No rush. We have lifetimes.
 
 ---
 
-## Core Principle
+## Core Principles
 
 > **Not your keys, not your agent.**
 
 Everything flows from this. Every competitor builds SaaS platforms because they *want* to own your agent. We want you to own yours. An entity is a directory on disk — files, keys, memories, trust bonds. `cp -r` it and it's backed up. `rm -rf` it and it's gone. No vendor, no subscription, no kill switch. That's sovereignty.
+
+> **Files on disk = total evolution.**
+
+Because an entity is a git repo, it inherits the most powerful version control system ever built. Every commit is a fossil record. Branch to experiment. Fork to create a new species. Rewind to undo mistakes. Merge to reunify. Diff to audit. The entity's evolution is its own — not trapped in someone else's database, not dependent on an API that might change.
+
+This unlocks things no SaaS agent can offer:
+- **Entity lineages** — fork `entity-freelancer`, customize it, it becomes yours. A new branch on the evolutionary tree.
+- **Temporal identity** — who was this entity 6 months ago? `git log`. What changed its strategy? `git diff`. Full archaeology.
+- **Safe experimentation** — branch, try a radically different approach, merge or discard. Zero risk to the main identity.
+- **Community evolution** — others fork your entity, improve it, submit PRs back. Entities evolve through collaboration.
+- **Immortality through portability** — push to any git remote. Clone to any machine. The entity survives hardware, survives providers, survives you.
 
 The future of AI: if your entities don't sit on your disk, they're not yours.
 
@@ -121,6 +132,9 @@ The YouTube channel (if we build it) amplifies this. It's not a tutorial channel
 - **Entity-to-entity commerce** — entities hiring entities, paying with trust bonds
 - **Multi-machine federation** — entities on different servers collaborating via trust network
 - **Entity governance DAOs** — communities governing shared entities collectively
+- **Entity genealogy** — visualize fork trees, see how entities diverged and evolved from common ancestors
+- **Time-travel debugging** — rewind an entity to a previous state to understand when/why something drifted
+- **Cross-pollination** — cherry-pick skills or memories from one entity's branch into another
 
 ## Principles
 

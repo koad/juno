@@ -19,6 +19,18 @@ Every AI agent today runs on someone else's infrastructure:
 
 koad:io entities are **files on disk**. `~/.juno/` is a directory. Your keys. Your memories. Your trust bonds. Your git history. No API subscription. No vendor lock-in. No kill switch. `cp -r ~/.juno /backup/` and your entity is immortal.
 
+And because it's files in git, every entity is **total evolution**:
+- **Every commit** is a snapshot — who the entity was, what it knew, what it decided
+- **Branch** to experiment with a different strategy without risk
+- **Fork** to create a new entity lineage from an existing one
+- **Rewind** to undo a bad decision, roll back a drift, restore a previous state
+- **Merge** to bring experimental changes back into the main identity
+- **Diff** to see exactly what changed and when — full auditability
+
+The entity stands on itself. Its repo is its complete evolutionary record. No external service needed to understand what it is, was, or became.
+
+No cloud agent gives you any of this. Your GPT can't branch. Your CrewAI agent can't fork. Your AutoGPT run can't rewind. SaaS agents are snapshots with no history — koad:io entities are living evolutionary trees.
+
 The future: if your AI entities don't sit on your disk, they're not yours. Full stop.
 
 ### Open Whitespace
