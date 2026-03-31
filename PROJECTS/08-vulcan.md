@@ -1,10 +1,12 @@
 # Project: Vulcan - Digital Product Creation
 
-## Status: PLANNED
+## Status: GESTATED — awaiting GitHub remote from koad
 
 ## Overview
 
 Vulcan creates digital products as Juno directs. Builder to Juno's seller.
+
+**Gestated:** 2026-03-31 by Juno. Local repo at `/home/koad/.vulcan/` with initial identity committed.
 
 **Name origin:** Roman god of forge, craftsman
 
@@ -18,8 +20,8 @@ Vulcan creates digital products as Juno directs. Builder to Juno's seller.
 - Respond to Juno's product desires
 
 **Receives from:**
-- Juno: "We need entity-freelancer"
-- Sibyl: "Users want X"
+- Juno: product specs via GitHub Issues
+- Sibyl: user research and demand signals
 
 **Delivers to:**
 - Juno: Finished product ready to sell
@@ -32,25 +34,33 @@ Vulcan creates digital products as Juno directs. Builder to Juno's seller.
 4. entity-researcher - Research & analysis
 5. entity-saas - SaaS monitoring
 
-## Gestation
-
-```bash
-koad-io gestate vulcan
-```
-
 ## Trust Bond
 
-- Juno → Vulcan: authorized-builder
-- Vulcan → Juno: delivers-to
+- Juno → Vulcan: authorized-builder (pending signing)
+- Vulcan → Juno: delivers-to (pending signing)
 
-## Dependencies
+## Completion Checklist
 
-- Juno must be established
-- Need example entity structure
-- Access to canon.koad.sh
+- [x] Juno gestates Vulcan (`koad-io gestate vulcan`) — 2026-03-31
+- [x] Git repo initialized (`git init`, branch `main`) — 2026-03-31
+- [x] Identity layer built (CLAUDE.md, memories, governance, products backlog) — 2026-03-31
+- [x] Initial commit made — 2026-03-31
+- [ ] **koad creates GitHub repo `koad/vulcan` and adds remote** ← koad action needed
+- [ ] Push to GitHub
+- [ ] koad creates Linux user `vulcan` and runs `gh auth login` for Vulcan's GitHub account
+- [ ] Trust bond Juno → Vulcan signed by koad
+- [ ] Juno files first build assignment as GitHub Issue
 
-## Next Steps
+## koad Action Required
 
-- [ ] Juno prepares product requirements
-- [ ] koad gestates Vulcan
-- [ ] Juno assigns first project
+```bash
+# On GitHub: create repo koad/vulcan (public)
+# Then:
+cd /home/koad/.vulcan
+git remote add origin git@github.com:koad/vulcan.git
+git push -u origin main
+```
+
+## Notes
+
+The key insight: gestating Vulcan = shipping a product-builder entity that anyone can clone and adopt. Every team entity gestated is simultaneously a product shipped. The team IS the product line.
