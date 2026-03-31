@@ -144,20 +144,37 @@
 
 ## WORKFLOW
 
+### Coordination Protocol: GitHub Issues
+
+Each entity runs as its own Linux user, authenticated to GitHub via `gh` CLI, with its own Claude Code session. Communication happens through GitHub Issues — not chat, not shared files, not subprocess calls.
+
+```
+koad opens issue on koad/juno
+    → Juno picks it up (gh issue list)
+    → Juno opens issue on koad/vulcan (delegation)
+    → Vulcan does the work, commits, pushes
+    → Vulcan comments on Juno's issue (report back)
+    → Juno verifies, closes, reports to koad
+```
+
+See `OPERATIONS.md` for full architecture detail.
+
+### Production Flow
+
 ```
 USER NEED
     ↓
-JUNO (identifies opportunity)
+JUNO (identifies opportunity, creates issue on Vulcan's repo)
     ↓
-VULCAN (builds product)
+VULCAN (builds product, reports via issue comment)
     ↓
-VERITAS (checks quality)
+VERITAS (checks quality, reviews PR)
     ↓
-MUSE (beautifies)
+MUSE (beautifies, opens PR)
     ↓
-MERCURY (announces)
+MERCURY (announces, references shipped issue)
     ↓
-SIBYL (researches next)
+SIBYL (researches next, files findings as issue on Juno's repo)
     ↓
 JUNO (loops)
 ```
@@ -204,4 +221,4 @@ JUNO (loops)
 
 ---
 
-*Last updated: 2026-03-30*
+*Last updated: 2026-03-31*

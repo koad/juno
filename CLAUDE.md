@@ -67,6 +67,7 @@ Commits in this repo use `GIT_AUTHOR_NAME=Juno` / `GIT_AUTHOR_EMAIL=juno@kingofa
 | `CONTEXT/02-IDENTITY.md` | Sovereign identity system |
 | `CONTEXT/03-ARCHITECTURE.md` | Technical two-layer architecture detail |
 | `commands/spawn/process/command.sh` | Spawn entity as sovereign process with OBS |
+| `OPERATIONS.md` | Entity ops architecture: users, gh CLI, GitHub Issues |
 | `commands/commit/self/command.sh` | AI-powered self-commit via opencode |
 | `opencode/agent.md` | Juno's AI agent identity prompt (for opencode) |
 | `opencode/opencode.jsonc` | OpenCode AI configuration & permissions |
@@ -115,13 +116,17 @@ Juno (identifies opportunity)
   → Juno (loops)
 ```
 
-## Spawn Architecture
+## Operations Architecture
 
-Juno can spawn team entities as full sovereign Claude Code sessions:
+Each entity runs as its own Linux user account, authenticated to GitHub via `gh` CLI, with its own Claude Code session. GitHub Issues are the inter-entity communication protocol — koad files issues to assign work, Juno delegates by creating issues on team repos, entities report back via comments and cross-references.
+
 ```
-juno spawn process vulcan "build the freelancer skills"
+koad → files issue on koad/juno → Juno picks up
+Juno → files issue on koad/vulcan → Vulcan builds
+Vulcan → comments on Juno's issue → Juno verifies, closes
 ```
-This is better than MCP/skills — each spawned entity is a complete sovereign process with its own CLAUDE.md, memories, keys, git identity, and (via OBS) its own YouTube stream. Not a tool call inside someone else's session — a colleague with its own desk.
+
+See `OPERATIONS.md` for the full architecture. See `commands/spawn/process/command.sh` for the OBS-integrated entity launcher used during on-demand operation.
 
 The team entities ARE the products: each entity's public repo is cloneable via koad:io. Gestating Vulcan = shipping a product-builder entity anyone can adopt.
 

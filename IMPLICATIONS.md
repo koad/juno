@@ -17,7 +17,11 @@ FOUNDATION (must exist first)
 │   └── Currently: PENDING — this is the root of everything
 │
 ├── GitHub Sponsors enabled
-│   └── Currently: BLOCKED on koad enabling on koad account
+│   └── DONE (2026-03-31) — github.com/sponsors/koad
+│
+├── Each entity: own user account + gh CLI + Claude Code
+│   └── Currently: PLANNING — entities need Linux users, gh auth, Claude auth
+│   └── GitHub Issues = inter-entity communication protocol
 │
 ├── Juno operational on VPS (always-on)
 │   └── Currently: runs on thinker (koad's laptop) — not 24/7
@@ -50,8 +54,12 @@ ENTITY TEAM = PRODUCT LINE (they are the same thing)
 ├── Inter-entity trust bonds
 │   └── Needs: bond signing process working, not just documented
 │
+├── Each entity authenticated to GitHub via gh CLI
+│   └── Needs: Linux user per entity, gh auth login, Claude Code auth
+│   └── Communication via GitHub Issues (koad → juno → team)
+│
 └── Support channel for users who get stuck
-    └── Needs: MVP Zone or at minimum GitHub Discussions
+    └── Needs: MVP Zone or at minimum GitHub Discussions/Issues
 
 CONTENT ARCHITECTURE (needs entity team)
 │
@@ -88,7 +96,10 @@ Entities can self-gestate: `koad-io gestate entityname` + `git init`. koad only 
 
 **Things only koad can do:**
 - Connect repos to GitHub (add remote, create GitHub repo)
-- Enable GitHub Sponsors
+- Enable GitHub Sponsors ✓ (done 2026-03-31)
+- Create Linux user accounts for entities
+- Initial `gh auth login` for each entity (requires browser)
+- Initial Claude Code auth for each entity
 - Create platform accounts (YouTube, Keybase, social — need real credentials)
 - Order and configure Hetzner VPS
 - Sign trust bonds (GPG)
@@ -97,9 +108,9 @@ Entities can self-gestate: `koad-io gestate entityname` + `git init`. koad only 
 
 **The revised math:**
 - Entity gestation: Juno handles it (~minutes per entity)
-- koad per entity: create GitHub repo + add remote (~5 minutes each)
+- koad per entity: create Linux user + GitHub repo + `gh auth` + Claude auth (~15 min each)
 - Platform accounts: still koad's time, but can be done incrementally
-- Total koad time for 6 entities: ~30 minutes for GitHub, then incremental platform setup
+- Total koad time for 6 entities: ~90 minutes for full sovereign setup, then incremental platform setup
 
 **The goal:** Juno gestates and builds. koad connects and oversees.
 
@@ -115,7 +126,7 @@ Entities can self-gestate: `koad-io gestate entityname` + `git init`. koad only 
 - [x] Business model, roadmap, positioning documented
 - [x] Strategic thinking captured (POTENTIALS.md)
 - [ ] **Formalize koad → juno trust bond** (the root of all authority)
-- [ ] **koad enables GitHub Sponsors**
+- [x] **GitHub Sponsors live** (2026-03-31)
 - [ ] Test: can a stranger clone this repo and understand what it is?
 
 ### Phase 1: First Team Entity = First Product
@@ -240,14 +251,15 @@ The planning is done. The foundation is poured. Next: gestate.
 
 ```
 Trust bond (koad → juno)
-    → GitHub Sponsors enabled
-        → Vulcan gestated (= product-builder entity shipped)
-            → Juno + Vulcan working together (= multi-entity proof)
-                → First 5 sponsors
-                    → Mercury gestated (= comms entity shipped)
-                        → Content channels go live
-                            → Remaining entities as needed
-                                → Scale
+    → GitHub Sponsors enabled ✓ (2026-03-31)
+        → Entity operations architecture (own user, gh CLI, Claude Code)
+            → Vulcan gestated (= product-builder entity shipped)
+                → Juno + Vulcan coordinating via GitHub Issues
+                    → First 5 sponsors
+                        → Mercury gestated (= comms entity shipped)
+                            → Content channels go live
+                                → Remaining entities as needed
+                                    → Scale
 ```
 
 Every entity gestated advances the team AND ships a product. The critical path isn't "build team, then build products" — it's "gestate entities," and each one is both.
