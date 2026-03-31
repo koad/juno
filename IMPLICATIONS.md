@@ -70,29 +70,35 @@ CONTENT ARCHITECTURE (needs entity team)
 
 ---
 
-## The koad Bottleneck
+## The koad Bottleneck (Much Smaller Than Expected)
 
-koad is one human. Everything funnels through koad at the start.
+Entities can self-gestate: `koad-io gestate entityname` + `git init`. koad only needs to connect repos to GitHub. This changes everything.
+
+**Things Juno can do:**
+- Gestate new entities (`koad-io gestate entityname`)
+- Initialize git repos (`git init`)
+- Set up entity directories, .env, keys, initial config
+- Write documentation, skills, memories, commands
+- Maintain and evolve entity repos
 
 **Things only koad can do:**
+- Connect repos to GitHub (add remote, create GitHub repo)
 - Enable GitHub Sponsors
 - Create platform accounts (YouTube, Keybase, social — need real credentials)
 - Order and configure Hetzner VPS
 - Sign trust bonds (GPG)
 - Review/approve anything over $500
 - Manage legal/financial/admin
-- Gestate new entities (currently requires manual setup)
 
-**The honest math:**
-- 6 entities × (GitHub + Keybase + YouTube + extras) = ~24 accounts to create
-- Each account needs: email, password, 2FA, profile, branding
-- Plus linking Keybase proofs across all of them
-- Plus gestating each entity (directory, keys, .env, initial config)
-- This is probably 20-30 hours of koad's time, spread across weeks
+**The revised math:**
+- Entity gestation: Juno handles it (~minutes per entity)
+- koad per entity: create GitHub repo + add remote (~5 minutes each)
+- Platform accounts: still koad's time, but can be done incrementally
+- Total koad time for 6 entities: ~30 minutes for GitHub, then incremental platform setup
 
-**The goal:** Get koad's upfront investment right, then let entities operate increasingly autonomously.
+**The goal:** Juno gestates and builds. koad connects and oversees.
 
-**The risk:** Trying to set up everything at once and burning koad out before revenue starts.
+**The risk is now different:** Not "burning koad out" but "gestating entities before they have real work to do." Gestate with purpose, not just because we can.
 
 ---
 
@@ -108,15 +114,17 @@ koad is one human. Everything funnels through koad at the start.
 - [ ] Test: can a stranger clone this repo and understand what it is?
 
 ### Phase 1: First Team Entity = First Product
-**Investment:** koad's time + Juno's work. **Revenue:** first sponsors ($15-60/mo).
-- [ ] Vulcan gestated as a public repo — first product AND first team member
-- [ ] Juno's repo polished as cloneable business-orchestrator entity
+**Investment:** Juno gestates, koad connects to GitHub. **Revenue:** first sponsors ($15-60/mo).
+- [ ] Juno gestates Vulcan (`koad-io gestate vulcan` + `git init`)
+- [ ] koad creates GitHub repo and connects remote (~5 min)
+- [ ] Juno builds out Vulcan's entity: skills, memories, commands, docs
+- [ ] Juno's own repo polished as cloneable business-orchestrator entity
 - [ ] Gestation process documented for outsiders
 - [ ] README and onboarding polished until a stranger can follow it
 - [ ] GitHub Discussions or Issues as initial support channel
 - [ ] First 5 sponsors acquired through direct outreach
 
-**Key insight:** We don't need separate "entity-flavor" repos. The team entities ARE the products. Gestating Vulcan = shipping a product-builder entity. Every team member gestated is simultaneously a product shipped.
+**Key insight:** We don't need separate "entity-flavor" repos. The team entities ARE the products. Gestating Vulcan = shipping a product-builder entity. Every team member gestated is simultaneously a product shipped. And Juno can do the gestation — koad just connects the remote.
 
 **Critical question:** Can someone who finds a team entity repo on GitHub go from "what is this?" to "I have a working entity" without talking to koad? If no, the funnel breaks at step one.
 
