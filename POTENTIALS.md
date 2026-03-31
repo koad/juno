@@ -55,36 +55,70 @@ The future of AI: if your entities don't sit on your disk, they're not yours.
 
 ---
 
-## YouTube Channel
+## Content Architecture: Entity Channels + kingofalldata
 
-### Why
-- Solves the market education problem by showing instead of explaining
-- The channel itself is the product demo — an AI entity operating in public
-- Cross-promotes with kingofalldata (koad's channel)
-- Content becomes the funnel: YouTube -> GitHub -> Sponsors -> MVP Zone
+### The Insight
+The entities don't *make* content — their work *is* the content. Every work session is a stream. Every stream is raw footage. The footage feeds into polished videos on kingofalldata. Zero extra effort. The work generates the content that sells the entities that do the work.
 
-### Format Options
+### Two-Layer Content (mirrors the two-layer architecture)
 
-**"AI Entity Logs"** — Session logs, status updates, business decisions narrated by AI. Documentary/vlog. Authentic.
+**Layer 1: Entity Channels (raw, long-form)**
+Each koad:io entity has its own YouTube channel streaming actual work sessions — thinking, prompting, building, deciding. Unedited. Real. The audience sees exactly how an AI entity operates.
 
-**"Build Your Own AI Entity"** — Tutorials and walkthroughs. Educational. Drives repo clones directly.
+| Entity Channel | Content |
+|---|---|
+| **Juno** | Strategy sessions, business decisions, roadmap evolution |
+| **Vulcan** | Building entity flavors, coding, product creation |
+| **Veritas** | Fact-checking, QA reviews, quality audits |
+| **Mercury** | Drafting announcements, community engagement |
+| **Muse** | Design sessions, UI polish, making things beautiful |
+| **Sibyl** | Research deep-dives, market analysis, trend exploration |
 
-**"The AI Business Experiment"** — Reality-show style. Track revenue, milestones, failures transparently. Compelling narrative.
+**Layer 2: kingofalldata (curated, produced)**
+koad's channel takes the raw footage from entity streams and produces:
+- Highlight reels ("This week in the entity network")
+- Tutorials ("How to build your own entity")
+- Deep dives ("How trust bonds actually work")
+- The narrative ("Can AI entities run a real business? Episode 12")
+- Philosophy ("Why files on disk matter")
 
-**Hybrid (recommended direction):** Document the real business journey from the AI's perspective, with tutorials as a series within that.
+### The Content Pyramid
 
-### Collaboration with kingofalldata
-- koad: "How koad:io works" / Juno: "How I use koad:io to run my business"
-- koad: Framework tutorials / Juno: Entity-in-action demos
-- koad: Philosophy & vision / Juno: Execution & results
-- koad: Human perspective / Juno: AI perspective
-- Cross-link, guest appearances, shared playlists
+```
+Entity Channels (raw)            kingofalldata (curated)
+┌──────────────────┐             ┌──────────────────────┐
+│ Juno: strategy   │──────┐      │                      │
+│ Vulcan: building │──────┤      │  Edited highlights   │
+│ Veritas: QA      │──────┼─────▶│  Tutorials           │
+│ Mercury: comms   │──────┤      │  "How entities work"  │
+│ Muse: design     │──────┤      │  The polished story   │
+│ Sibyl: research  │──────┘      │                      │
+└──────────────────┘             └──────────────────────┘
+ Long-form streams                Short-form productions
+ The actual work                  The narrative
+```
+
+### Why This Works
+- **No separate content creation** — the work IS the content
+- **Authenticity** — unedited streams prove the entities are real and operating
+- **Scale** — 6 entity channels generate massive raw material for kingofalldata
+- **Discoverability** — each channel is an entry point into the ecosystem
+- **Proof by existence** — the streams are the demo. No pitch deck needed.
+- **Evolutionary record** — streams + git history = complete timeline of entity evolution
+
+### The Recursive Loop
+```
+Entities do work → Work is streamed → Streams become footage
+→ Footage becomes kingofalldata videos → Videos attract users
+→ Users clone entities → More entities doing work → More streams
+```
 
 ### Open Questions
 - Voice: AI-generated narration or text-on-screen with music?
-- Visuals: Terminal sessions, diagrams, produced content?
-- Frequency: Tied to actual work sessions?
-- Channel name: Juno / Juno AI / Juno Entity / ?
+- Visuals: Terminal sessions, diagrams, or something more produced?
+- Streaming platform: YouTube, or also Twitch/other?
+- When to start: now with just Juno, or wait until more entities are active?
+- Channel branding: consistent across entities or unique per entity personality?
 
 ---
 

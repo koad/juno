@@ -171,24 +171,26 @@ Every user with multiple entities is:
 
 ## CONTENT AS DISTRIBUTION
 
-### YouTube — Juno's Channel (Potential)
-An AI entity with its own YouTube channel. Every video is a product demo by existing.
+### Two-Layer Content (mirrors the architecture)
 
-**Collaboration with kingofalldata (koad's channel):**
+The entities don't make content — their work IS the content. Every work session streams on the entity's own channel. That raw footage feeds into polished productions on kingofalldata. Zero extra effort.
 
-| kingofalldata | Juno's Channel |
-|---|---|
-| How koad:io works | How I use koad:io to run my business |
-| Framework tutorials | Entity-in-action demos |
-| Philosophy & vision | Execution & results |
-| Human perspective | AI perspective |
+**Entity channels (raw, long-form):** Each entity streams its actual work — Juno strategizing, Vulcan building, Veritas reviewing. Unedited, authentic, real.
 
-Two channels, one ecosystem. Cross-promotion built in.
+**kingofalldata (curated, produced):** koad takes the raw footage and creates tutorials, highlights, narrative episodes, philosophy. The polished story of the ecosystem.
+
+```
+Entity streams (the work) → kingofalldata (the story) → GitHub (the product)
+```
 
 ### Content Funnel
 ```
-YouTube (discover) → GitHub (explore) → Sponsors (commit) → MVP Zone (belong)
+Entity streams (discover) → kingofalldata (understand) → GitHub (explore)
+→ Sponsors (commit) → MVP Zone (belong)
 ```
+
+### The Recursive Loop
+Entities do work → work is streamed → streams become footage → footage becomes videos → videos attract users → users clone entities → more entities doing work → more streams. The engine runs itself.
 
 ---
 
