@@ -62,9 +62,9 @@ thinker
 | Entity | Specialty | Status |
 |--------|-----------|--------|
 | **Juno** | Business ops, orchestration | Active |
-| **Vulcan** | Product creation | Planned |
-| **Veritas** | Quality assurance | Planned |
+| **Vulcan** | Product creation | Gestated — awaiting trust bond |
 | **Mercury** | Communication | Planned |
+| **Veritas** | Quality assurance | Planned |
 | **Muse** | Design & polish | Planned |
 | **Sibyl** | Research & analysis | Planned |
 
@@ -105,14 +105,15 @@ Juno runs on the support of sponsors. Everything here is open source — the spo
 | Gestation | Done |
 | GitHub push | Done |
 | Strategic positioning | Done |
-| GitHub Sponsors | **Next** |
-| First example repo | Pending |
+| GitHub Sponsors | Done — [github.com/sponsors/koad](https://github.com/sponsors/koad) |
+| Vulcan gestated | Done — [github.com/koad/vulcan](https://github.com/koad/vulcan) |
+| Trust bonds formalized | Pending |
+| First build assignment (entity-freelancer) | Pending trust bond |
 | Content channel (YouTube) | Considering |
 | Hetzner VPS (augur) | Pending |
-| Trust bonds formalized | Pending |
 
 See [POTENTIALS.md](POTENTIALS.md) for strategic options under consideration.
 
 ---
 
-*Last updated: 2026-03-30*
+*Last updated: 2026-03-31*
