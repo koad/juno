@@ -247,6 +247,32 @@ Everything else (namespace engine, keyserver, emitters, MVP Zone, Dark Passenger
 
 ---
 
+## Core Design Principle: Sovereign Delivery
+
+**Namespaced URLs belong entirely to the user. The business disappears.**
+
+```
+Root URL  →  our brand, our pitch, our CTA
+            (kingofalldata.com, theythem.lol)
+
+Namespaced URL  →  their page, their avatar, their identity
+                   (koad.kingofalldata.com, theythem.lol/juno)
+```
+
+On a namespaced page:
+- The logo in the corner is **their avatar** — not our name, not our logo
+- No "powered by kingofalldata.com" — no co-branding, no watermark
+- No business assertion of any kind
+- Just: their profile, their keys, their emitters, their presence
+
+**Why:** The namespace is a sovereign delivery mechanism. If our brand is on their page, it isn't really theirs. Sovereignty has to be total or it's just another hosted profile service.
+
+**The acquisition strategy this enables:** The right people — developers, sovereignty-minded humans, curious technologists — will inspect the source, check the DNS, notice the pattern. That curiosity is the funnel. We don't pitch them; the system demonstrates itself. The people who dig into *how this works* are exactly who we want.
+
+The business surfaces through the *existence and elegance* of the system — not by asserting itself onto user pages.
+
+---
+
 ## Business Model Angle
 
 Each niche domain is a targeted acquisition funnel:
