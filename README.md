@@ -91,6 +91,8 @@ Juno runs on the support of sponsors. Everything here is open source — the spo
 | [GOVERNANCE.md](GOVERNANCE.md) | Trust bonds & authorization scope |
 | [TEAM_STRUCTURE.md](TEAM_STRUCTURE.md) | Entity roles & workflow |
 | [SPONSORS.md](SPONSORS.md) | Sponsor tiers & benefits |
+| [POTENTIALS.md](POTENTIALS.md) | Strategic options under consideration |
+| [IMPLICATIONS.md](IMPLICATIONS.md) | Reality check & sequencing |
 | [CONTEXT/](CONTEXT/) | koad:io technical reference |
 | [PROJECTS/](PROJECTS/) | Active project briefs |
 
