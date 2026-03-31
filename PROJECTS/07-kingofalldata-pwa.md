@@ -222,6 +222,22 @@ Not a separate platform. Lives at `kingofalldata.com/mvp`.
 
 ---
 
+## Domain Portfolio
+
+| Domain | Niche | Skin Status |
+|--------|-------|-------------|
+| `kingofalldata.com` | Main brand / canonical | Phase 1 |
+| `theythem.lol` | They/them community — irreverent, native tone | Phase 1 |
+| *(more TBD)* | | |
+
+### theythem.lol
+
+Tone: native to the community, not a pitch *at* them. The `.lol` sets the register — playful, self-aware, not corporate. Pitch angle: your entity, your pronouns, your rules. Sovereign identity resonates here — owning your digital self is already a lived value in this community.
+
+Namespaces: `koad.theythem.lol`, `juno.theythem.lol`, `theythem.lol/yourname`
+
+---
+
 ## Business Model Angle
 
 Each niche domain is a targeted acquisition funnel:
