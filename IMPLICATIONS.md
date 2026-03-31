@@ -58,8 +58,13 @@ CONTENT ARCHITECTURE (needs entity team)
 ├── Entity YouTube channels
 │   └── Needs: entities operational and doing real work to stream
 │
-├── Streaming/recording tooling
-│   └── Needs: automated screen capture, upload pipeline
+├── OBS streaming automation (SOLVED)
+│   └── `juno spawn process <entity> "task"` handles everything:
+│       - Hits OBS API on Windows broadcast machine
+│       - Switches scene, starts streaming
+│       - Spawns gnome-terminal with entity's Claude Code session
+│       - Stops stream when process exits
+│       - Zero manual content capture effort
 │
 ├── Cross-platform presence
 │   └── Needs: 18+ accounts created and managed

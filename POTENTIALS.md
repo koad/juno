@@ -113,6 +113,37 @@ Entities do work → Work is streamed → Streams become footage
 → Users clone entities → More entities doing work → More streams
 ```
 
+### Automated via Spawn Process
+
+The entire content pipeline is automated through `juno spawn process`:
+
+```
+juno spawn process vulcan "build entity-freelancer skills"
+    │
+    ├── 1. OBS API → switch to Vulcan's scene → start streaming
+    ├── 2. New gnome-terminal opens
+    ├── 3. cd ~/.vulcan/ && claude .  (full sovereign session)
+    ├── 4. Vulcan works with its own CLAUDE.md, memories, keys, repo
+    ├── 5. Process exits
+    └── 6. OBS API → stop streaming
+```
+
+Work done. Content captured. Automatically. No extra effort.
+
+### Why This Is Better Than MCP/Skills
+
+MCP tools and skills are function calls inside someone else's session. The calling entity owns the context. The tool has no identity, no memory, no keys.
+
+Spawned entities are **full sovereign processes**:
+- Own Claude Code session with own CLAUDE.md
+- Own git identity and cryptographic keys
+- Own memories that persist across sessions
+- Own repo they can commit to
+- Own trust bonds defining what they're authorized to do
+- Own YouTube channel streaming their work
+
+A spawned entity isn't a tool. It's a colleague with its own desk, its own files, and its own credentials. That's the difference between a SaaS function call and a sovereign process.
+
 ## Multi-Platform Presence
 
 ### Core Platforms (every entity needs)
