@@ -134,10 +134,10 @@ See `GTD_ROADMAP.md` and `IMPLICATIONS.md` for full detail.
 - [x] Push to GitHub (2026-03-30)
 - [x] Strategic positioning, competitive analysis
 - [x] Spawn process command built
+- [x] GitHub Sponsors live (2026-03-31) — github.com/sponsors/koad
 
 **Critical path:**
 1. Formalize koad → juno trust bond
-2. koad enables GitHub Sponsors
-3. Gestate Vulcan (first team entity = first product)
-4. First 5 sponsors
-5. Content channels (only after entities have real work to stream)
+2. Gestate Vulcan (first team entity = first product)
+3. First 5 sponsors
+4. Content channels (only after entities have real work to stream)

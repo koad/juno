@@ -109,7 +109,7 @@ the model. Every satisfied customer demonstrates the value.
 LAUNCH (Month 1-3)
 ├── [x] Get gestated (2026-03-30)
 ├── [x] Push to GitHub (2026-03-30)
-├── [ ] GitHub Sponsors page live
+├── [x] GitHub Sponsors page live (2026-03-31)
 ├── [ ] First example repo (entity-freelancer)
 └── [ ] First 5 sponsors
 
@@ -235,15 +235,14 @@ SCALE (Month 7-12)
 ┌─────────────────────────────────────────────────────────────┐
 │  PROJECT: GitHub Sponsors Setup                            │
 ├─────────────────────────────────────────────────────────────┤
-│  Status: PENDING                                          │
+│  Status: COMPLETE (2026-03-31)                            │
 │  Owner: koad (admin), juno (content)                 │
-│  Runway: Awaiting gestation                               │
 │                                                             │
 │  Deliverables:                                            │
-│  ├── GitHub Sponsors page created                         │
-│  ├── Tier structure ($1, $5, $10, custom)                │
-│  ├── Bio and links configured                             │
-│  └── First sponsor tier messaging written                 │
+│  ├── [x] GitHub Sponsors page created                     │
+│  ├── [x] Tier structure ($1, $5, $10, custom)            │
+│  ├── [x] Bio and links configured                         │
+│  └── [x] First sponsor tier messaging written             │
 └─────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────┐
@@ -327,7 +326,7 @@ entity-gestation
 │  PREPARING:                                                │
 │  ├── [x] Draft sponsor tier content (SPONSORS.md)          │
 │  ├── [x] Add FUNDING.yml for Sponsors button               │
-│  ├── [ ] koad enables GitHub Sponsors on koad account       │
+│  ├── [x] koad enables GitHub Sponsors (2026-03-31)         │
 │  ├── [ ] First example repo structure (entity-freelancer)  │
 │  └── [ ] Content channel strategy (YouTube — pondering)    │
 │                                                             │
@@ -361,39 +360,43 @@ I prepare:
 CONTROL TOWER PROTOCOL:
 
 1. What's on the runway right now?
-   → Nothing blocking. Sponsors content ready.
+   → GitHub Sponsors LANDED (2026-03-31). Runway clear.
 
 2. What can land next?
-   → GitHub Sponsors (koad enables on account)
+   → Gestate Vulcan (first team entity = first product)
 
 3. What's blocking the runway?
-   → koad must enable Sponsors on github.com/koad
+   → koad must formalize trust bond with juno
+   → koad connects Vulcan to GitHub after gestation (~5 min)
 
 4. What needs to taxi before next landing?
-   → Draft entity-freelancer structure
-   → Formalize trust bond with koad
+   → Formalize koad → juno trust bond
+   → Prepare Vulcan entity structure
 
 5. Clear one, then clear next.
-   → LAND(GitHub Sponsors) → TAXI(prepare) → LAND(entity-freelancer)
+   → LAND(trust bond) → LAND(Vulcan gestation) → TAXI(first sponsors)
 ```
 
 ---
 
 ## NEXT LANDING
 
-**Landing:** GitHub Sponsors
+**Landed:** GitHub Sponsors (2026-03-31) -- github.com/sponsors/koad is LIVE
 
-**Requires:** koad enables GitHub Sponsors on the `koad` account
+**Next landing:** Gestate Vulcan (first team entity = first shippable product)
+
+**Requires:**
+- koad → juno trust bond formalized
+- koad connects Vulcan repo to GitHub after gestation
 
 **Success criteria:**
-- Sponsors page live at github.com/sponsors/koad
-- Tier structure matches SPONSORS.md
-- FUNDING.yml renders "Sponsor" button on repo
-- First sponsor tier messaging ready
+- Vulcan entity gestated and pushed to GitHub
+- Vulcan has its own CLAUDE.md, memories, keys, git identity
+- Vulcan is cloneable via koad:io — the first product anyone can adopt
 
-**After that:** First example repo (entity-freelancer)
+**After that:** First 5 sponsors, then Mercury for content channels
 
 ---
 
 *Elevation: 50K → 40K → 30K → 20K → 10K → RUNWAY*
-*Last updated: 2026-03-30*
+*Last updated: 2026-03-31*
