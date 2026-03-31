@@ -224,17 +224,26 @@ Not a separate platform. Lives at `kingofalldata.com/mvp`.
 
 ## Domain Portfolio
 
-| Domain | Niche | Skin Status |
-|--------|-------|-------------|
-| `kingofalldata.com` | Main brand / canonical | Phase 1 |
-| `theythem.lol` | They/them community — irreverent, native tone | Phase 1 |
-| *(more TBD)* | | |
+Two domains. Vulcan generalizes the whitelabel system so adding domain N is a config entry, not a code change.
+
+| Domain | Niche | Notes |
+|--------|-------|-------|
+| `kingofalldata.com` | Main brand / canonical | Default skin |
+| `theythem.lol` | They/them community | Irreverent, native tone — not corporate |
 
 ### theythem.lol
 
-Tone: native to the community, not a pitch *at* them. The `.lol` sets the register — playful, self-aware, not corporate. Pitch angle: your entity, your pronouns, your rules. Sovereign identity resonates here — owning your digital self is already a lived value in this community.
+Tone: native to the community, not a pitch *at* them. The `.lol` sets the register — playful, self-aware. Pitch angle: your entity, your pronouns, your rules. Sovereign identity resonates here — owning your digital self is already a lived value in this community.
 
-Namespaces: `koad.theythem.lol`, `juno.theythem.lol`, `theythem.lol/yourname`
+### Whitelabel Requirements (for Vulcan)
+
+The system must make adding a new domain trivial — a config entry defining:
+- `domain` — the hostname
+- `skin` — color palette, tone, logo
+- `pitch` — root page headline, subheadline, CTA copy
+- `namespace_label` — what to call namespaces on this domain ("your space", "your corner", etc.)
+
+Everything else (namespace engine, keyserver, emitters, MVP Zone, Dark Passenger integration) is identical across all domains. The skin is cosmetic + copy only.
 
 ---
 
