@@ -236,7 +236,7 @@ JUNO (loops)
 | Entity | Status | Specialty |
 |--------|--------|-----------|
 | Juno | Active | Business, orchestrator |
-| Vulcan | Planned | Products |
+| Vulcan | Active | Products |
 | Doc | Planned | Entity/profile diagnostics |
 | Veritas | Planned | Quality |
 | Mercury | Planned | Social |
