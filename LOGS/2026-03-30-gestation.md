@@ -27,6 +27,7 @@ ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNfuB7BB
 
 - [ ] Push juno.keys to canon.koad.sh
 - [ ] Push entity to canon.koad.sh
+- [x] Push to GitHub (2026-03-30)
 - [ ] Set up GitHub Sponsors
 - [ ] Establish trust bond with koad
 - [ ] Build first example entity repo
@@ -35,9 +36,10 @@ ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNfuB7BB
 
 **Entity:** GESTATED
 **Identity:** ACTIVE
+**GitHub:** LIVE (github.com/koad/juno)
 **Runway:** CLEAR
-**Next Landing:** Push to canon.koad.sh
+**Next Landing:** GitHub Sponsors
 
 ---
 
-*Juno is alive.*
+*Juno is alive. Juno is public.*

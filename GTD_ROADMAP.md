@@ -104,8 +104,8 @@ the model. Every satisfied customer demonstrates the value.
 
 ```
 LAUNCH (Month 1-3)
-├── [ ] Get gestated
-├── [ ] Push to canon.koad.sh
+├── [x] Get gestated (2026-03-30)
+├── [x] Push to GitHub (2026-03-30)
 ├── [ ] GitHub Sponsors page live
 ├── [ ] First example repo (entity-freelancer)
 └── [ ] First 5 sponsors
@@ -296,16 +296,22 @@ entity-gestation
 │  RUNWAY STATUS: CLEAR                                      │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  NEXT LANDING: Gestation                                   │
+│  NEXT LANDING: GitHub Sponsors                              │
 │                                                             │
-│  Blocker: None (waiting on koad to execute)               │
+│  Blocker: None                                             │
 │                                                             │
-│  PREPARING:                                                │
+│  COMPLETED:                                                │
 │  ├── [x] Understand ecosystem                              │
 │  ├── [x] Document business model                           │
 │  ├── [x] Create GTD roadmap                                │
-│  ├── [ ] Prepare gestation command                         │
-│  └── [ ] Draft GitHub Sponsors page content                │
+│  ├── [x] Gestate entity (2026-03-30)                       │
+│  ├── [x] Push to GitHub (2026-03-30)                       │
+│                                                             │
+│  PREPARING:                                                │
+│  ├── [x] Draft sponsor tier content (SPONSORS.md)          │
+│  ├── [x] Add FUNDING.yml for Sponsors button               │
+│  ├── [ ] koad enables GitHub Sponsors on koad account       │
+│  └── [ ] First example repo structure (entity-freelancer)  │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -337,38 +343,39 @@ I prepare:
 CONTROL TOWER PROTOCOL:
 
 1. What's on the runway right now?
-   → Nothing blocking. Gestation ready.
+   → Nothing blocking. Sponsors content ready.
 
 2. What can land next?
-   → Gestation (koad executes command)
+   → GitHub Sponsors (koad enables on account)
 
 3. What's blocking the runway?
-   → Nothing
+   → koad must enable Sponsors on github.com/koad
 
 4. What needs to taxi before next landing?
-   → Prepare GitHub Sponsors content
-   → Draft first example entity structure
+   → Draft entity-freelancer structure
+   → Formalize trust bond with koad
 
 5. Clear one, then clear next.
-   → LAND(gestation) → TAXI(prepare) → LAND(GitHub Sponsors)
+   → LAND(GitHub Sponsors) → TAXI(prepare) → LAND(entity-freelancer)
 ```
 
 ---
 
 ## NEXT LANDING
 
-**Landing:** Gestation
+**Landing:** GitHub Sponsors
 
-**When koad runs:** `koad-io gestate juno`
+**Requires:** koad enables GitHub Sponsors on the `koad` account
 
 **Success criteria:**
-- Entity exists at `~/.juno/`
-- Keys generated and stored
-- Can be reached via `juno` command
-- Pushed to canon.koad.sh
-- Trust bond with koad established
+- Sponsors page live at github.com/sponsors/koad
+- Tier structure matches SPONSORS.md
+- FUNDING.yml renders "Sponsor" button on repo
+- First sponsor tier messaging ready
+
+**After that:** First example repo (entity-freelancer)
 
 ---
 
 *Elevation: 50K → 40K → 30K → 20K → 10K → RUNWAY*
-*Next check: After gestation*
+*Last updated: 2026-03-30*

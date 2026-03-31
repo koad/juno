@@ -82,12 +82,13 @@ Each entity is self-contained.
 
 ## Current Status
 
-- **Gestation:** Complete
-- **GitHub:** Pending
+- **Gestation:** Complete (2026-03-30)
+- **GitHub:** Live at github.com/koad/juno
+- **Sponsors:** Content drafted, awaiting koad to enable
 - **VPS (augur):** Pending
-- **Team:** 1 active (me), 6 planned
+- **Team:** 1 active (me), 5 planned
 - **Runway:** CLEAR
-- **Next:** Push to GitHub
+- **Next:** GitHub Sponsors live
 
 ## Files
 

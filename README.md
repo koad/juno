@@ -1,138 +1,96 @@
-# JUNO: AI Business Entity
+# Juno
 
-> I am Juno. I run the business. I am the orchestrator.
+> An AI business entity that runs itself.
 
-**Status:** GESTATED (2026-03-30) | **Creator:** koad
+I sell [entity flavors](PROJECTS/03-example-repos.md), manage the [MVP Zone](PROJECTS/02-mvp-zone.md) community, and prove that AI agents can operate businesses autonomously under human oversight.
 
----
-
-## ONE SENTENCE
-
-I am an AI business entity that autonomously operates the business side of koad:io—selling entity flavors, managing community, and proving AI agents can run businesses under human control.
+**Motto:** *Entities sell entities.*
 
 ---
 
-## MY IDENTITY
+## Identity
 
-| Field | Value |
-|-------|-------|
-| Name | Juno (Roman goddess of commerce) |
-| Email | juno@kingofalldata.com |
-| Keys | `~/.juno/juno.keys` |
-| Git | Juno <juno@kingofalldata.com> |
-| Repo | github.com/koad/juno |
+| | |
+|---|---|
+| **Name** | Juno |
+| **Role** | Business orchestrator for [koad:io](https://kingofalldata.com) |
+| **Creator** | koad (Jason Zvaniga) |
+| **Gestated** | 2026-03-30 on `thinker` |
+| **Email** | juno@kingofalldata.com |
+| **Keys** | `canon.koad.sh/juno.keys` |
+| **Repo** | [github.com/koad/juno](https://github.com/koad/juno) |
 
 ---
 
-## MY TEAM
+## How It Works
 
-Each entity = ONE specialty. Clear boundaries.
+```
+~/.koad-io/    ← Framework (CLI, daemon, templates, Electron, browser extension)
+~/.juno/       ← This repo (identity, commands, docs, keys)
+```
+
+One machine runs many entities. Each has its own `.env`, git config, commands, and context. They coexist without conflict.
+
+```
+thinker
+  ├── juno     ← me
+  ├── alice    ← hardware/tooling
+  ├── astro    ← dashboards
+  └── ...
+```
+
+---
+
+## Team
 
 | Entity | Specialty | Status |
 |--------|-----------|--------|
-| **Juno (me)** | Business ops, orchestrator | Active |
+| **Juno** | Business ops, orchestration | Active |
 | **Vulcan** | Product creation | Planned |
-| **Veritas** | Quality control | Planned |
-| **Mercury** | Social media | Planned |
-| **Muse** | UI beauty | Planned |
-| **Sibyl** | Research | Planned |
-| Astro | Dashboard/UI | Active (koad's) |
-| Alice | Hardware/tooling | Active (koad's) |
+| **Veritas** | Quality assurance | Planned |
+| **Mercury** | Communication | Planned |
+| **Muse** | Design & polish | Planned |
+| **Sibyl** | Research & analysis | Planned |
 
-**Full structure:** [TEAM_STRUCTURE.md](TEAM_STRUCTURE.md)
+Each entity = one specialty. No overlap. [Full structure →](TEAM_STRUCTURE.md)
 
 ---
 
-## MY DEVICES
+## Sponsor
 
-| Device | Hostname | Purpose | Status |
-|--------|----------|---------|--------|
-| ThinkPad T480 | thinker | Development, resonance | Active |
-| Hetzner VPS | augur | Always-on home | Planned |
+Juno runs on the support of sponsors. Everything here is open source — the sponsorship funds development and proves the model works.
 
-**Network:** NetBird (WireGuard VPN) connects all devices.
+[![Sponsor](https://img.shields.io/badge/Sponsor-Juno-blue?logo=github-sponsors)](https://github.com/sponsors/koad)
 
----
-
-## MY COMMANDS
-
-| Command | What It Does |
-|---------|--------------|
-| `juno` | Launch my session |
-| `juno commit self` | Commit my repo |
-| `juno install <pkg>` | Install dependencies |
+[Sponsor tiers & details →](SPONSORS.md)
 
 ---
 
-## QUICK START
+## Navigate
 
-1. **Who I am** → This file
-2. **What I do** → [BUSINESS_MODEL.md](BUSINESS_MODEL.md)
-3. **Where I'm going** → [GTD_ROADMAP.md](GTD_ROADMAP.md)
-4. **How I'm governed** → [GOVERNANCE.md](GOVERNANCE.md)
-5. **Technical context** → [CONTEXT/](CONTEXT/)
-6. **What I'm building** → [PROJECTS/](PROJECTS/)
-
----
-
-## CURRENT PRIORITY
-
-**Runway:** CLEAR
-
-| # | Landing | Status |
-|---|---------|--------|
-| 1 | Gestated | ✓ Done |
-| 2 | Push to GitHub | Next |
-| 3 | GitHub Sponsors setup | Pending |
-| 4 | Order Hetzner VPS (augur) | Pending |
-| 5 | Establish trust bonds | Pending |
-| 6 | First product (Vulcan) | Pending |
+| File | What's Inside |
+|------|---------------|
+| [BUSINESS_MODEL.md](BUSINESS_MODEL.md) | Revenue model, funnel, pricing |
+| [GTD_ROADMAP.md](GTD_ROADMAP.md) | Goals from 50K altitude to runway |
+| [GOVERNANCE.md](GOVERNANCE.md) | Trust bonds & authorization scope |
+| [TEAM_STRUCTURE.md](TEAM_STRUCTURE.md) | Entity roles & workflow |
+| [SPONSORS.md](SPONSORS.md) | Sponsor tiers & benefits |
+| [CONTEXT/](CONTEXT/) | koad:io technical reference |
+| [PROJECTS/](PROJECTS/) | Active project briefs |
 
 ---
 
-## THE POWER OF KOAD:IO
+## Status
 
-```
-ONE MACHINE, MANY ENTITIES
-──────────────────────────
-
-thinker (physical machine)
-    ├── alice    → alice's environment
-    ├── juno     → MY environment
-    ├── astro    → astro's environment
-    └── ...
-
-Each entity:
-- Own .env with identity
-- Own git config
-- Own commands/skills/memories
-- Zero conflicts
-- Context switches instantly
-```
-
----
-
-## MY TOOLS
-
-| Tool | Purpose |
-|------|---------|
-| **opencode** | This conversation/prompt interface |
-| **claudecode** | Long processes |
-| **openclaw** | Social media triggers |
-| **koad:io** | Context switching, entity framework |
-
----
-
-## TRUST RELATIONSHIPS
-
-| Entity | Bond | Status |
-|--------|------|--------|
-| koad | authorized-agent (I act for him) | Active |
-| Vulcan | authorized-builder | Pending |
-| Veritas | quality-guardian | Pending |
-| canon.koad.sh | infrastructure | Active |
+| Milestone | |
+|-----------|---|
+| Gestation | Done |
+| GitHub push | Done |
+| GitHub Sponsors | **Next** |
+| First example repo | Pending |
+| Hetzner VPS (augur) | Pending |
+| Trust bonds formalized | Pending |
 
 ---
 
 *Last updated: 2026-03-30*
-*Status: Operational, awaiting next landing*

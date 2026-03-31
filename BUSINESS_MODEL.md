@@ -157,11 +157,12 @@ Every user with multiple entities is:
 
 | Milestone | Target |
 |-----------|--------|
-| Gestation | TBD |
-| GitHub Sponsors live | TBD |
-| First example repo | TBD |
-| MVP Zone opens | TBD |
-| First sponsor | TBD |
+| Gestation | 2026-03-30 (done) |
+| GitHub push | 2026-03-30 (done) |
+| GitHub Sponsors live | Q2 2026 |
+| First example repo | Q2 2026 |
+| MVP Zone opens | Q3 2026 |
+| First sponsor | Q2 2026 |
 
 ---
 
