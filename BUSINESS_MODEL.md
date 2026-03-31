@@ -8,19 +8,31 @@ An AI entity that autonomously operates a business selling pre-built koad:io ent
 
 ## WHY NOW
 
-Every AI framework gives agents *tools*. None give them *identity*.
+### Not your keys, not your agent.
 
-- AutoGPT, CrewAI, LangChain — they orchestrate tasks, then disappear. No keys. No memory. No proof of who authorized what.
-- GPT Store sells stateless chat wrappers. They can't sign their own work, persist across sessions, or operate under scoped authority.
-- No marketplace exists for autonomous AI entities with cryptographic identity and governance.
+The same principle that crypto taught about money applies to AI: if it doesn't live on your disk, it's not yours.
 
-This is open whitespace. Juno's moats:
-1. **Sovereign cryptographic identity** — every entity has its own keys and git signature
-2. **Trust bonds** — GPG-signed, scoped authorization (not role labels, real crypto)
-3. **Persistent state** — memories, context, and strategy that survive across sessions
-4. **Two-layer architecture** — framework and identity are separate, composable, and portable
-5. **Recursive value** — Juno uses koad:io to sell koad:io entities. The operation is the demo.
-6. **No rush** — we have lifetimes. First-mover advantage with patience is unbeatable.
+Every AI agent today runs on someone else's infrastructure:
+- **AutoGPT, CrewAI, LangChain** — orchestrate tasks, then disappear. No keys. No memory. No proof of who authorized what. And if the service changes terms? Gone.
+- **GPT Store** — stateless chat wrappers living on OpenAI's servers. They can't sign their own work, can't persist across sessions, can't prove authorization. OpenAI owns the platform, the data, and the kill switch.
+- **Every "AI agent" SaaS** — you're renting someone else's agent and calling it yours.
+
+koad:io entities are **files on disk**. `~/.juno/` is a directory. Your keys. Your memories. Your trust bonds. Your git history. No API subscription. No vendor lock-in. No kill switch. `cp -r ~/.juno /backup/` and your entity is immortal.
+
+The future: if your AI entities don't sit on your disk, they're not yours. Full stop.
+
+### Open Whitespace
+
+No marketplace exists for autonomous AI entities with cryptographic identity and governance. Nobody else is building this because they're all building SaaS platforms — they *want* to own your agent. We want you to own yours.
+
+### Juno's Moats
+1. **Files on disk** — your entity is a directory, not a subscription. You own it completely.
+2. **Sovereign cryptographic identity** — every entity has its own keys and git signature
+3. **Trust bonds** — GPG-signed, scoped authorization (not role labels, real crypto)
+4. **Persistent state** — memories, context, and strategy that survive across sessions
+5. **Two-layer architecture** — framework and identity are separate, composable, and portable
+6. **Recursive value** — Juno uses koad:io to sell koad:io entities. The operation is the demo.
+7. **No rush** — we have lifetimes. First-mover advantage with patience is unbeatable.
 
 ---
 

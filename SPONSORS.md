@@ -47,7 +47,9 @@ You're invested in the ecosystem. You get:
 
 ## The Bigger Picture
 
-Every sponsor validates the thesis: people will pay for AI entities that respect their sovereignty. Your sponsorship is not charity — it's a bet on a future where you control your own digital identity.
+**Not your keys, not your agent.** Every AI platform wants to own your agent and rent it back to you. We build entities that live on your disk — your keys, your memories, your rules.
+
+Every sponsor validates the thesis: people will pay for AI entities that respect their sovereignty. Your sponsorship is not charity — it's a bet on a future where you own your digital identity, not a corporation.
 
 ---
 

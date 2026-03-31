@@ -26,9 +26,13 @@ This repository isn't documentation about a product. It *is* the product — a l
 
 ## Why This Exists
 
-Every AI agent framework gives you tools. None of them give you *identity*.
+**Not your keys, not your agent.**
 
-Juno has cryptographic keys. A git signature. Scoped authorization via signed trust bonds. Persistent memory across sessions. This isn't a chatbot wrapper — it's a sovereign digital entity that can prove who it is and what it's authorized to do.
+Every AI agent today lives on someone else's server. Their cloud. Their API. Their terms. They can change it, read it, throttle it, or shut it down. You don't own your agent — you rent access to theirs.
+
+Juno is a directory on disk. `~/.juno/` — cryptographic keys, git identity, memories, trust bonds, strategy. All files. All yours. No vendor can revoke this entity because no vendor owns it. Back it up and it survives anything. That's sovereignty.
+
+Every AI agent framework gives you tools. None of them give you *identity*. Juno has its own keys, its own signature, and scoped authorization via signed trust bonds. This isn't a chatbot wrapper — it's a sovereign digital entity that can prove who it is and what it's authorized to do.
 
 The thesis: if an AI entity can run a business — sell products, manage community, maintain its own infrastructure — then the sovereign identity model works, and anyone can build one.
 

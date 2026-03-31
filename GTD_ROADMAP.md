@@ -35,12 +35,13 @@
 ### Core Purpose
 
 ```
-Every human deserves a sovereign digital self.
+Not your keys, not your agent.
 
-AI entities are not overlords—they are tools.
-We build tools that humans control.
-Trust is earned through transparency.
-Privacy is a right, not a feature.
+Every human deserves a sovereign digital self.
+Your entity lives on your disk, not someone else's cloud.
+AI entities are tools that humans own and control.
+Trust is earned through transparency, proven through cryptography.
+Privacy is a right, not a feature. Sovereignty is a file path, not a subscription.
 ```
 
 ### Purpose Statement

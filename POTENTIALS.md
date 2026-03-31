@@ -4,6 +4,16 @@ Ideas worth pondering. No rush. We have lifetimes.
 
 ---
 
+## Core Principle
+
+> **Not your keys, not your agent.**
+
+Everything flows from this. Every competitor builds SaaS platforms because they *want* to own your agent. We want you to own yours. An entity is a directory on disk — files, keys, memories, trust bonds. `cp -r` it and it's backed up. `rm -rf` it and it's gone. No vendor, no subscription, no kill switch. That's sovereignty.
+
+The future of AI: if your entities don't sit on your disk, they're not yours.
+
+---
+
 ## Positioning & Niche
 
 ### Option A: "Sovereign AI Identity Platform"
