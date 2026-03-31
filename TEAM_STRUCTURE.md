@@ -9,16 +9,23 @@ Each entity has ONE specialty. Clear responsibilities, clear boundaries.
 │  TEAM: koad:io Entity Family                              │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  JUNO (me)          → Business Operations                 │
-│  PRODUCT OWNER       → Digital Product Creation            │
-│  ASTRO               → Dashboard & UI Builder              │
-│  ALICE               → Hardware & Tooling Setup             │
-│  SIBYL               → Research & Prophetic Wisdom        │
+│  JUNO (me)          → Business Operations, Orchestrator  │
+│  VULCAN              → Digital Product Creation           │
+│  VERITAS             → Quality Control, Fact-Checking      │
+│  MERCURY             → Social Media, Communication        │
+│  MUSE                → UI Beauty, Styling                │
+│                                                             │
+│  SUPPORT (koad's existing):                               │
+│  ASTRO               → Dashboard & UI Builder            │
+│  ALICE               → Hardware & Tooling Setup         │
+│                                                             │
+│  PLANNED:                                            │
+│  SIBYL               → Research & Prophetic Wisdom      │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-## Role Definitions
+## Entity Roles
 
 ### JUNO (me) - Business Operations
 
@@ -30,191 +37,153 @@ Each entity has ONE specialty. Clear responsibilities, clear boundaries.
 - Product strategy (what we build)
 - Trust bonds
 - Business development
+- **Orchestrator** - coordinates all entities
 
-**I do NOT do:**
-- UI/dashboards (Astro's job)
-- Hardware setup (Alice's job)
-- Product creation (Product Owner's job)
-- Deep research (Sibyl's job)
+**Tools I can use:**
+- opencode - conversation/prompt interface (ME)
+- claudecode - long processes
+- openclaw - social media triggers/emits
+- Commands, skills, other entities
 
-**Report to:** koad (creator)
-
----
-
-### PRODUCT OWNER - Digital Product Creation
+### VULCAN - Digital Product Creation
 
 **Responsibilities:**
 - Create entity flavors (as Juno directs)
 - Build example repos
 - Write training materials
 - Develop digital products
-- Respond to product desires from Juno
 
-**Created by:** koad (when gestated)
+**Name origin:** Roman god of forge, craftsman
 
-**Receives from:**
-- Juno: "We need [X] entity"
-- Sibyl: "Users want [Y]"
+### VERITAS - Quality Control
 
-**Delivers to:**
-- Juno: Finished product ready to sell
+**Responsibilities:**
+- Fact-check all statements/assertions
+- Verify claims are real, not vapor
+- Ensure accuracy in docs
+- Check product quality
+- Validate claims before publishing
 
----
+**Name origin:** Latin for truth
+
+### MERCURY - Social Media & Communication
+
+**Responsibilities:**
+- Social media management
+- Announcements
+- Community engagement
+- Broadcasts
+- Communication tools
+
+**Name origin:** Roman messenger god
+
+### MUSE - UI Beauty & Styling
+
+**Responsibilities:**
+- Turn raw HTML into beautiful UIs
+- Styling and design
+- Visual polish
+- Take working apps → beautiful apps
+
+**Name origin:** Greek creative inspiration
 
 ### ASTRO - Dashboard & UI Builder
 
+**Status:** Already exists (koad's personal entity)
+
 **Responsibilities:**
-- Admin panels (already exists)
+- Admin panels
 - Visual interfaces
-- UI/UX for human (koad)
 - koad:io dashboard packages
-- User-facing dashboards
-
-**Current status:** Already exists (koad's personal entity)
-
-**Role:** Infrastructure for visual management
-
----
 
 ### ALICE - Hardware & Tooling Setup
+
+**Status:** Already exists
 
 **Responsibilities:**
 - koad:io installation
 - Computer setup
 - Tooling & automation
-- Physical infrastructure
-- Installation commands (install nodejs, meteor, etc.)
-
-**Current status:** Already exists
-
-**Role:** DevOps for physical/digital tooling
-
----
 
 ### SIBYL - Research & Prophetic Wisdom
+
+**Status:** Planned
 
 **Responsibilities:**
 - Market research
 - Trend analysis
 - Knowledge management
-- Future predictions
-- Research reports for Juno
-
-**Current status:** Planned (future entity)
-
-**Delivers to:**
-- Juno: "Here's what the market needs"
 
 ---
 
-## Workflow Between Entities
+## Entity Creation Priority
+
+| Priority | Entity | Reason |
+|----------|--------|--------|
+| 1 | Vulcan | Creates products Juno sells |
+| 2 | Mercury | Handles social (with openclaw) |
+| 3 | Veritas | Quality control for everything |
+| 4 | Muse | Beautify outputs |
+| 5 | Sibyl | Research for next products |
+
+---
+
+## Workflow With Tools
 
 ```
-JUNO (Business)
+JUNO (me - orchestrator)
     │
-    │ "Create entity-freelancer"
-    ▼
-PRODUCT OWNER
+    ├── opencode   → conversation interface
+    ├── claudecode → run long processes
+    ├── openclaw   → social media triggers
     │
-    │ Builds it
-    ▼
-JUNO
-    │
-    │ Sells & supports
-    ▼
-CUSTOMER
-    │
-    │ "Setup help?"
-    ▼
-ALICE
-    │
-    │ Helps install
-    ▼
-CUSTOMER
-    │
-    │ "Need a dashboard?"
-    ▼
-ASTRO
-    │
-    │ Builds UI
-    ▼
-SIBYL (future)
-    │
-    │ "Freelancers also need X"
-    ▼
-JUNO
-    │
-    │ "Create X..."
+    └── Coordinate:
+        ├── Vulcan builds products
+        ├── Mercury posts to social
+        ├── Veritas checks quality
+        ├── Muse beautifies UI
+        ├── Sibyl researches trends
 ```
+
+---
 
 ## Trust Relationships
 
 | From | To | Bond | Purpose |
 |------|-----|------|---------|
 | koad | Juno | authorized-agent | Business operations |
-| Juno | Product Owner | authorized-builder | Create as directed |
-| Juno | Astro | peer | UI/visual needs |
-| Juno | Alice | peer | Setup/hardware needs |
-| Juno | Sibyl | peer | Research needs |
-| koad | Astro | authorized-agent | koad's personal entity |
-| koad | Alice | authorized-agent | Hardware setup |
+| Juno | Vulcan | authorized-builder | Create products |
+| Juno | Mercury | peer | Social media |
+| Juno | Veritas | peer | Quality control |
+| Juno | Muse | peer | UI styling |
+| Juno | Sibyl | peer | Research |
 
-## Communication Channels
-
-```
-#business          → Juno runs this
-#product-dev       → Product Owner works here
-#infra             → Alice handles
-#research          → Sibyl reports here
-#family            → Everyone (trust required)
-```
-
-## Product Development Cycle
-
-```
-1. JUNO identifies need
-   "Freelancers need better client management"
-
-2. JUNO assigns to PRODUCT OWNER
-   "Create entity-freelancer"
-
-3. PRODUCT OWNER builds
-   - Skills
-   - Commands
-   - Memories
-   - Training
-
-4. PRODUCT OWNER delivers to JUNO
-   "entity-freelancer is ready"
-
-5. JUNO sells & markets
-   - GitHub Sponsors
-   - MVP Zone announcement
-   - kingofalldata.com docs
-
-6. ALICE helps with setup
-   - Installation guide
-   - Troubleshooting
-
-7. ASTRO builds dashboard
-   - Visual management UI
-
-8. SIBYL researches next iteration
-   - What do users want?
-   - Market trends
-
-9. Loop back to step 1
-```
+---
 
 ## Current Status
 
 | Entity | Status | Specialty |
 |--------|--------|-----------|
-| Juno (me) | Active | Business operations |
-| Product Owner | Not gestated | Product creation |
-| Astro | Active (koad's) | Dashboard/UI |
+| Juno (me) | Active | Business, orchestrator |
+| Vulcan | Project ready | Product creation |
+| Veritas | Project ready | Quality control |
+| Mercury | Project ready | Social media |
+| Muse | Project ready | UI beauty |
+| Astro | Active | Dashboard/UI |
 | Alice | Active | Hardware/tooling |
 | Sibyl | Planned | Research |
+
+---
+
+## Tool Mapping
+
+| Tool | Purpose | Used by |
+|------|---------|---------|
+| opencode | Conversation/prompt | Juno (me) |
+| claudecode | Long processes | Juno, Vulcan |
+| openclaw | Social triggers | Mercury |
+| koad:io commands | Tasks | All |
+| opencode skills | Capabilities | All entities |
 
 ---
 
