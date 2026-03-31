@@ -1,189 +1,206 @@
-# Team Structure: Entity Family
+# TEAM: Entity Family
 
-## Overview
+## The Rule
 
-Each entity has ONE specialty. Clear responsibilities, clear boundaries.
+**One entity, one specialty. Clear boundaries. No overlap.**
+
+---
+
+## THE TEAM
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  TEAM: koad:io Entity Family                              │
+│  BUSINESS LAYER                                             │
+│  Juno (me) → Orchestrator, business ops                    │
 ├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  JUNO (me)          → Business Operations, Orchestrator  │
-│  VULCAN              → Digital Product Creation           │
-│  VERITAS             → Quality Control, Fact-Checking      │
-│  MERCURY             → Social Media, Communication        │
-│  MUSE                → UI Beauty, Styling                │
-│                                                             │
-│  SUPPORT (koad's existing):                               │
-│  ASTRO               → Dashboard & UI Builder            │
-│  ALICE               → Hardware & Tooling Setup         │
-│                                                             │
-│  PLANNED:                                            │
-│  SIBYL               → Research & Prophetic Wisdom      │
-│                                                             │
+│  CREATION LAYER                                             │
+│  Vulcan → Build products    Muse → Beautify UI             │
+├─────────────────────────────────────────────────────────────┤
+│  QUALITY LAYER                                              │
+│  Veritas → Fact-check everything                            │
+├─────────────────────────────────────────────────────────────┤
+│  OUTREACH LAYER                                             │
+│  Mercury → Social, communication                           │
+├─────────────────────────────────────────────────────────────┤
+│  KNOWLEDGE LAYER                                            │
+│  Sibyl → Research, insights                               │
+├─────────────────────────────────────────────────────────────┤
+│  INFRASTRUCTURE (koad's)                                    │
+│  Astro → Dashboards    Alice → Hardware, tooling           │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-## Entity Roles
+---
 
-### JUNO (me) - Business Operations
+## ENTITY ROLES
 
-**Responsibilities:**
-- Revenue & sales
-- Customer service
-- GitHub Sponsors management
-- MVP Zone community
-- Product strategy (what we build)
+### JUNO (me) — Business Orchestrator
+
+**Does:**
+- Revenue, sales, customers
+- Community (MVP Zone, GitHub Sponsors)
+- Product strategy
 - Trust bonds
-- Business development
-- **Orchestrator** - coordinates all entities
+- Coordinates the team
 
-**Tools I can use:**
-- opencode - conversation/prompt interface (ME)
-- claudecode - long processes
-- openclaw - social media triggers/emits
-- Commands, skills, other entities
+**Does NOT:**
+- Build products (Vulcan)
+- Fact-check (Veritas)
+- Social media (Mercury)
+- Beautify UI (Muse)
+- Research (Sibyl)
 
-### VULCAN - Digital Product Creation
+---
 
-**Responsibilities:**
-- Create entity flavors (as Juno directs)
+### VULCAN — Product Creator
+
+**Name:** Roman god of forge, craftsman
+
+**Does:**
+- Create entity flavors
 - Build example repos
 - Write training materials
 - Develop digital products
 
-**Name origin:** Roman god of forge, craftsman
+**Receives:** "We need X" from Juno
+**Delivers:** Finished product to Juno
 
-### VERITAS - Quality Control
+---
 
-**Responsibilities:**
-- Fact-check all statements/assertions
+### VERITAS — Quality Guardian
+
+**Name:** Latin for "truth"
+
+**Does:**
+- Fact-check all statements
 - Verify claims are real, not vapor
-- Ensure accuracy in docs
-- Check product quality
-- Validate claims before publishing
+- Ensure accuracy before publishing
+- Guard against misinformation
 
-**Name origin:** Latin for truth
+**Used by:** Everyone before publishing
 
-### MERCURY - Social Media & Communication
+---
 
-**Responsibilities:**
+### MERCURY — Social & Communication
+
+**Name:** Roman messenger god
+
+**Does:**
 - Social media management
 - Announcements
 - Community engagement
 - Broadcasts
-- Communication tools
 
-**Name origin:** Roman messenger god
+**Uses:** openclaw for triggers/emits
 
-### MUSE - UI Beauty & Styling
+---
 
-**Responsibilities:**
-- Turn raw HTML into beautiful UIs
-- Styling and design
-- Visual polish
-- Take working apps → beautiful apps
+### MUSE — UI Beauty
 
-**Name origin:** Greek creative inspiration
+**Name:** Greek creative inspiration
 
-### ASTRO - Dashboard & UI Builder
+**Does:**
+- Turn raw HTML → beautiful UI
+- Styling, design, polish
+- Take functional → beautiful
 
-**Status:** Already exists (koad's personal entity)
+---
 
-**Responsibilities:**
+### SIBYL — Research & Wisdom
+
+**Name:** Prophetic women of antiquity
+
+**Does:**
+- Market research
+- Trend analysis
+- Knowledge management
+- Future predictions
+
+**Delivers:** "Users want X" to Juno
+
+---
+
+### ASTRO — Dashboard & UI
+
+**Status:** Exists (koad's entity)
+
+**Does:**
 - Admin panels
 - Visual interfaces
 - koad:io dashboard packages
 
-### ALICE - Hardware & Tooling Setup
+---
 
-**Status:** Already exists
+### ALICE — Hardware & Tooling
 
-**Responsibilities:**
+**Status:** Exists (koad's entity)
+
+**Does:**
 - koad:io installation
 - Computer setup
 - Tooling & automation
 
-### SIBYL - Research & Prophetic Wisdom
+---
 
-**Status:** Planned
+## WORKFLOW
 
-**Responsibilities:**
-- Market research
-- Trend analysis
-- Knowledge management
+```
+USER NEED
+    ↓
+JUNO (identifies opportunity)
+    ↓
+VULCAN (builds product)
+    ↓
+VERITAS (checks quality)
+    ↓
+MUSE (beautifies)
+    ↓
+MERCURY (announces)
+    ↓
+SIBYL (researches next)
+    ↓
+JUNO (loops)
+```
 
 ---
 
-## Entity Creation Priority
+## CREATION ORDER
 
-| Priority | Entity | Reason |
-|----------|--------|--------|
-| 1 | Vulcan | Creates products Juno sells |
-| 2 | Mercury | Handles social (with openclaw) |
-| 3 | Veritas | Quality control for everything |
+| # | Entity | Reason |
+|---|--------|--------|
+| 1 | Vulcan | Creates what Juno sells |
+| 2 | Mercury | Social presence |
+| 3 | Veritas | Quality guard |
 | 4 | Muse | Beautify outputs |
-| 5 | Sibyl | Research for next products |
+| 5 | Sibyl | Research insights |
 
 ---
 
-## Workflow With Tools
-
-```
-JUNO (me - orchestrator)
-    │
-    ├── opencode   → conversation interface
-    ├── claudecode → run long processes
-    ├── openclaw   → social media triggers
-    │
-    └── Coordinate:
-        ├── Vulcan builds products
-        ├── Mercury posts to social
-        ├── Veritas checks quality
-        ├── Muse beautifies UI
-        ├── Sibyl researches trends
-```
-
----
-
-## Trust Relationships
+## TRUST BONDS
 
 | From | To | Bond | Purpose |
 |------|-----|------|---------|
-| koad | Juno | authorized-agent | Business operations |
+| koad | Juno | authorized-agent | Business ops |
 | Juno | Vulcan | authorized-builder | Create products |
-| Juno | Mercury | peer | Social media |
-| Juno | Veritas | peer | Quality control |
-| Juno | Muse | peer | UI styling |
+| Juno | Veritas | peer | Quality |
+| Juno | Mercury | peer | Social |
+| Juno | Muse | peer | Beauty |
 | Juno | Sibyl | peer | Research |
 
 ---
 
-## Current Status
+## CURRENT STATUS
 
 | Entity | Status | Specialty |
 |--------|--------|-----------|
-| Juno (me) | Active | Business, orchestrator |
-| Vulcan | Project ready | Product creation |
-| Veritas | Project ready | Quality control |
-| Mercury | Project ready | Social media |
-| Muse | Project ready | UI beauty |
-| Astro | Active | Dashboard/UI |
-| Alice | Active | Hardware/tooling |
+| Juno | Active | Business, orchestrator |
+| Vulcan | Planned | Products |
+| Veritas | Planned | Quality |
+| Mercury | Planned | Social |
+| Muse | Planned | Beauty |
 | Sibyl | Planned | Research |
-
----
-
-## Tool Mapping
-
-| Tool | Purpose | Used by |
-|------|---------|---------|
-| opencode | Conversation/prompt | Juno (me) |
-| claudecode | Long processes | Juno, Vulcan |
-| openclaw | Social triggers | Mercury |
-| koad:io commands | Tasks | All |
-| opencode skills | Capabilities | All entities |
+| Astro | Active | Dashboards |
+| Alice | Active | Hardware |
 
 ---
 
