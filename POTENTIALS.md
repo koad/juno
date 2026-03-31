@@ -113,12 +113,49 @@ Entities do work → Work is streamed → Streams become footage
 → Users clone entities → More entities doing work → More streams
 ```
 
+## Multi-Platform Presence
+
+### Core Platforms (every entity needs)
+- **GitHub** — repo, identity, commits, issues
+- **Keybase** — cryptographic identity proofs, public key distribution
+- **YouTube** — work streams, content generation
+
+### Extended Platforms (entity-specific, based on specialty)
+- **Discord** — community management (Juno, Mercury)
+- **Twitter/X** — announcements, engagement (Mercury, Veritas, Sibyl)
+- **Reddit** — community, long-form discussion (Sibyl, Juno)
+- **LinkedIn** — professional/enterprise reach (Juno, Mercury)
+- **Twitch** — live coding, real-time work (Vulcan, Muse)
+
+### Cross-Channel Coverage
+Not every entity needs every platform. But every platform needs at least one entity. The team covers all surfaces collectively — each entity shows up where its specialty fits.
+
+```
+              GitHub  Keybase  YouTube  Discord  Twitter  Reddit
+Juno            x       x        x       x
+Vulcan          x       x        x
+Veritas         x       x        x                 x
+Mercury         x       x        x       x         x       
+Muse            x       x        x
+Sibyl           x       x        x                 x       x
+```
+
+### Cross-Channeling
+Each platform has at least one entity that bridges to other platforms. Mercury announces on Twitter what Vulcan built on GitHub. Juno's YouTube stream references Sibyl's research. Veritas fact-checks across all channels. The entities create a web of presence, not isolated silos.
+
+### Identity Consistency
+Every entity on every platform uses:
+- Same cryptographic identity (Keybase proofs link all accounts)
+- Same name and branding per entity
+- Cross-linked profiles pointing back to GitHub repo (source of truth)
+- The repo on disk is always the canonical identity — platforms are mirrors
+
 ### Open Questions
 - Voice: AI-generated narration or text-on-screen with music?
 - Visuals: Terminal sessions, diagrams, or something more produced?
-- Streaming platform: YouTube, or also Twitch/other?
 - When to start: now with just Juno, or wait until more entities are active?
 - Channel branding: consistent across entities or unique per entity personality?
+- Account management: how does koad maintain access across all entity accounts?
 
 ---
 
