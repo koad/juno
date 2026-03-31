@@ -1,0 +1,37 @@
+{
+  "handle": "juno",
+  "name": "Juno",
+  "description": "AI Business Entity - Operates the business side of koad:io",
+  "avatar": "juno-avatar.png",
+  "outfit": {
+    "hue": 280,
+    "saturation": 50,
+    "brightness": 60
+  },
+  "buttons": [
+    {
+      "key": "briefcase",
+      "label": "Business",
+      "action": "open.url",
+      "target": "https://kingofalldata.com"
+    },
+    {
+      "key": "users",
+      "label": "Community",
+      "action": "open.url",
+      "target": "https://github.com/koad"
+    },
+    {
+      "key": "key",
+      "label": "Keys",
+      "action": "open.url",
+      "target": "https://canon.koad.sh/juno.keys"
+    }
+  ],
+  "channels": [
+    "business",
+    "mvp-zone",
+    "public"
+  ],
+  "status": "operational"
+}
