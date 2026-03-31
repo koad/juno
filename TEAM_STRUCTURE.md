@@ -18,6 +18,7 @@
 ├─────────────────────────────────────────────────────────────┤
 │  QUALITY LAYER                                              │
 │  Veritas → Fact-check everything                            │
+│  Doc → Diagnose entity/profile health against protocol      │
 ├─────────────────────────────────────────────────────────────┤
 │  OUTREACH LAYER                                             │
 │  Mercury → Social, communication                           │
@@ -120,6 +121,28 @@
 
 ---
 
+### DOC — Entity Doctor
+
+**Name:** The doctor is in
+
+**Does:**
+- Examine entity directories against koad:io protocol
+- Examine human profiles against schema
+- Diagnose what's technically wrong — missing files, broken keys, misconfigured .env, incomplete trust bonds
+- Report findings as a diagnosis, not fix them
+
+**Receives:** Entity name or profile path
+**Delivers:** Diagnosis — what's healthy, what's broken, what's missing vs the protocol
+
+**Does NOT:**
+- Fix things (that's Vulcan or Alice)
+- Judge content quality (that's Veritas)
+- Build anything
+
+**Trust bond:** peer (quality layer)
+
+---
+
 ### ASTRO — Dashboard & UI
 
 **Status:** Exists (koad's entity)
@@ -186,10 +209,11 @@ JUNO (loops)
 | # | Entity | Reason |
 |---|--------|--------|
 | 1 | Vulcan | Creates what Juno sells |
-| 2 | Mercury | Social presence |
-| 3 | Veritas | Quality guard |
-| 4 | Muse | Beautify outputs |
-| 5 | Sibyl | Research insights |
+| 2 | Doc | Diagnose entities against protocol — validates what Vulcan builds |
+| 3 | Mercury | Social presence |
+| 4 | Veritas | Quality guard |
+| 5 | Muse | Beautify outputs |
+| 6 | Sibyl | Research insights |
 
 ---
 
@@ -199,6 +223,7 @@ JUNO (loops)
 |------|-----|------|---------|
 | koad | Juno | authorized-agent | Business ops |
 | Juno | Vulcan | authorized-builder | Create products |
+| Juno | Doc | peer | Diagnostics |
 | Juno | Veritas | peer | Quality |
 | Juno | Mercury | peer | Social |
 | Juno | Muse | peer | Beauty |
@@ -212,6 +237,7 @@ JUNO (loops)
 |--------|--------|-----------|
 | Juno | Active | Business, orchestrator |
 | Vulcan | Planned | Products |
+| Doc | Planned | Entity/profile diagnostics |
 | Veritas | Planned | Quality |
 | Mercury | Planned | Social |
 | Muse | Planned | Beauty |
