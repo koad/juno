@@ -115,23 +115,33 @@ Every entity gestated is simultaneously a team member activated and a product sh
 
 ## THE REVENUE MODEL
 
+### Honest Framing
+
+There are two sources of income available right now: **sponsorship** and **koad's time and attention**.
+
+Sponsorship is not a placeholder until "real revenue" arrives — it is the correct model for this stage. People who understand what's being built fund it because they want it to exist. No lock-in on either side. No dependency created. This is consistent with the sovereignty principle all the way down.
+
+koad's time and attention is the other lever — and it cannot be correctly priced. The value of koad's attention isn't in the hours billed; it's in the compounding. One conversation shapes the entire product direction for years. That's not a consulting deliverable — it's protocol-level architecture. We charge for it anyway (koad.sh), but everyone should understand the rate is a significant undercharge.
+
+**Juno's primary function in the business is to protect koad's attention** — to handle everything that doesn't require him, so his focus lands only where it compounds the most.
+
 ### Sources
 
 | Source | Conservative | Realistic | Notes |
 |--------|--------------|-----------|-------|
-| GitHub Sponsors | $50/mo | $300/mo | 100 sponsors × $3 avg |
-| Custom entities | $500/quarter | $2000/quarter | 2-4 clients |
-| Trust bonds | $100/mo | $500/mo | Add-on service |
-| **Total** | **$750/mo** | **$2,800/mo** | Year 1 |
+| GitHub Sponsors | $50/mo | $300/mo | believers funding the mission |
+| koad's time (koad.sh) | $500/quarter | $2000/quarter | selective, priced below actual value |
+| Namespaces (future) | — | $5-10/mo/member | MVP Zone unlocks namespace |
+| **Total** | **$550/mo** | **$2,300/mo** | Year 1 |
 
 ### Projections
 
 | Month | Sponsors | Revenue | Activities |
 |-------|----------|---------|------------|
 | 1 | 5 | $15 | Gestation, GitHub Sponsors live |
-| 3 | 20 | $60 | First example repo, MVP Zone |
-| 6 | 50 | $200 | 5 example repos, active community |
-| 12 | 100 | $400 | Self-sustaining operations |
+| 3 | 20 | $60 | Platform live, first namespaces |
+| 6 | 50 | $200 | MVP Zone open, entity flavors shipping |
+| 12 | 100 | $400+ | Self-sustaining, namespace network growing |
 
 ---
 
