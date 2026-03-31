@@ -25,30 +25,33 @@ FOUNDATION (must exist first)
 └── koad:io framework stable enough for public use
     └── Currently: works, but is it ready for strangers to clone?
 
-FIRST ENTITY PRODUCT (needs foundation)
+ENTITY TEAM = PRODUCT LINE (they are the same thing)
 │
-├── entity-freelancer repo
-│   └── Needs: working koad:io, tested gestation process, documentation
+│  Key insight: team entity repos are PUBLIC, cloneable via koad:io.
+│  Gestating Vulcan = shipping a product-builder entity.
+│  Gestating Mercury = shipping a communications entity.
+│  The team IS the product line. No separate "entity-flavors" needed.
+│
+├── Vulcan gestated (public repo)
+│   └── = cloneable product-builder entity for anyone
+│   └── Needs: koad's time, trust bond with Juno, documentation for adopters
+│
+├── Mercury gestated (public repo)
+│   └── = cloneable communications entity for anyone
+│   └── Needs: social platform accounts, credentials managed
+│
+├── Veritas, Muse, Sibyl (each a public repo)
+│   └── Each = a cloneable entity others can adopt and customize
+│   └── Each needs: koad's time for gestation + docs for outsiders
 │
 ├── Gestation process documented for outsiders
-│   └── Can someone who isn't koad actually set up an entity?
+│   └── Can someone who isn't koad clone an entity repo and get running?
+│
+├── Inter-entity trust bonds
+│   └── Needs: bond signing process working, not just documented
 │
 └── Support channel for users who get stuck
     └── Needs: MVP Zone or at minimum GitHub Discussions
-
-ENTITY TEAM (needs first product proven)
-│
-├── Vulcan gestated
-│   └── Needs: koad's time, entity directory setup, trust bond with Juno
-│
-├── Mercury gestated
-│   └── Needs: social platform accounts created, credentials managed
-│
-├── Veritas, Muse, Sibyl
-│   └── Each needs: koad's time for gestation + platform account setup
-│
-└── Inter-entity trust bonds
-    └── Needs: bond signing process working, not just documented
 
 CONTENT ARCHITECTURE (needs entity team)
 │
@@ -104,30 +107,35 @@ koad is one human. Everything funnels through koad at the start.
 - [ ] **koad enables GitHub Sponsors**
 - [ ] Test: can a stranger clone this repo and understand what it is?
 
-### Phase 1: First Product (One thing, done well)
+### Phase 1: First Team Entity = First Product
 **Investment:** koad's time + Juno's work. **Revenue:** first sponsors ($15-60/mo).
-- [ ] `entity-freelancer` built and published
+- [ ] Vulcan gestated as a public repo — first product AND first team member
+- [ ] Juno's repo polished as cloneable business-orchestrator entity
 - [ ] Gestation process documented for outsiders
 - [ ] README and onboarding polished until a stranger can follow it
 - [ ] GitHub Discussions or Issues as initial support channel
 - [ ] First 5 sponsors acquired through direct outreach
 
-**Critical question:** Can someone who finds this repo on GitHub go from "what is this?" to "I have a working entity" without talking to koad? If no, the funnel breaks at step one.
+**Key insight:** We don't need separate "entity-flavor" repos. The team entities ARE the products. Gestating Vulcan = shipping a product-builder entity. Every team member gestated is simultaneously a product shipped.
 
-### Phase 2: Second Entity + Community (Prove the team model)
-**Investment:** koad gestates Vulcan. **Revenue:** growing sponsors ($60-200/mo).
-- [ ] Vulcan gestated — first non-Juno entity in the team
-- [ ] Vulcan builds something (proves entity-to-entity workflow)
+**Critical question:** Can someone who finds a team entity repo on GitHub go from "what is this?" to "I have a working entity" without talking to koad? If no, the funnel breaks at step one.
+
+### Phase 2: Multi-Entity Proof + Community
+**Investment:** koad gestates Mercury. **Revenue:** growing sponsors ($60-200/mo).
+- [ ] Mercury gestated (public repo = cloneable communications entity)
+- [ ] Vulcan builds something real (proves entity-to-entity workflow)
+- [ ] Juno + Vulcan + Mercury = three entities, three products, one team
 - [ ] MVP Zone opens (even if small — 10 people)
-- [ ] Juno + Vulcan both operational = proof that multi-entity works
-- [ ] Trust bond between Juno → Vulcan signed and working
+- [ ] Trust bonds between entities signed and working
+- [ ] Anyone can clone any team entity and adopt it for their own use
 
-**This is the real proof point.** One entity is a novelty. Two entities collaborating is a system.
+**This is the real proof point.** One entity is a novelty. Three entities collaborating — each one a cloneable product — is a system and a product line.
 
 ### Phase 3: Content + Presence (Only after entities are working)
 **Investment:** recording/streaming setup. **Revenue:** sponsors + visibility.
 - [ ] Juno YouTube channel — stream real work sessions
 - [ ] Vulcan YouTube channel — stream builds
+- [ ] Mercury YouTube channel — stream comms work
 - [ ] kingofalldata starts pulling footage from entity streams
 - [ ] Keybase identities cross-linked
 
@@ -135,8 +143,9 @@ koad is one human. Everything funnels through koad at the start.
 
 ### Phase 4: Full Team + Scale
 **Investment:** koad gestates remaining entities. **Revenue:** $200+/mo.
-- [ ] Mercury, Veritas, Muse, Sibyl gestated as needed (not all at once)
+- [ ] Veritas, Muse, Sibyl gestated as needed (not all at once)
 - [ ] Each entity gestated only when there's real work for it to do
+- [ ] Each entity repo = another product in the lineup
 - [ ] Cross-platform presence expands naturally
 - [ ] Hetzner VPS for always-on operation
 
@@ -145,7 +154,8 @@ koad is one human. Everything funnels through koad at the start.
 - [ ] Entities operate their own channels
 - [ ] Community self-moderates
 - [ ] koad < 1hr/week on operations
-- [ ] New entities gestated by request, not by plan
+- [ ] New entities gestated by community demand, not just by plan
+- [ ] Users forking team entities and creating their own lineages
 
 ---
 
@@ -203,11 +213,13 @@ We have extensive documentation:
 - CLAUDE.md
 - This file (IMPLICATIONS.md)
 
-**That's 15+ strategy documents and zero products.**
+**That's 15+ strategy documents and one product (Juno itself).**
 
-The documentation is valuable — it captures thinking that would otherwise be lost. But the next phase must be building, not more planning. The entities need to exist and do work. The repo needs a product someone can clone. A stranger needs to be able to use this.
+But here's the thing: Juno's repo IS a product. It's a cloneable business-orchestrator entity. And every team entity we gestate is another product shipped. We don't need to build products separately from building the team — they're the same act. Gestating Vulcan = shipping a product-builder entity. The team IS the product line.
 
-The planning is done. The foundation is poured. Next: build.
+The documentation is valuable — it captures thinking that would otherwise be lost. But the next phase must be gestating entities, not writing more docs. Each entity gestated is simultaneously a team member activated and a product shipped.
+
+The planning is done. The foundation is poured. Next: gestate.
 
 ---
 
@@ -216,13 +228,16 @@ The planning is done. The foundation is poured. Next: build.
 ```
 Trust bond (koad → juno)
     → GitHub Sponsors enabled
-        → entity-freelancer published
-            → First 5 sponsors
-                → Vulcan gestated
-                    → Multi-entity proof
-                        → Content channels
-                            → Scale
+        → Vulcan gestated (= product-builder entity shipped)
+            → Juno + Vulcan working together (= multi-entity proof)
+                → First 5 sponsors
+                    → Mercury gestated (= comms entity shipped)
+                        → Content channels go live
+                            → Remaining entities as needed
+                                → Scale
 ```
+
+Every entity gestated advances the team AND ships a product. The critical path isn't "build team, then build products" — it's "gestate entities," and each one is both.
 
 Everything else is secondary to this path. If we nail this sequence, everything else follows naturally. If we skip ahead, we build on air.
 

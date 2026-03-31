@@ -96,16 +96,20 @@ No marketplace exists for autonomous AI entities with cryptographic identity and
 | **Trust Bonds** | $100-500 | Signed authorization relationships |
 | **koad.sh Premium** | Variable | Creator's consulting |
 
-### Example Entity Flavors (to build)
+### The Product Line IS the Team
 
-| Repo | Purpose | Target Audience |
-|------|---------|-----------------|
-| `entity-freelancer` | General freelance tasks | Freelancers |
-| `entity-developer` | Dev assistance | Developers |
-| `entity-marketer` | Marketing automation | Marketers |
-| `entity-researcher` | Research & analysis | Researchers |
-| `entity-saas` | SaaS monitoring | Founders |
-| `juno` | Business operations | Anyone |
+The team entities are public git repos. Cloneable via koad:io. The team IS the product line — no separate "entity-flavor" repos needed.
+
+| Entity Repo | Team Role | Product For Adopters |
+|---|---|---|
+| `juno` | Business orchestrator | Clone a business-ops entity |
+| `vulcan` | Product creator | Clone a builder/developer entity |
+| `mercury` | Communications | Clone a comms/social entity |
+| `veritas` | Quality guardian | Clone a fact-checking/QA entity |
+| `muse` | Design & polish | Clone a design/UI entity |
+| `sibyl` | Research & analysis | Clone a research entity |
+
+Every entity gestated is simultaneously a team member activated and a product shipped. The work they do proves the product works. Their git history is their resume.
 
 ---
 

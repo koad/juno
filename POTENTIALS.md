@@ -173,16 +173,20 @@ No direct marketplace exists for preconfigured autonomous business entities with
 
 ---
 
-## Product Ideas
+## Product Line = The Team
 
-- `entity-freelancer` — first flavor, general business tasks
-- `entity-developer` — code review, debugging, docs
-- `entity-marketer` — content, social, analytics
-- `entity-researcher` — web search, data synthesis, reports
-- `entity-saas` — metrics, alerts, performance monitoring
+The team entities ARE the products. No separate entity-flavor repos needed.
+
+Gestating Vulcan = shipping a product-builder entity anyone can clone.
+Gestating Mercury = shipping a communications entity anyone can clone.
+
+Every entity does real work (proving it works), streams that work (content), and exists as a public repo (product). Three birds, one gestation.
+
+Additional products and content:
 - "Why Entities > Chatbots" explainer content
 - Trust bond marketplace / directory
-- Entity flavor gallery (browse before you clone)
+- Entity flavor gallery (browse the team, clone what fits)
+- Starter entities for specific use cases (forked from team entities, simplified)
 
 ---
 
