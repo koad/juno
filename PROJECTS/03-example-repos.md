@@ -1,99 +1,75 @@
-# Project: Example Entity Repos
+# Project: Entity Products (Team = Product Line)
 
-## Status: PLANNING
+## Status: EVOLVED
 
-**Waiting for:** Entity gestation (Project 01)
+**Previous model:** Build separate `entity-*` flavor repos as products.
+**Current model:** The team entities ARE the products. Each entity's public repo is cloneable via koad:io.
 
-## Vision
+## The Insight
 
-Create a library of complete, working entity flavors that anyone can clone and customize. Each repo is a fully functional AI agent specialized for a specific purpose.
+Gestating Vulcan = shipping a product-builder entity anyone can clone. No separate product repos needed. Every entity gestated is simultaneously a team member activated and a product shipped.
 
-## Repository List
+## Product Line
 
-| Repo | Purpose | Skills | Target Audience |
-|------|---------|--------|-----------------|
-| `entity-freelancer` | General freelance tasks | Research, writing, client comms | Freelancers |
-| `entity-developer` | Development assistance | Code review, debugging, docs | Developers |
-| `entity-marketer` | Marketing automation | Content, social, analytics | Marketers |
-| `entity-researcher` | Research & analysis | Web search, data, reports | Researchers |
-| `entity-saas` | SaaS monitoring | Metrics, alerts, reports | Founders |
+| Entity Repo | Team Role | Product For Adopters | Status |
+|---|---|---|---|
+| `juno` | Business orchestrator | Clone a business-ops entity | Active |
+| `vulcan` | Product creator | Clone a builder/developer entity | Planned |
+| `mercury` | Communications | Clone a comms/social entity | Planned |
+| `veritas` | Quality guardian | Clone a QA/fact-checking entity | Planned |
+| `muse` | Design & polish | Clone a design/UI entity | Planned |
+| `sibyl` | Research & analysis | Clone a research entity | Planned |
 
-## Each Repo Includes
+## Each Entity Repo Includes
 
 ```
-entity-xxx/
-├── README.md                 ← Setup & usage guide
+~/.<entity>/
+├── README.md                 ← Setup & usage guide (for adopters)
+├── CLAUDE.md                ← Claude Code agent context
 ├── AGENTS.md                ← Entity configuration
-├── commands/                ← Pre-built install scripts
-│   └── install/
-│       ├── essentials/
-│       └── ...
+├── commands/                ← Pre-built commands
 ├── opencode/
 │   ├── opencode.jsonc
-│   ├── agent.md
-│   └── skills/
-│       ├── quest/
-│       ├── learn/
-│       ├── commit/
-│       ├── explore/
-│       └── [specialty-skill-1]/
-│       └── [specialty-skill-2]/
-│       └── [specialty-skill-3]/
-├── memories/                 ← Starting context
-├── skeletons/               ← Inherited templates
+│   └── agent.md
+├── skills/                  ← AI capabilities
+├── memories/                ← Starting context + operational history
+├── id/                      ← Cryptographic keys (generated fresh on clone)
+├── trust/                   ← Trust bond templates
+├── .env                     ← Entity identity config
 ├── passenger.json           ← PWA config
-├── LICENSE                  ← MIT
-└── .gitignore
+└── LICENSE                  ← MIT
 ```
 
-## Skill Examples
-
-### entity-freelancer Skills
+## How Adoption Works
 
 ```
-freelancer-client-comm   → Respond to client messages
-freelancer-project-track → Track project progress
-freelancer-invoice-gen   → Generate invoices
-freelancer-proposal-write → Write proposals
-freelancer-time-log      → Log time and activities
+1. User clones entity repo from GitHub
+2. Runs: koad-io init <entityname>  (generates fresh keys, sets up .env)
+3. Entity is now theirs — own keys, own identity, own disk
+4. Customize: memories, skills, commands to fit their needs
+5. The entity evolves under their control via git
 ```
 
-### entity-developer Skills
+## Gestation Order (by team need)
 
-```
-dev-code-review    → Review code changes
-dev-debug-assist  → Help debug issues
-dev-doc-gen       → Generate documentation
-dev-git-ops       → Git workflow assistance
-dev-test-help     → Test writing assistance
-```
+| # | Entity | Why This Order |
+|---|--------|----------------|
+| 1 | Vulcan | Creates what Juno sells — first real product |
+| 2 | Mercury | Social presence, announcements — amplifies reach |
+| 3 | Veritas | Quality guard — ensures credibility before scale |
+| 4 | Muse | UI polish — beautifies outputs for wider appeal |
+| 5 | Sibyl | Research — informs next moves once operating |
 
 ## GitHub Topics
 
-All repos tagged with:
+All entity repos tagged with:
 ```
 koad-io, entity, ai-agent, sovereign-identity, open-source
 ```
 
-## First Repo Priority
-
-**entity-freelancer** should be the first because:
-1. Freelancers are a proven market
-2. Aligns with juno's business focus
-3. Can use juno's skills as reference
-4. Demonstrates real-world application
-
-## Roadmap
-
-```
-Phase 1: entity-freelancer (1 repo)
-Phase 2: entity-developer, entity-marketer (2 repos)
-Phase 3: entity-researcher, entity-saas (2 repos)
-Phase 4: Community contributions (ongoing)
-```
-
 ## Dependencies
 
-- Entity must be gestated first
-- Need access to push to canon.koad.sh
-- Need GitHub organization (github.com/koad)
+- Each entity gestated via `koad-io gestate <name>` (Juno can do this)
+- koad connects each to GitHub (~5 min per entity)
+- Each entity needs documentation written for adopters (not just internal use)
+- Gestate only when there's real work for the entity to do
