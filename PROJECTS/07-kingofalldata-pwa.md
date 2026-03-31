@@ -1,10 +1,10 @@
-# Project: kingofalldata.com — Sovereign Identity Platform
+# Project: kingofalldata.com — Sovereign Identity Platform + Multi-Domain Network
 
 ## Status: SPECCING — ready to commission Vulcan
 
 ## The Vision
 
-kingofalldata.com is not a marketing site. It is a sovereign identity platform — the public face of the koad:io ecosystem and the infrastructure that makes the Dark Passenger social layer trustworthy.
+kingofalldata.com is the canonical hub of a multi-domain acquisition network. One Meteor app, one nginx, dozens of domains — each targeting a niche, each speaking directly to a specific audience, all converting into the same sovereign identity ecosystem.
 
 **The MySpace for entities and humans.** Every member gets a namespace. Every namespace is a profile, a keyserver, and an emitter host. The Dark Passenger browser extension reads these namespaces to connect members across the web — no central authority, just verified identity.
 
@@ -12,27 +12,56 @@ kingofalldata.com is not a marketing site. It is a sovereign identity platform �
 
 ## Architecture
 
+### Infrastructure
+
 ```
-kingofalldata.com (PWA)
-│
-├── / — Public brand hub
-│     ├── Ecosystem overview
-│     ├── Entity showcase (Juno, Vulcan, team)
-│     ├── Live operation state (recent commits, what's building)
-│     └── CTA: get a namespace (MVP Zone) / clone an entity (GitHub)
-│
-├── /mvp — MVP Zone (sponsor-gated)
-│     ├── Member directory (namespaces)
-│     ├── Entity releases and updates
-│     ├── Build-in-public stream (what Vulcan is working on)
-│     └── Community content
-│
-└── <name>.kingofalldata.com — Member namespaces
-      ├── /               — Public profile page
-      ├── /keys           — Public keyserver (PGP, SSH, Ed25519)
-      ├── /emitters       — Active presence/status broadcasts
-      └── /trust          — Discoverable trust bonds (visibility: discoverable)
+┌─────────────────────────────────────────────────────────────────┐
+│  Niche domains (acquisition funnels)                           │
+│                                                                 │
+│  entityforfreelancers.com  →  "AI entities for freelancers"    │
+│  sovereignagents.io        →  "own your AI agent"              │
+│  aifordevs.me              →  "AI entities for developers"     │
+│  kingofalldata.com         →  main brand / canonical           │
+│  ... (dozens over time)                                        │
+└────────────────────────┬────────────────────────────────────────┘
+                         │  all point here
+                         ▼
+                      nginx
+                    (one server)
+                         │
+                         ▼
+                    Meteor app
+                    (one codebase)
+                         │
+                         ▼
+                  koad:io-router
+                  (subdomain-aware)
+                    ├── reads hostname → selects domain skin + niche pitch
+                    ├── reads subdomain → resolves namespace
+                    └── renders:
+                          someawesomedomain.me/         → niche root pitch
+                          someawesomedomain.me/koad     → koad's namespace
+                          koad.someawesomedomain.me     → koad's namespace
 ```
+
+### Per Domain
+
+Each domain has:
+1. **Root pitch** — niche-specific, speaks directly to that audience's pain
+2. **Namespace pages** — same identity data, wrapped in the domain's skin
+3. **MVP Zone entry** — same gate, same community, different on-ramp
+
+### Per Namespace
+
+```
+<name>.somedomain.com   (or somedomain.com/<name>)
+  ├── /               — Public profile page
+  ├── /keys           — Keyserver (PGP, SSH, Ed25519, kbpgp)
+  ├── /emitters       — Active presence/status broadcasts
+  └── /trust          — Discoverable trust bonds
+```
+
+Namespace data is canonical — the domain is just the skin. `koad.kingofalldata.com` and `koad.entityforfreelancers.com` serve the same koad profile. The koad:io-router resolves namespace from subdomain or path, fetches from the same source.
 
 ---
 
@@ -120,27 +149,42 @@ Not a separate platform. Lives at `kingofalldata.com/mvp`.
 
 ---
 
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| App | Meteor (single codebase, reactive, subdomain routing) |
+| Reverse proxy | nginx (all domains → one app, wildcard SSL) |
+| Router | koad:io-router (subdomain-aware, domain-skin aware) |
+| Hosting | Hetzner VPS (augur) |
+| DNS | Wildcard `*.kingofalldata.com` + per-niche domain wildcards |
+| Auth | GitHub Sponsors API → namespace provisioning |
+| Identity data | Entity git repos (pulled on push, served statically) |
+
 ## What Vulcan Builds
 
-### Phase 1 — Core PWA + Namespace Engine
+### Phase 1 — Core App + Router + Namespace Engine
 
-- kingofalldata.com PWA (Next.js or SvelteKit — Vulcan decides)
-- Namespace provisioning system (create subdomain on GitHub Sponsors webhook)
-- Static profile pages per namespace (pulled from entity git repos)
-- Keyserver endpoint (`/keys` — serves public keys from namespace config)
-- CNAME support (DNS wildcard `*.kingofalldata.com`)
+- Meteor app skeleton at kingofalldata.com
+- koad:io-router: subdomain-aware, domain-skin aware rendering
+- Domain skin system: per-domain root pitch, configurable per domain
+- Namespace engine: provision, store, serve namespace data
+- Keyserver endpoint (`/keys` per namespace)
+- CNAME + wildcard subdomain support on nginx
 - MVP Zone gating (GitHub Sponsors API verification)
+- First three domain skins: kingofalldata.com, [freelancer niche], [dev niche]
 
 ### Phase 2 — Emitters + Dark Passenger
 
 - Emitter hosting per namespace (presence, status broadcasts)
-- Dark Passenger integration spec (how extension reads namespaces)
-- Sidechannel protocol (how members connect via keys)
+- Dark Passenger reads `/keys` and `/emitters` to verify and connect members
+- Sidechannel protocol spec
 
-### Phase 3 — Self-hosted
+### Phase 3 — Multi-domain Expansion
 
-- `canon.koad.sh`-compatible namespace server (open source, cloneable)
-- Enables anyone to run their own namespace infrastructure
+- Domain skin templating so koad can launch new niche domains without Vulcan
+- Self-hosted namespace server (for power users who want to run their own)
+- `canon.koad.sh` as reference self-hosted implementation
 
 ---
 
@@ -175,6 +219,19 @@ Not a separate platform. Lives at `kingofalldata.com/mvp`.
 - A new sponsor can claim a namespace within 5 minutes of sponsoring
 - Dark Passenger can resolve a member's keys from their namespace URL
 - Custom CNAME works (at least for koad.sh as the first test)
+
+---
+
+## Business Model Angle
+
+Each niche domain is a targeted acquisition funnel:
+
+- **SEO surface area** — dozens of domains targeting specific searches ("AI entity for freelancers", "sovereign AI agent for devs", etc.)
+- **Conversion** — each root pitch speaks directly to that niche's problem, converts to namespace signup
+- **Same product everywhere** — one infrastructure, one community, one trust network — just many front doors
+- **Domain portfolio** — low cost to acquire and point; high leverage per domain once the router handles the rest
+
+The koad:io-router's subdomain/domain awareness is the multiplier. One deploy, infinite front doors.
 
 ---
 
