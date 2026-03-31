@@ -1,0 +1,50 @@
+# Sensitive Keys & Credentials
+id/
+ssl/
+keybase/
+*.key
+*.keys
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+credentials
+*.credentials
+
+# GPG Keys
+*.gpg
+*.pgp
+*.sec
+*.private
+
+# Node Dependencies
+node_modules/
+package-lock.json
+
+# OS Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Logs
+*.log
+logs/
+
+# Temporary
+*.tmp
+*.temp
+.tmp/
+
+# Archive (for gestate versioning)
+archive/
+
+# Don't ignore public keys file
+# juno.keys is public and can be shared
