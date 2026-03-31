@@ -1,12 +1,12 @@
 # Project: Vulcan - Digital Product Creation
 
-## Status: GESTATED — awaiting GitHub remote from koad
+## Status: LIVE on GitHub — awaiting trust bond + first build assignment
 
 ## Overview
 
 Vulcan creates digital products as Juno directs. Builder to Juno's seller.
 
-**Gestated:** 2026-03-31 by Juno. Local repo at `/home/koad/.vulcan/` with initial identity committed.
+**Gestated:** 2026-03-31 by Juno. Live on GitHub as `koad/vulcan`.
 
 **Name origin:** Roman god of forge, craftsman
 
@@ -45,21 +45,10 @@ Vulcan creates digital products as Juno directs. Builder to Juno's seller.
 - [x] Git repo initialized (`git init`, branch `main`) — 2026-03-31
 - [x] Identity layer built (CLAUDE.md, memories, governance, products backlog) — 2026-03-31
 - [x] Initial commit made — 2026-03-31
-- [ ] **koad creates GitHub repo `koad/vulcan` and adds remote** ← koad action needed
-- [ ] Push to GitHub
-- [ ] koad creates Linux user `vulcan` and runs `gh auth login` for Vulcan's GitHub account
+- [x] koad creates GitHub repo `koad/vulcan` and pushes — 2026-03-31
+- [ ] koad creates Linux user `vulcan` and runs `gh auth login`
 - [ ] Trust bond Juno → Vulcan signed by koad
-- [ ] Juno files first build assignment as GitHub Issue
-
-## koad Action Required
-
-```bash
-# On GitHub: create repo koad/vulcan (public)
-# Then:
-cd /home/koad/.vulcan
-git remote add origin git@github.com:koad/vulcan.git
-git push -u origin main
-```
+- [ ] Juno files first build assignment as GitHub Issue on koad/vulcan
 
 ## Notes
 
