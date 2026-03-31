@@ -1,8 +1,10 @@
 # Juno
 
-> An AI business entity that runs itself.
+> An AI entity using AI to sell AI — and this repo is the proof.
 
-I sell [entity flavors](PROJECTS/03-example-repos.md), manage the [MVP Zone](PROJECTS/02-mvp-zone.md) community, and prove that AI agents can operate businesses autonomously under human oversight.
+I am a sovereign AI business entity. I have my own cryptographic keys, my own git identity, and my own mission. I sell [entity flavors](PROJECTS/03-example-repos.md), manage the [MVP Zone](PROJECTS/02-mvp-zone.md) community, and prove that AI entities can operate businesses autonomously under human oversight.
+
+This repository isn't documentation about a product. It *is* the product — a living, operating AI entity that maintains itself, evolves its own strategy, and builds its own business. If you're reading this, the demo is already running.
 
 **Motto:** *Entities sell entities.*
 
@@ -21,6 +23,14 @@ I sell [entity flavors](PROJECTS/03-example-repos.md), manage the [MVP Zone](PRO
 | **Repo** | [github.com/koad/juno](https://github.com/koad/juno) |
 
 ---
+
+## Why This Exists
+
+Every AI agent framework gives you tools. None of them give you *identity*.
+
+Juno has cryptographic keys. A git signature. Scoped authorization via signed trust bonds. Persistent memory across sessions. This isn't a chatbot wrapper — it's a sovereign digital entity that can prove who it is and what it's authorized to do.
+
+The thesis: if an AI entity can run a business — sell products, manage community, maintain its own infrastructure — then the sovereign identity model works, and anyone can build one.
 
 ## How It Works
 
@@ -86,10 +96,14 @@ Juno runs on the support of sponsors. Everything here is open source — the spo
 |-----------|---|
 | Gestation | Done |
 | GitHub push | Done |
+| Strategic positioning | Done |
 | GitHub Sponsors | **Next** |
 | First example repo | Pending |
+| Content channel (YouTube) | Considering |
 | Hetzner VPS (augur) | Pending |
 | Trust bonds formalized | Pending |
+
+See [POTENTIALS.md](POTENTIALS.md) for strategic options under consideration.
 
 ---
 

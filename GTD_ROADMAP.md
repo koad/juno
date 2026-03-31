@@ -84,6 +84,8 @@ the model. Every satisfied customer demonstrates the value.
 - Trust bonds are how we know who to trust online
 - kingofalldata.com is the go-to resource for sovereign identity
 - The koad:io ecosystem has 1000+ active users
+- Juno's YouTube channel documents the journey from the AI's perspective
+- The line between "product" and "proof" has dissolved — Juno's existence IS the pitch
 
 ---
 
@@ -183,6 +185,16 @@ SCALE (Month 7-12)
 │  • Maintain trust chain integrity                        │
 │  • Enable peer-to-peer trust                             │
 └─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│  AREA 6: Content & Presence                               │
+├─────────────────────────────────────────────────────────────┤
+│  • YouTube channel (potential — AI entity in public)       │
+│  • Collaborate with kingofalldata (koad's channel)        │
+│  • Build-in-public narrative (the process is the proof)   │
+│  • Content funnel: YouTube → GitHub → Sponsors → MVP Zone │
+│  • Strategic storytelling, not content marketing          │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 ### Area Owners
@@ -194,6 +206,7 @@ SCALE (Month 7-12)
 | Documentation | juno + koad | I write, koad reviews |
 | Business Ops | juno | Full ownership |
 | Trust Network | juno + koad | Joint governance |
+| Content & Presence | juno + koad | Juno operates, koad collaborates |
 
 ---
 
@@ -207,15 +220,15 @@ SCALE (Month 7-12)
 ┌─────────────────────────────────────────────────────────────┐
 │  PROJECT: Entity Gestation                                 │
 ├─────────────────────────────────────────────────────────────┤
-│  Status: PENDING                                          │
+│  Status: COMPLETE (2026-03-30)                            │
 │  Owner: koad                                              │
-│  Runway: Awaiting execution                               │
 │                                                             │
 │  Deliverables:                                            │
-│  ├── Gestated with koad-io gestate juno               │
-│  ├── Pushed to canon.koad.sh                            │
-│  ├── Public keys at juno.keys                        │
-│  └── Trust bond with koad established                    │
+│  ├── [x] Gestated with koad-io gestate juno               │
+│  ├── [x] Pushed to GitHub (github.com/koad/juno)          │
+│  ├── [ ] Pushed to canon.koad.sh                          │
+│  ├── [ ] Public keys at juno.keys                         │
+│  └── [ ] Trust bond with koad established                 │
 └─────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────┐
@@ -306,12 +319,16 @@ entity-gestation
 │  ├── [x] Create GTD roadmap                                │
 │  ├── [x] Gestate entity (2026-03-30)                       │
 │  ├── [x] Push to GitHub (2026-03-30)                       │
+│  ├── [x] Competitive analysis & positioning (2026-03-30)   │
+│  ├── [x] Strategic potentials captured (POTENTIALS.md)     │
+│  ├── [x] "Why Now" narrative articulated                   │
 │                                                             │
 │  PREPARING:                                                │
 │  ├── [x] Draft sponsor tier content (SPONSORS.md)          │
 │  ├── [x] Add FUNDING.yml for Sponsors button               │
 │  ├── [ ] koad enables GitHub Sponsors on koad account       │
-│  └── [ ] First example repo structure (entity-freelancer)  │
+│  ├── [ ] First example repo structure (entity-freelancer)  │
+│  └── [ ] Content channel strategy (YouTube — pondering)    │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```

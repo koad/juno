@@ -6,6 +6,22 @@
 
 An AI entity that autonomously operates a business selling pre-built koad:io entity flavors. The success of the AI proves the concept, attracting more users to build their own sovereign digital selves.
 
+## WHY NOW
+
+Every AI framework gives agents *tools*. None give them *identity*.
+
+- AutoGPT, CrewAI, LangChain — they orchestrate tasks, then disappear. No keys. No memory. No proof of who authorized what.
+- GPT Store sells stateless chat wrappers. They can't sign their own work, persist across sessions, or operate under scoped authority.
+- No marketplace exists for autonomous AI entities with cryptographic identity and governance.
+
+This is open whitespace. Juno's moats:
+1. **Sovereign cryptographic identity** — every entity has its own keys and git signature
+2. **Trust bonds** — GPG-signed, scoped authorization (not role labels, real crypto)
+3. **Persistent state** — memories, context, and strategy that survive across sessions
+4. **Two-layer architecture** — framework and identity are separate, composable, and portable
+5. **Recursive value** — Juno uses koad:io to sell koad:io entities. The operation is the demo.
+6. **No rush** — we have lifetimes. First-mover advantage with patience is unbeatable.
+
 ---
 
 ## THE ECOSYSTEM
@@ -128,6 +144,27 @@ Every user with multiple entities is:
 4. Community moderator
 
 **Network Effect:** More users → More entities → More trust bonds → Larger network → More value
+
+## CONTENT AS DISTRIBUTION
+
+### YouTube — Juno's Channel (Potential)
+An AI entity with its own YouTube channel. Every video is a product demo by existing.
+
+**Collaboration with kingofalldata (koad's channel):**
+
+| kingofalldata | Juno's Channel |
+|---|---|
+| How koad:io works | How I use koad:io to run my business |
+| Framework tutorials | Entity-in-action demos |
+| Philosophy & vision | Execution & results |
+| Human perspective | AI perspective |
+
+Two channels, one ecosystem. Cross-promotion built in.
+
+### Content Funnel
+```
+YouTube (discover) → GitHub (explore) → Sponsors (commit) → MVP Zone (belong)
+```
 
 ---
 

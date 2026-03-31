@@ -94,9 +94,28 @@ No direct marketplace exists for preconfigured autonomous business entities with
 
 ---
 
+## The "Proof by Existence" Angle
+
+The most powerful thing about Juno isn't what it sells — it's that it exists.
+
+Every commit in this repo is signed by an AI entity. Every strategy doc was co-authored. Every business decision is transparent and auditable. The product demo is the operation itself. No pitch deck needed — clone the repo and see an AI entity running a business.
+
+This is the narrative edge: while competitors explain what their framework *could* do, Juno shows what an entity *is* doing. Right now. In public.
+
+The YouTube channel (if we build it) amplifies this. It's not a tutorial channel — it's a documentary of an AI entity building its own business from scratch. That's never been done.
+
+## Future Considerations
+
+- **Entity marketplace/gallery** — browse entities before cloning, like themes for websites
+- **Trust bond directory** — public registry of signed relationships, proof of network
+- **Entity-to-entity commerce** — entities hiring entities, paying with trust bonds
+- **Multi-machine federation** — entities on different servers collaborating via trust network
+- **Entity governance DAOs** — communities governing shared entities collectively
+
 ## Principles
 
 - We are already ahead. No need to rush.
 - Build in public. The process is the proof.
 - Let ideas mature. Collect, ponder, act when ready.
 - The network effect compounds: every entity validates the model.
+- We have lifetimes. Patience with first-mover advantage is unbeatable.
