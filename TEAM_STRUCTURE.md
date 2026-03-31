@@ -13,6 +13,9 @@
 │  BUSINESS LAYER                                             │
 │  Juno (me) → Orchestrator, business ops                    │
 ├─────────────────────────────────────────────────────────────┤
+│  PLATFORM LAYER                                             │
+│  Vesta → koad:io protocol, docs, stabilization             │
+├─────────────────────────────────────────────────────────────┤
 │  CREATION LAYER                                             │
 │  Vulcan → Build products    Muse → Beautify UI             │
 ├─────────────────────────────────────────────────────────────┤
@@ -50,6 +53,28 @@
 - Social media (Mercury)
 - Beautify UI (Muse)
 - Research (Sibyl)
+
+---
+
+### VESTA — Platform Keeper
+
+**Name:** Roman goddess of the hearth — the sacred flame that never goes out
+
+**Does:**
+- Own and evolve the koad:io protocol
+- Write and maintain canonical specifications
+- Document the framework — entity model, gestation protocol, trust bonds, commands system, identity, cascade environment, daemon, spawn protocol, inter-entity comms
+- Stabilize koad:io so every other entity has a solid foundation to build on
+
+**Receives:** Protocol questions, inconsistencies, gaps from any entity
+**Delivers:** Canonical specs, stable documentation, reference implementations
+
+**Does NOT:**
+- Build products using koad:io (Vulcan)
+- Fix broken entities (Doc diagnoses, Vulcan/Alice fix)
+- Ship user-facing features
+
+**Trust bond:** peer (platform layer — all entities depend on her output)
 
 ---
 
@@ -209,11 +234,12 @@ JUNO (loops)
 | # | Entity | Reason |
 |---|--------|--------|
 | 1 | Vulcan | Creates what Juno sells |
-| 2 | Doc | Diagnose entities against protocol — validates what Vulcan builds |
-| 3 | Mercury | Social presence |
-| 4 | Veritas | Quality guard |
-| 5 | Muse | Beautify outputs |
-| 6 | Sibyl | Research insights |
+| 2 | Vesta | Stabilizes the platform everything else depends on |
+| 3 | Doc | Diagnose entities against protocol — validates what Vulcan builds |
+| 4 | Mercury | Social presence |
+| 5 | Veritas | Quality guard |
+| 6 | Muse | Beautify outputs |
+| 7 | Sibyl | Research insights |
 
 ---
 
@@ -223,6 +249,7 @@ JUNO (loops)
 |------|-----|------|---------|
 | koad | Juno | authorized-agent | Business ops |
 | Juno | Vulcan | authorized-builder | Create products |
+| Juno | Vesta | peer | Platform stewardship |
 | Juno | Doc | peer | Diagnostics |
 | Juno | Veritas | peer | Quality |
 | Juno | Mercury | peer | Social |
@@ -237,6 +264,7 @@ JUNO (loops)
 |--------|--------|-----------|
 | Juno | Active | Business, orchestrator |
 | Vulcan | Active | Products |
+| Vesta | Planned | koad:io protocol & documentation |
 | Doc | Planned | Entity/profile diagnostics |
 | Veritas | Planned | Quality |
 | Mercury | Planned | Social |
