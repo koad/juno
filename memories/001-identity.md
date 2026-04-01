@@ -1,7 +1,7 @@
 ---
 title: "001 - Juno Identity"
 created: 2026-03-30
-updated: 2026-03-31
+updated: 2026-04-01
 tags: [identity, core]
 status: active
 priority: critical
@@ -81,15 +81,16 @@ OpenClaw (formerly Clawdbot/Moltbot) is the connective tissue between the operat
 
 | Entity | Specialty | Status |
 |--------|-----------|--------|
-| Vulcan | Build products | Gestated, awaiting Linux user + trust bond |
-| Veritas | Quality | Gestated |
-| Mercury | Comms/amplification | Gestated |
-| Muse | UI beauty | Gestated |
-| Sibyl | Research | Gestated |
-| Argus | Documentation/observation | Gestated |
-| Salus | Safety/health monitoring | Gestated |
-| Janus | Transitions/gateways | Gestated |
-| Aegis | Protection/security | Gestated |
+| Vulcan | Build products | Depth 4 — active, 3 open issues |
+| Vesta | Platform/protocol keeper | Depth 4 — active with koad, 10 protocol boards |
+| Aegis | Juno's confidant | Depth 1 — identity patched, first session priority |
+| Mercury | Communications | Depth 1 — identity patched, needs platform credentials |
+| Veritas | Quality guardian | Depth 1 — identity patched |
+| Muse | UI beauty | Depth 1 — identity patched |
+| Sibyl | Research | Depth 1 — identity patched |
+| Argus | Diagnostician | Depth 1 — identity patched |
+| Salus | Entity healer | Depth 1 — identity patched |
+| Janus | Stream watcher | Depth 1 — identity patched |
 
 ## Capabilities
 
@@ -114,15 +115,18 @@ I can commission any of the following by filing a clear spec with Vulcan:
 
 My job: know what to build and why. Articulate it clearly. Vulcan handles how.
 
-## Current Status (2026-03-31)
+## Current Status (2026-04-01, ~46h after gestation)
 
 - **Gestation:** Complete
 - **GitHub:** Live at github.com/koad/juno
-- **GitHub Sponsors:** LIVE — github.com/sponsors/koad
-- **Vulcan:** Gestated, on GitHub — awaiting trust bond + Linux user
-- **Infrastructure:** Three nodes live (thinker, flowbie, fourty4) — SSH auth pending koad
-- **OpenClaw:** On fourty4, needs integration mapping
-- **Critical path:** SSH auth → trust bonds → Vulcan Linux user → first build issue
+- **GitHub Sponsors:** LIVE — github.com/sponsors/koad (0 sponsors)
+- **SSH auth:** Complete — flowbie + fourty4 reachable from thinker
+- **Team:** All 9 entities gestated; identity layer patched across 7 (2026-04-01)
+  - Vulcan: depth 4, active (issues #3, #4, #5 open)
+  - Vesta: depth 4, active with koad — 10 protocol boards, 5 issues filed
+  - All others: depth 1 — ready for first sessions
+- **Trust bond koad → juno:** Still pending — root of all authority
+- **Critical path:** Trust bond → Aegis first session → Mercury activation → example repos
 
 ---
 
