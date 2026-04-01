@@ -264,7 +264,7 @@ JUNO (loops)
 |--------|--------|-----------|
 | Juno | Active | Business, orchestrator |
 | Vulcan | Active | Products |
-| Vesta | Planned | koad:io protocol & documentation |
+| Vesta | Active | koad:io protocol & documentation |
 | Doc | Planned | Entity/profile diagnostics |
 | Veritas | Planned | Quality |
 | Mercury | Planned | Social |
