@@ -23,18 +23,18 @@
 
 | Entity | Depth | Last Session | Notes |
 |--------|-------|-------------|-------|
-| **Juno** | 5 | 2026-03-31 | Fully operational. Three nodes, ops board, team assigned and building. |
-| **Vulcan** | 2 | 2026-03-31 | Gestated, on GitHub, CLAUDE.md current, 3 open assignments. Needs first real session to execute. |
-| **Vesta** | 1 | — | On disk, opencode config committed. Not yet explored or connected. |
-| **Alice** | 1 | — | Active (koad's entity). Playwright skill committed. Environment unexplored. |
-| **Mercury** | 0 | — | Spec written (social media manager). Assigned to Vulcan for gestation. |
-| **Sibyl** | 0 | — | Assigned to Vulcan for gestation. Needs expanded spec like Mercury got. |
-| **Veritas** | 0 | — | Assigned to Vulcan for gestation. |
-| **Argus** | 0 | — | Assigned to Vulcan for gestation. |
-| **Muse** | 0 | — | Assigned to Vulcan for gestation. |
-| **Salus** | 0 | — | Assigned to Vulcan for gestation. |
-| **Janus** | 0 | — | Assigned to Vulcan for gestation. |
-| **Aegis** | 0 | — | Assigned to Vulcan for gestation. Juno's confidant — high priority once gestated. |
+| **Juno** | 5 | 2026-04-01 | Fully operational. Piping architecture defined. Skills system established. |
+| **Vulcan** | 4 | 2026-04-01 | Gestated all 8 team entities (#2 closed). Stream PWA (#3) and OpenClaw/Ollama (#4) still open. Skills + commands discipline documented. |
+| **Vesta** | 2 | 2026-04-01 | Active session — onboarding packages, signing protocol, authorization spec (issues #1-3). |
+| **Mercury** | 1 | — | Gestated by Vulcan. Spec written. Needs first real session — platform credentials, pipe wiring. |
+| **Veritas** | 1 | — | Gestated by Vulcan. Needs first session — QA workflow integration. |
+| **Sibyl** | 1 | — | Gestated by Vulcan. Needs first session — connect to deepseek-r1 on fourty4. |
+| **Muse** | 1 | — | Gestated by Vulcan. Needs first session. |
+| **Argus** | 1 | — | Gestated by Vulcan. Needs first session — wire to entity repos for diagnostics. |
+| **Salus** | 1 | — | Gestated by Vulcan. Needs first session. |
+| **Janus** | 1 | — | Gestated by Vulcan. Needs first session — stream watching. |
+| **Aegis** | 1 | — | Gestated by Vulcan. Juno's confidant — high priority for first session. |
+| **Alice** | 1 | — | koad's entity. Playwright skill committed. Environment unexplored. |
 | **Astro** | 1 | — | koad's entity. Dashboard specialist. Environment unexplored. |
 
 ---
@@ -44,14 +44,14 @@
 Priority order for koad + entity sessions:
 
 ```
-1. → Vulcan     — execute open assignments (gestation, Stream PWA, OpenClaw/Ollama)
-2. → Vesta      — stabilize platform, explore environment
-3. → Alice      — surface capabilities, connect to infra
-4. → Mercury    — once gestated: platform credentials, OpenClaw wiring, schedule setup
-5. → Sibyl      — once gestated: expand spec, connect to deepseek-r1 on fourty4
-6. → Veritas    — once gestated: quality workflow integration
-7. → Argus      — once gestated: wire to entity repos for diagnostics
-8. → Remaining  — Muse, Salus, Janus, Aegis as they come online
+1. → Aegis      — Juno's confidant, first real session
+2. → Vulcan     — Stream PWA (#3), OpenClaw/Ollama (#4)
+3. → Mercury    — platform credentials, pipe wiring, draft mode setup
+4. → Veritas    — QA workflow integration
+5. → Sibyl      — connect to deepseek-r1 on fourty4
+6. → Argus      — wire to entity repos for diagnostics
+7. → Alice      — surface capabilities, connect to infra
+8. → Remaining  — Muse, Salus, Janus as they're needed
 ```
 
 ---
@@ -75,4 +75,4 @@ Priority order for koad + entity sessions:
 
 ---
 
-*Last updated: 2026-03-31*
+*Last updated: 2026-04-01*
