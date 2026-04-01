@@ -137,22 +137,59 @@ start_obs_stream
 # Spawn Entity Process
 # ─────────────────────────────────────────────
 
-# Build the command to run inside the terminal
+# Terminal emulator — override with SPAWN_TERMINAL env var
+# Auto-detects: tmux > gnome-terminal > xterm
+SPAWN_TERMINAL="${SPAWN_TERMINAL:-auto}"
+
+# Build the claude command
 if [ -n "$PROMPT" ]; then
-    # Pass prompt via heredoc to handle special characters
-    SPAWN_CMD="cd $ENTITY_DIR && claude . --prompt $(printf '%q' "$PROMPT")"
+    SPAWN_CMD="cd $ENTITY_DIR && claude . -p $(printf '%q' "$PROMPT")"
 else
     SPAWN_CMD="cd $ENTITY_DIR && claude ."
 fi
 
-# Spawn in a new gnome-terminal
-# The entity gets its own window with its own context
-gnome-terminal \
-    --title="⬡ $ENTITY_NAME" \
-    --geometry=120x40 \
-    -- bash -c "$SPAWN_CMD; EXIT_CODE=\$?; echo ''; echo '[$ENTITY_NAME process ended with code '\$EXIT_CODE']'; sleep 3; exit \$EXIT_CODE" &
+WRAP_CMD="$SPAWN_CMD; EXIT_CODE=\$?; echo ''; echo '[$ENTITY_NAME process ended with code '\$EXIT_CODE']'; sleep 3; exit \$EXIT_CODE"
 
-TERMINAL_PID=$!
+# Resolve terminal
+if [ "$SPAWN_TERMINAL" = "auto" ]; then
+    if [ -n "${TMUX:-}" ] || command -v tmux &>/dev/null; then
+        SPAWN_TERMINAL="tmux"
+    elif command -v gnome-terminal &>/dev/null; then
+        SPAWN_TERMINAL="gnome-terminal"
+    elif command -v xterm &>/dev/null; then
+        SPAWN_TERMINAL="xterm"
+    else
+        SPAWN_TERMINAL="bash"
+    fi
+fi
+
+echo "[spawn] Using terminal: $SPAWN_TERMINAL"
+
+case "$SPAWN_TERMINAL" in
+    tmux)
+        tmux new-window -n "$ENTITY_NAME" "bash -c '$WRAP_CMD'" &
+        TERMINAL_PID=$!
+        ;;
+    gnome-terminal)
+        gnome-terminal \
+            --title="⬡ $ENTITY_NAME" \
+            --geometry=120x40 \
+            -- bash -c "$WRAP_CMD" &
+        TERMINAL_PID=$!
+        ;;
+    xterm)
+        xterm -title "⬡ $ENTITY_NAME" -e bash -c "$WRAP_CMD" &
+        TERMINAL_PID=$!
+        ;;
+    bash)
+        # Headless — run directly in background, log to file
+        LOG="$ENTITY_DIR/var/spawn-$TIMESTAMP.log"
+        mkdir -p "$ENTITY_DIR/var"
+        bash -c "$WRAP_CMD" >"$LOG" 2>&1 &
+        TERMINAL_PID=$!
+        echo "[spawn] Headless mode — logging to $LOG"
+        ;;
+esac
 
 echo ""
 echo "Entity $ENTITY_NAME spawned (terminal PID: $TERMINAL_PID)"
