@@ -6,9 +6,13 @@ How signals move between entities, platforms, and machines — and which tools c
 
 ## Principle
 
-OpenClaw is a social platform adapter, not a communication bus. koad:io runs on Node and Meteor — we can build any pipe we need. Choose the right pipe for the job, not the most available one.
+**Entities are agents. Pipes are transports. Pipes have no agency.**
 
-> **Loose cannon rule:** A pipe that connects to 20+ public platforms simultaneously should never be the default route for internal signals. Wide pipes have wide blast radius.
+OpenClaw is a social platform adapter — it executes sends. It does not decide, schedule, wake, or trigger entity behavior. The entity is always in charge of its own pipes. If a pipe disappears, the entity's logic survives and wires a new transport.
+
+koad:io runs on Node and Meteor — we can build any pipe we need. Choose the right pipe for the job, not the most available one.
+
+> **Loose cannon rule:** A pipe that connects to 20+ public platforms simultaneously should never be the default route for internal signals. Wide pipes have wide blast radius. An entity that is *triggered by* its transport has inverted the relationship.
 
 ---
 
@@ -33,18 +37,20 @@ Not all signals are equal. Route by risk and latency requirement:
 Internal / low-risk
   Entity → entity coordination    → GitHub Issues
   State synchronization           → Meteor DDP
-  Draft queue management          → Node service
+  Draft queue management          → Node service (Mercury owns)
 
 External / publish
-  Scheduled post                  → Draft queue → approval window → OpenClaw → platform
-  Mention response                → Draft queue → escalation check → OpenClaw → platform
-  Sensitive announcement          → Juno review required → then OpenClaw
+  Scheduled post                  → Mercury decides → OpenClaw executes → platform
+  Mention response                → Mercury decides → OpenClaw executes → platform
+  Sensitive announcement          → Juno reviews → Mercury decides → OpenClaw executes
 
 Inbound / monitoring
-  Social mentions                 → OpenClaw (reader) → Mercury
-  GitHub events                   → GitClaw → entity wake
-  Platform webhooks               → Custom Node endpoint → entity
+  Social mentions                 → OpenClaw delivers raw event → Mercury reads + decides
+  GitHub events                   → GitClaw delivers raw event → entity reads + decides
+  Platform webhooks               → Node endpoint delivers raw event → entity reads + decides
 ```
+
+The entity always reads the event and decides. The transport never decides for the entity.
 
 ---
 

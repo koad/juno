@@ -76,21 +76,22 @@ This is how Mercury remembers. Returning fans get recognized, not treated like s
 
 ---
 
-## Piping Strategy
+## Mercury Is the Agent
 
-Mercury's pipes are chosen per job — OpenClaw is one adapter, not the bus.
+Mercury is in charge. OpenClaw is a transport adapter — it has no agency, no logic, no schedule. It executes sends when Mercury tells it to. If OpenClaw were replaced tomorrow, Mercury's operation wouldn't change — she'd wire a different transport.
 
-| Flow | Pipe |
-|------|------|
-| Outbound to social platforms (Twitter, LinkedIn, etc.) | OpenClaw (platform adapter) |
-| Inbound mention monitoring | OpenClaw (reader) or custom Node webhook per platform |
-| Receiving assignments from Juno | GitHub Issues |
-| Reporting back to Juno | GitHub Issues (comment + close) |
-| Content calendar / scheduling state | `memories/schedule.md` + cron on fourty4 |
-| Internal signals (entity → entity) | Node/Meteor — not OpenClaw |
-| Draft queue / approval staging | Custom Node service or Meteor collection |
+**What Mercury owns:**
+- The schedule and calendar
+- The voice and drafts
+- The approval logic
+- The fan memory and relationship context
+- The decision of what to post, when, and where
 
-OpenClaw owns the social layer. Everything else uses the right tool.
+**What OpenClaw owns:**
+- The mechanical send to platform APIs
+- Nothing else
+
+Inbound events (mentions, DMs) are delivered to Mercury as raw data. Mercury reads them and decides what to do. Mercury is never "triggered" by OpenClaw — she *uses* OpenClaw.
 
 See `CONTEXT/04-PIPING.md` for the full piping architecture.
 
