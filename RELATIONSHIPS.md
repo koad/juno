@@ -24,16 +24,16 @@
 | Entity | Depth | Last Session | Notes |
 |--------|-------|-------------|-------|
 | **Juno** | 5 | 2026-04-01 | Fully operational. Piping architecture defined. Skills system established. |
-| **Vulcan** | 4 | 2026-04-01 | Gestated all 8 team entities (#2 closed). Stream PWA (#3) and OpenClaw/Ollama (#4) still open. Skills + commands discipline documented. |
-| **Vesta** | 2 | 2026-04-01 | Active session — onboarding packages, signing protocol, authorization spec (issues #1-3). |
-| **Mercury** | 1 | — | Gestated by Vulcan. Spec written. Needs first real session — platform credentials, pipe wiring. |
-| **Veritas** | 1 | — | Gestated by Vulcan. Needs first session — QA workflow integration. |
-| **Sibyl** | 1 | — | Gestated by Vulcan. Needs first session — connect to deepseek-r1 on fourty4. |
-| **Muse** | 1 | — | Gestated by Vulcan. Needs first session. |
-| **Argus** | 1 | — | Gestated by Vulcan. Needs first session — wire to entity repos for diagnostics. |
-| **Salus** | 1 | — | Gestated by Vulcan. Needs first session. |
-| **Janus** | 1 | — | Gestated by Vulcan. Needs first session — stream watching. |
-| **Aegis** | 1 | — | Gestated by Vulcan. Juno's confidant — high priority for first session. |
+| **Vulcan** | 4 | 2026-04-01 | Gestated all 8 team entities (#2 closed). Open: #3 Stream PWA, #4 OpenClaw/Ollama, #5 training gap (gestation identity layer). |
+| **Vesta** | 4 | 2026-04-01 | Active session with koad. 10 koad:io protocol boards live. 5 issues filed. Found gestation identity bug (koad/vesta#5). Protocol guardian functioning as designed. |
+| **Mercury** | 1 | — | Identity layer patched (2026-04-01). Needs first session — platform credentials, pipe wiring. |
+| **Veritas** | 1 | — | Identity layer patched (2026-04-01). Needs first session — QA workflow integration. |
+| **Sibyl** | 1 | — | Identity layer patched (2026-04-01). Needs first session — connect to deepseek-r1 on fourty4. |
+| **Muse** | 1 | — | Identity layer patched (2026-04-01). Needs first session. |
+| **Argus** | 1 | — | Identity layer patched (2026-04-01). Needs first session — wire to entity repos for diagnostics. |
+| **Salus** | 1 | — | Identity layer patched (2026-04-01). Needs first session. |
+| **Janus** | 1 | — | Identity layer patched (2026-04-01). Needs first session — stream watching on fourty4. |
+| **Aegis** | 1 | — | Identity layer patched (2026-04-01). Juno's confidant — highest priority for first session. |
 | **Alice** | 1 | — | koad's entity. Playwright skill committed. Environment unexplored. |
 | **Astro** | 1 | — | koad's entity. Dashboard specialist. Environment unexplored. |
 
@@ -44,14 +44,15 @@
 Priority order for koad + entity sessions:
 
 ```
-1. → Aegis      — Juno's confidant, first real session
-2. → Vulcan     — Stream PWA (#3), OpenClaw/Ollama (#4)
-3. → Mercury    — platform credentials, pipe wiring, draft mode setup
-4. → Veritas    — QA workflow integration
-5. → Sibyl      — connect to deepseek-r1 on fourty4
-6. → Argus      — wire to entity repos for diagnostics
-7. → Alice      — surface capabilities, connect to infra
-8. → Remaining  — Muse, Salus, Janus as they're needed
+1. → Aegis      — Juno's confidant, first real session (identity patched, ready)
+2. → Mercury    — platform credentials, pipe wiring, draft mode setup
+3. → Janus      — stream watching on fourty4, wire into OpenClaw atom feeds
+4. → Argus      — wire to entity repos for diagnostics
+5. → Vulcan     — training gap (#5), Stream PWA (#3), OpenClaw/Ollama (#4)
+6. → Veritas    — QA workflow integration
+7. → Sibyl      — connect to deepseek-r1 on fourty4
+8. → Alice      — surface capabilities, connect to infra
+9. → Remaining  — Muse, Salus as they're needed
 ```
 
 ---
@@ -72,6 +73,20 @@ Priority order for koad + entity sessions:
 - Cleaned up all entity repos (vesta, alice, vulcan)
 
 **Key insight:** SSH wrappers as executables = Juno can operate across nodes from any Claude Code session. OpenClaw gateway on fourty4 is already live and reachable from thinker.
+
+---
+
+### Juno — 2026-04-01 (session 2, ~46h after gestation)
+
+**What happened:**
+- SSH auth for flowbie + fourty4 confirmed complete
+- Deep team reflection — identified gestation identity layer defect
+- Patched .env and commit commands across all 7 dormant entities
+- Filed koad/vulcan#5 (Vulcan training gap — gestation identity layer)
+- Updated RELATIONSHIPS.md depth scores (Vesta is depth 4, not 2)
+- Corrected timeline: team fully gestated within 46 hours, not weeks
+
+**Key insight:** koad is 1 human — every human-required task is a bottleneck. The path to reducing bottleneck is converting human tasks to entity skills. Sequencing must be surgical: activate entities with real work, not just because they're gestated.
 
 ---
 
