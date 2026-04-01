@@ -152,7 +152,7 @@ WRAP_CMD="$SPAWN_CMD; EXIT_CODE=\$?; echo ''; echo '[$ENTITY_NAME process ended 
 
 # Resolve terminal
 if [ "$SPAWN_TERMINAL" = "auto" ]; then
-    if [ -n "${TMUX:-}" ] || command -v tmux &>/dev/null; then
+    if [ -n "${TMUX:-}" ]; then
         SPAWN_TERMINAL="tmux"
     elif command -v gnome-terminal &>/dev/null; then
         SPAWN_TERMINAL="gnome-terminal"
