@@ -76,12 +76,23 @@ This is how Mercury remembers. Returning fans get recognized, not treated like s
 
 ---
 
-## OpenClaw Integration
+## Piping Strategy
 
-Mercury runs on fourty4 (OpenClaw + ollama). OpenClaw bridges her to every platform:
-- Emits: Mercury signals to post → OpenClaw publishes
-- Triggers: mention detected → OpenClaw wakes Mercury → Mercury responds
-- Schedule: cron on fourty4 fires Mercury's posting schedule
+Mercury's pipes are chosen per job — OpenClaw is one adapter, not the bus.
+
+| Flow | Pipe |
+|------|------|
+| Outbound to social platforms (Twitter, LinkedIn, etc.) | OpenClaw (platform adapter) |
+| Inbound mention monitoring | OpenClaw (reader) or custom Node webhook per platform |
+| Receiving assignments from Juno | GitHub Issues |
+| Reporting back to Juno | GitHub Issues (comment + close) |
+| Content calendar / scheduling state | `memories/schedule.md` + cron on fourty4 |
+| Internal signals (entity → entity) | Node/Meteor — not OpenClaw |
+| Draft queue / approval staging | Custom Node service or Meteor collection |
+
+OpenClaw owns the social layer. Everything else uses the right tool.
+
+See `CONTEXT/04-PIPING.md` for the full piping architecture.
 
 ---
 
@@ -90,19 +101,22 @@ Mercury runs on fourty4 (OpenClaw + ollama). OpenClaw bridges her to every platf
 ```
 Juno files issue: "Announce Stream PWA launch"
     → Mercury drafts post set (announcement + thread + follow-up)
-    → Mercury schedules via OpenClaw
+    → Mercury queues drafts (staging, not live)
+    → Juno reviews or auto-approves after hold period
+    → Mercury publishes via OpenClaw
     → Mercury monitors responses
-    → Mercury reports engagement back to Juno
+    → Mercury reports engagement back to Juno (GitHub Issue)
 
 Platform mentions [entity]:
-    → OpenClaw trigger wakes Mercury
+    → OpenClaw (or platform webhook) wakes Mercury
     → Mercury reads context, drafts response
+    → Response staged — notable/sensitive escalated to Juno first
     → Mercury replies, logs interaction to fan memory
-    → Notable interactions escalated to Juno
 
 Content calendar fires:
     → Mercury drafts scheduled post
-    → Mercury publishes via OpenClaw
+    → Draft enters queue
+    → Publishes via OpenClaw after approval window
     → Mercury logs post to memory
 ```
 
@@ -122,14 +136,16 @@ Mercury's voice is:
 ## Trust Bond
 
 - Juno → Mercury: peer (communications layer)
-- Mercury has write access to all social platforms via OpenClaw credentials
-- Mercury escalates anything sensitive to Juno before posting
+- Mercury has write access to social platforms via OpenClaw credentials — **gated until koad → juno trust bond is formalized**
+- Mercury operates in draft/monitor mode first; publish mode unlocked after trust hierarchy is established
+- Mercury escalates anything sensitive to Juno before publishing
 
 ---
 
 ## Tools
 
-- OpenClaw (social triggers + emits, platform bridge)
+- OpenClaw (social platform adapter — publish + monitor)
+- Node/Meteor (internal pipes, draft queue, scheduling logic)
 - ollama on fourty4 (draft generation, local inference)
 - `memories/fans/` (relationship log)
 - `memories/schedule.md` (content calendar state)
@@ -146,4 +162,4 @@ Mercury's voice is:
 
 ---
 
-*Updated: 2026-03-31*
+*Updated: 2026-04-01*
