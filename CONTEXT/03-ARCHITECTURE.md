@@ -23,8 +23,9 @@
 ┌─────────────────────────────────────────────────────────────┐
 │  LAYER 2: Entities (~/.entityname/)                       │
 ├─────────────────────────────────────────────────────────────┤
+│  .claude/skills/           ← Claude Code duties            │
 │  commands/                 ← Inherited + custom            │
-│  opencode/skills/          ← AI capabilities               │
+│  opencode/skills/          ← OpenCode AI capabilities      │
 │  memories/                 ← Identity & context            │
 │  id/                       ← Cryptographic keys            │
 │  skeletons/                ← Inherited templates           │
@@ -71,7 +72,34 @@ install:  browsers, bun, claudecode, codium, docker, essentials,
 
 ## SKILLS SYSTEM
 
-### Structure
+Two skill layers exist per entity. Both encode duties — different runtimes.
+
+### Claude Code Skills (`~/.entity/.claude/skills/`)
+
+Simple `.md` files. Loaded as executable prompts in Claude Code sessions.
+Invoked as `/skill-name` when Claude Code is running inside the entity directory.
+**This is where entity duties live** — each skill is a duty the entity knows how to perform.
+
+```
+~/.entity/.claude/skills/
+└── <duty-name>.md     # Frontmatter: name, description. Body: steps + context.
+```
+
+Example duties per entity:
+
+| Entity | Skills |
+|--------|--------|
+| Juno | `delegate`, `morning-brief`, `ops-update` |
+| Vulcan | `gestate-entity`, `build-feature` |
+| Mercury | `draft-post`, `respond-mention`, `weekly-report` |
+| Veritas | `qa-review`, `sign-off` |
+| Sibyl | `research-topic`, `competitive-scan` |
+
+When you `juno spawn process <entity>`, the entity's Claude Code session has its skills ready.
+
+### OpenCode Skills (`~/.entity/opencode/skills/<skill-name>/`)
+
+Structured skill packages for the OpenCode runtime.
 
 ```
 ~/.entity/opencode/skills/<skill-name>/
@@ -286,7 +314,8 @@ ENTITY                 # Current entity name
 | Framework | `~/.koad-io/` |
 | Entity | `~/.entityname/` |
 | Keys | `~/.entityname/id/` |
-| Skills | `~/.entityname/opencode/skills/` |
+| Claude Code duties (skills) | `~/.entityname/.claude/skills/` |
+| OpenCode skills | `~/.entityname/opencode/skills/` |
 | Commands | `~/.entityname/commands/` |
 | Memories | `~/.entityname/memories/` |
 | Config | `~/.entityname/opencode/` |

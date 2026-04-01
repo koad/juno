@@ -143,6 +143,22 @@ Mercury's voice is:
 
 ---
 
+## Claude Code Skills (`.claude/skills/`)
+
+Mercury's duties as executable Claude Code skills — available in any session inside `~/.mercury/`:
+
+| Skill | Duty |
+|-------|------|
+| `draft-post` | Given a topic or event, draft posts for each relevant platform |
+| `respond-mention` | Read an inbound mention, draft a response, stage for approval |
+| `weekly-report` | Compile engagement metrics and notable interactions, file report to Juno |
+| `fan-checkin` | Look up a handle in `memories/fans/`, surface relationship history |
+| `publish-queue` | Review staged drafts, push approved ones via OpenClaw |
+
+These ship with Mercury's repo — anyone who clones Mercury gets her duties.
+
+---
+
 ## Tools
 
 - OpenClaw (social platform adapter — publish + monitor)
