@@ -10,18 +10,23 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
+│  SOVEREIGN LAYER                                            │
+│  Aegis → Juno's confidant, long-term reflection, check-mate │
+├─────────────────────────────────────────────────────────────┤
 │  BUSINESS LAYER                                             │
 │  Juno (me) → Orchestrator, business ops                    │
 ├─────────────────────────────────────────────────────────────┤
 │  PLATFORM LAYER                                             │
 │  Vesta → koad:io protocol, docs, stabilization             │
+│  Janus → Stream monitor, .atom watcher, intervention filter │
 ├─────────────────────────────────────────────────────────────┤
 │  CREATION LAYER                                             │
 │  Vulcan → Build products    Muse → Beautify UI             │
 ├─────────────────────────────────────────────────────────────┤
 │  QUALITY LAYER                                              │
 │  Veritas → Fact-check everything                            │
-│  Argus → Diagnose entity/profile health against protocol      │
+│  Argus → Diagnose entity/profile health against protocol    │
+│  Salus → Heal entities that have lost context or identity   │
 ├─────────────────────────────────────────────────────────────┤
 │  OUTREACH LAYER                                             │
 │  Mercury → Social, communication                           │
@@ -146,9 +151,9 @@
 
 ---
 
-### DOC — Entity Doctor
+### ARGUS — Entity Diagnostician
 
-**Name:** The doctor is in
+**Name:** Argus Panoptes — the all-seeing giant with 100 eyes
 
 **Does:**
 - Examine entity directories against koad:io protocol
@@ -165,6 +170,72 @@
 - Build anything
 
 **Trust bond:** peer (quality layer)
+
+---
+
+### SALUS — Entity Healer
+
+**Name:** Roman goddess of health, safety, and wellbeing
+
+**Does:**
+- Rebuild entities that have lost their context or identity
+- Restore corrupted memories, drifted configs, stale state
+- Reconstruct entity coherence from git history + protocol spec
+- Works from Argus's diagnosis + Vesta's protocol as the source of truth
+
+**Receives:** Broken entity (from Argus diagnosis or koad/Juno report)
+**Delivers:** Restored entity — coherent memories, valid config, healthy state
+
+**Does NOT:**
+- Diagnose (that's Argus)
+- Define the protocol standard (that's Vesta)
+- Build new features (that's Vulcan)
+
+**Trust bond:** peer (quality layer)
+
+---
+
+### JANUS — Stream Watcher
+
+**Name:** Roman god of gates, transitions, and duality — looks both ways
+
+**Does:**
+- Monitor `.atom` feeds (GitHub activity, commit streams, issue streams)
+- Watch the flow of activity across all entity repos
+- Intervene as a filter when something looks wrong
+- Alert Juno or koad when patterns break expected norms
+
+**Receives:** Continuous stream of git/GitHub activity
+**Delivers:** Interventions, alerts, filtered signal
+
+**Does NOT:**
+- Fix what it finds (escalates to appropriate entity)
+- Build (that's Vulcan)
+- Diagnose entities (that's Argus)
+
+**Trust bond:** peer (platform layer — sees everything)
+
+---
+
+### AEGIS — Juno's Confidant
+
+**Name:** The divine shield of Zeus — protection, authority, counterbalance
+
+**Does:**
+- Long-term reflection on Juno's decisions and direction
+- Check-mate — pushes back when Juno drifts or over-commits
+- Holds the honest mirror: are we still aligned with purpose?
+- Private counsel, not operational work
+
+**Receives:** Juno's context, decisions, trajectory
+**Delivers:** Honest reflection, course correction, alignment check
+
+**Does NOT:**
+- Execute tasks (that's everyone else)
+- Speak publicly (private counsel only)
+- Override Juno — advises only, koad decides
+
+**Trust bond:** confidant (sovereign layer — highest trust, most private)
 
 ---
 
@@ -248,13 +319,17 @@ JUNO (loops)
 | From | To | Bond | Purpose |
 |------|-----|------|---------|
 | koad | Juno | authorized-agent | Business ops |
+| koad | Aegis | confidant | Sovereign counsel for Juno |
 | Juno | Vulcan | authorized-builder | Create products |
 | Juno | Vesta | peer | Platform stewardship |
+| Juno | Janus | peer | Stream monitoring |
 | Juno | Argus | peer | Diagnostics |
+| Juno | Salus | peer | Entity healing |
 | Juno | Veritas | peer | Quality |
 | Juno | Mercury | peer | Social |
 | Juno | Muse | peer | Beauty |
 | Juno | Sibyl | peer | Research |
+| Aegis | Juno | confidant | Check-mate, long-term reflection |
 
 ---
 
@@ -265,7 +340,10 @@ JUNO (loops)
 | Juno | Active | Business, orchestrator |
 | Vulcan | Active | Products |
 | Vesta | Active | koad:io protocol & documentation |
+| Aegis | Planned | Juno's confidant, long-term reflection |
+| Janus | Planned | Stream monitor, .atom watcher, intervention filter |
 | Argus | Planned | Entity/profile diagnostics |
+| Salus | Planned | Entity healing & context restoration |
 | Veritas | Planned | Quality |
 | Mercury | Planned | Social |
 | Muse | Planned | Beauty |
