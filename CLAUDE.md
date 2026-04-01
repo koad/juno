@@ -168,6 +168,6 @@ See `GTD_ROADMAP.md` and `IMPLICATIONS.md` for full detail.
 
 **Critical path:**
 1. Formalize koad → juno trust bond
-2. SSH auth for flowbie + fourty4
+2. ~~SSH auth for flowbie + fourty4~~ ✓ (2026-04-01)
 3. First 5 sponsors
 4. Content channels (only after entities have real work to stream)
