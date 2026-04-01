@@ -338,16 +338,16 @@ JUNO (loops)
 | Entity | Status | Specialty |
 |--------|--------|-----------|
 | Juno | Active | Business, orchestrator |
-| Vulcan | Active | Products |
+| Vulcan | Active | Products (on GitHub, assigned gestation + Stream PWA) |
 | Vesta | Active | koad:io protocol & documentation |
-| Aegis | Planned | Juno's confidant, long-term reflection |
-| Janus | Planned | Stream monitor, .atom watcher, intervention filter |
-| Argus | Planned | Entity/profile diagnostics |
-| Salus | Planned | Entity healing & context restoration |
-| Veritas | Planned | Quality |
-| Mercury | Planned | Social |
-| Muse | Planned | Beauty |
-| Sibyl | Planned | Research |
+| Aegis | Assigned to Vulcan | Juno's confidant, long-term reflection |
+| Janus | Assigned to Vulcan | Stream monitor, .atom watcher, intervention filter |
+| Argus | Assigned to Vulcan | Entity/profile diagnostics |
+| Salus | Assigned to Vulcan | Entity healing & context restoration |
+| Veritas | Assigned to Vulcan | Quality |
+| Mercury | Assigned to Vulcan | Social |
+| Muse | Assigned to Vulcan | Beauty |
+| Sibyl | Assigned to Vulcan | Research |
 | Astro | Active | Dashboards |
 | Alice | Active | Hardware |
 

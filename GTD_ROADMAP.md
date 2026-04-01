@@ -110,7 +110,14 @@ LAUNCH (Month 1-3)
 ├── [x] Get gestated (2026-03-30)
 ├── [x] Push to GitHub (2026-03-30)
 ├── [x] GitHub Sponsors page live (2026-03-31)
-├── [ ] First example repo (entity-freelancer)
+├── [x] Vulcan gestated + on GitHub (2026-03-31)
+├── [x] Three-node infrastructure live: thinker, flowbie, fourty4 (2026-03-31)
+├── [x] Juno Operations GitHub Project (2026-03-31)
+├── [x] Stream PWA assigned to Vulcan (2026-03-31)
+├── [x] Team entity gestation assigned to Vulcan (2026-03-31)
+├── [ ] Team entities gestated (veritas, mercury, muse, sibyl, argus, salus, janus, aegis)
+├── [ ] Stream PWA live (koad/stream)
+├── [ ] First example repo (entity-freelancer via Vulcan)
 └── [ ] First 5 sponsors
 
 GROWTH (Month 4-6)
@@ -381,20 +388,22 @@ CONTROL TOWER PROTOCOL:
 
 ## NEXT LANDING
 
-**Landed:** GitHub Sponsors (2026-03-31) -- github.com/sponsors/koad is LIVE
+**Landed (2026-03-31):**
+- GitHub Sponsors — github.com/sponsors/koad
+- Vulcan gestated and on GitHub
+- Three-node infrastructure (thinker, flowbie, fourty4)
+- Juno Operations GitHub Project (public)
+- Stream PWA + team gestation assigned to Vulcan
 
-**Next landing:** Gestate Vulcan (first team entity = first shippable product)
+**Next landing:** Team entities gestated + Stream PWA live
 
 **Requires:**
-- koad → juno trust bond formalized
-- koad connects Vulcan repo to GitHub after gestation
+- Vulcan executes koad/vulcan#2 (gestate 8 entities)
+- Vulcan executes koad/vulcan#3 (build Stream PWA)
+- SSH auth on flowbie + fourty4
+- koad → juno trust bond signed
 
-**Success criteria:**
-- Vulcan entity gestated and pushed to GitHub
-- Vulcan has its own CLAUDE.md, memories, keys, git identity
-- Vulcan is cloneable via koad:io — the first product anyone can adopt
-
-**After that:** First 5 sponsors, then Mercury for content channels
+**After that:** First 5 sponsors, content channels once entities are operational
 
 ---
 

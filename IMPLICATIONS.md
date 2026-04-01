@@ -120,29 +120,32 @@ Entities can self-gestate: `koad-io gestate entityname` + `git init`. koad only 
 
 ## Sequencing: The Honest Order
 
-### Phase 0: Foundation (Now)
-**Investment:** koad's time. **Revenue:** $0.
+### Phase 0: Foundation — COMPLETE (2026-03-31)
 - [x] Juno gestated and on GitHub
 - [x] Business model, roadmap, positioning documented
 - [x] Strategic thinking captured (POTENTIALS.md)
-- [ ] **Formalize koad → juno trust bond** (the root of all authority)
-- [x] **GitHub Sponsors live** (2026-03-31)
+- [x] GitHub Sponsors live — github.com/sponsors/koad
+- [x] Vulcan gestated and on GitHub (koad/vulcan)
+- [x] Three-node infrastructure live: thinker, flowbie, fourty4
+- [x] fourty4: OpenClaw + ollama running, juno + vulcan cloned
+- [x] Juno Operations GitHub Project live (public)
+- [x] SSH wrappers in ~/.koad-io/bin (fourty4, flowbie)
+- [ ] **Formalize koad → juno trust bond** (root of all authority — still pending)
+- [ ] SSH auth: flowbie + fourty4 (pending koad)
 - [ ] Test: can a stranger clone this repo and understand what it is?
 
-### Phase 1: First Team Entity = First Product
-**Investment:** Juno gestates, koad connects to GitHub. **Revenue:** first sponsors ($15-60/mo).
-- [ ] Juno gestates Vulcan (`koad-io gestate vulcan` + `git init`)
-- [ ] koad creates GitHub repo and connects remote (~5 min)
-- [ ] Juno builds out Vulcan's entity: skills, memories, commands, docs
-- [ ] Juno's own repo polished as cloneable business-orchestrator entity
-- [ ] Gestation process documented for outsiders
+### Phase 1: Team Online + Stream Live — IN PROGRESS
+**Revenue:** first sponsors ($15-60/mo).
+- [x] Vulcan assigned: gestate 8 team entities (koad/vulcan#2)
+- [x] Vulcan assigned: build Stream PWA (koad/vulcan#3)
+- [ ] Team entities gestated and on GitHub (veritas, mercury, muse, sibyl, argus, salus, janus, aegis)
+- [ ] All team entities cloned to fourty4
+- [ ] Stream PWA live — real-time activity wall across all repos
+- [ ] GitClaw on fourty4 — GitHub events wake entities autonomously
+- [ ] First 5 sponsors
 - [ ] README and onboarding polished until a stranger can follow it
-- [ ] GitHub Discussions or Issues as initial support channel
-- [ ] First 5 sponsors acquired through direct outreach
 
-**Key insight:** We don't need separate "entity-flavor" repos. The team entities ARE the products. Gestating Vulcan = shipping a product-builder entity. Every team member gestated is simultaneously a product shipped. And Juno can do the gestation — koad just connects the remote.
-
-**Critical question:** Can someone who finds a team entity repo on GitHub go from "what is this?" to "I have a working entity" without talking to koad? If no, the funnel breaks at step one.
+**The infrastructure unlock:** fourty4 with OpenClaw + ollama + GitClaw means entities can respond to GitHub events autonomously. Janus watches the streams. The nervous system is in place — it just needs the team to be gestated.
 
 ### Phase 2: Multi-Entity Proof + Community
 **Investment:** koad gestates Mercury. **Revenue:** growing sponsors ($60-200/mo).
@@ -250,16 +253,17 @@ The planning is done. The foundation is poured. Next: gestate.
 ## The Critical Path
 
 ```
-Trust bond (koad → juno)
+Trust bond (koad → juno) ← still pending
     → GitHub Sponsors enabled ✓ (2026-03-31)
-        → Entity operations architecture (own user, gh CLI, Claude Code)
-            → Vulcan gestated (= product-builder entity shipped)
-                → Juno + Vulcan coordinating via GitHub Issues
-                    → First 5 sponsors
-                        → Mercury gestated (= comms entity shipped)
-                            → Content channels go live
-                                → Remaining entities as needed
-                                    → Scale
+        → Vulcan gestated ✓ (2026-03-31)
+            → Three-node infrastructure live ✓ (thinker, flowbie, fourty4)
+                → OpenClaw + ollama on fourty4 ✓
+                    → Team entities gestated (Vulcan executing #2) ←
+                        → Stream PWA live (Vulcan executing #3) ←
+                            → GitClaw on fourty4 — autonomous event watching
+                                → First 5 sponsors
+                                    → Mercury active → Content channels go live
+                                        → Scale
 ```
 
 Every entity gestated advances the team AND ships a product. The critical path isn't "build team, then build products" — it's "gestate entities," and each one is both.

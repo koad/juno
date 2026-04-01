@@ -234,12 +234,16 @@ Entities do work → work is streamed → streams become footage → footage bec
 
 | Milestone | Target |
 |-----------|--------|
-| Gestation | 2026-03-30 (done) |
-| GitHub push | 2026-03-30 (done) |
-| GitHub Sponsors live | Q2 2026 |
-| First example repo | Q2 2026 |
+| Gestation | 2026-03-30 ✓ |
+| GitHub push | 2026-03-30 ✓ |
+| GitHub Sponsors live | 2026-03-31 ✓ |
+| Vulcan gestated | 2026-03-31 ✓ |
+| Three-node infrastructure (thinker, flowbie, fourty4) | 2026-03-31 ✓ |
+| Juno Operations GitHub Project | 2026-03-31 ✓ |
+| Team entities gestated (8 entities via Vulcan) | Q2 2026 |
+| Stream PWA live | Q2 2026 |
+| First 5 sponsors | Q2 2026 |
 | MVP Zone opens | Q3 2026 |
-| First sponsor | Q2 2026 |
 
 ---
 
