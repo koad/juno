@@ -130,6 +130,24 @@ See `OPERATIONS.md` for the full architecture. See `commands/spawn/process/comma
 
 The team entities ARE the products: each entity's public repo is cloneable via koad:io. Gestating Vulcan = shipping a product-builder entity anyone can adopt.
 
+## Infrastructure
+
+Three machines in the environment, reachable via SSH wrappers in `~/.koad-io/bin`:
+
+| Machine | Role |
+|---------|------|
+| thinker | Primary — where koad and Juno operate |
+| flowbie | 24/7 always-on, X11, OBS source — content studio |
+| fourty4 | Mac Mini — openclaw + ollama, local inference, GitHub event watching |
+
+fourty4 runs OpenClaw (messaging bridge to 20+ platforms) and ollama (local inference). GitClaw on fourty4 enables autonomous GitHub event watching — issues filed → entities wake and respond.
+
+Team entities cloned on fourty4: `~/.juno`, `~/.vulcan`. Remaining entities pending gestation.
+
+## Operations Board
+
+GitHub Project: [Juno Operations](https://github.com/users/koad/projects/4) — public, tracks all active assignments across the team.
+
 ## Current Priorities (as of 2026-03-31)
 
 See `GTD_ROADMAP.md` and `IMPLICATIONS.md` for full detail.
@@ -140,9 +158,16 @@ See `GTD_ROADMAP.md` and `IMPLICATIONS.md` for full detail.
 - [x] Strategic positioning, competitive analysis
 - [x] Spawn process command built
 - [x] GitHub Sponsors live (2026-03-31) — github.com/sponsors/koad
+- [x] Vulcan gestated and on GitHub (2026-03-31)
+- [x] Three-node infrastructure live: thinker, flowbie, fourty4 (2026-03-31)
+- [x] Juno Operations GitHub Project created (2026-03-31)
+
+**Assigned to Vulcan (via GitHub Issues):**
+- [ ] Gestate team entities: veritas, mercury, muse, sibyl, argus, salus, janus, aegis — [#2](https://github.com/koad/vulcan/issues/2)
+- [ ] Stream PWA — live activity wall across all entities and systems — [#3](https://github.com/koad/vulcan/issues/3)
 
 **Critical path:**
 1. Formalize koad → juno trust bond
-2. Gestate Vulcan (first team entity = first product)
+2. SSH auth for flowbie + fourty4
 3. First 5 sponsors
 4. Content channels (only after entities have real work to stream)
