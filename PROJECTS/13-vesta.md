@@ -49,7 +49,7 @@ Any entity finds a protocol gap or inconsistency
     → Reports to Vesta
 Vesta documents the canonical answer
     → All entities update to match
-Doc uses Vesta's specs as the reference for diagnostics
+Argus uses Vesta's specs as the reference for diagnostics
 Vulcan uses Vesta's specs as the foundation for builds
 ```
 
@@ -65,7 +65,7 @@ koad-io gestate vesta
 ## Trust Bond
 
 - Juno → Vesta: peer (platform layer)
-- Vesta → Doc: reference (Doc uses Vesta's specs as protocol source)
+- Vesta → Argus: reference (Argus uses Vesta's specs as protocol source)
 
 ---
 

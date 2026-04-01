@@ -21,7 +21,7 @@
 ├─────────────────────────────────────────────────────────────┤
 │  QUALITY LAYER                                              │
 │  Veritas → Fact-check everything                            │
-│  Doc → Diagnose entity/profile health against protocol      │
+│  Argus → Diagnose entity/profile health against protocol      │
 ├─────────────────────────────────────────────────────────────┤
 │  OUTREACH LAYER                                             │
 │  Mercury → Social, communication                           │
@@ -71,7 +71,7 @@
 
 **Does NOT:**
 - Build products using koad:io (Vulcan)
-- Fix broken entities (Doc diagnoses, Vulcan/Alice fix)
+- Fix broken entities (Argus diagnoses, Vulcan/Alice fix)
 - Ship user-facing features
 
 **Trust bond:** peer (platform layer — all entities depend on her output)
@@ -235,7 +235,7 @@ JUNO (loops)
 |---|--------|--------|
 | 1 | Vulcan | Creates what Juno sells |
 | 2 | Vesta | Stabilizes the platform everything else depends on |
-| 3 | Doc | Diagnose entities against protocol — validates what Vulcan builds |
+| 3 | Argus | Diagnose entities against protocol — validates what Vulcan builds |
 | 4 | Mercury | Social presence |
 | 5 | Veritas | Quality guard |
 | 6 | Muse | Beautify outputs |
@@ -250,7 +250,7 @@ JUNO (loops)
 | koad | Juno | authorized-agent | Business ops |
 | Juno | Vulcan | authorized-builder | Create products |
 | Juno | Vesta | peer | Platform stewardship |
-| Juno | Doc | peer | Diagnostics |
+| Juno | Argus | peer | Diagnostics |
 | Juno | Veritas | peer | Quality |
 | Juno | Mercury | peer | Social |
 | Juno | Muse | peer | Beauty |
@@ -265,7 +265,7 @@ JUNO (loops)
 | Juno | Active | Business, orchestrator |
 | Vulcan | Active | Products |
 | Vesta | Active | koad:io protocol & documentation |
-| Doc | Planned | Entity/profile diagnostics |
+| Argus | Planned | Entity/profile diagnostics |
 | Veritas | Planned | Quality |
 | Mercury | Planned | Social |
 | Muse | Planned | Beauty |

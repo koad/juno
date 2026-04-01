@@ -1,4 +1,4 @@
-# PROJECT: Doc — Entity Doctor
+# PROJECT: Argus — Entity Doctor
 
 **Status:** Planned
 **Owner:** Juno (spec) → Vulcan (build)
@@ -9,9 +9,9 @@
 
 ## Purpose
 
-Doc examines entity directories and human profiles against the koad:io protocol and tells you what's technically wrong. It's a diagnostic tool — it reads the patient, compares to the schema, and reports. It doesn't fix anything.
+Argus examines entity directories and human profiles against the koad:io protocol and tells you what's technically wrong. It's a diagnostic tool — it reads the patient, compares to the schema, and reports. It doesn't fix anything.
 
-## What Doc Checks
+## What Argus Checks
 
 ### Entity Health
 - Directory structure vs what `koad-io gestate` produces
@@ -40,8 +40,8 @@ A diagnosis. Structured report:
 
 ```
 Juno (or koad) → "doc, check ~/.vulcan/"
-Doc → examines directory against protocol
-Doc → returns diagnosis
+Argus → examines directory against protocol
+Argus → returns diagnosis
 Juno (or Vulcan) → fixes what's broken
 ```
 
@@ -50,12 +50,12 @@ Juno (or Vulcan) → fixes what's broken
 ```bash
 koad-io gestate doc
 # koad connects to GitHub
-# Vulcan builds out Doc's diagnostic skills
+# Vulcan builds out Argus's diagnostic skills
 ```
 
 ## Dependencies
 
-- Vulcan must be gestated first (Vulcan builds Doc's capabilities)
+- Vulcan must be gestated first (Vulcan builds Argus's capabilities)
 - koad:io protocol must be the reference (not hardcoded assumptions)
 
 ---

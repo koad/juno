@@ -141,12 +141,24 @@ start_obs_stream
 # Auto-detects: tmux > gnome-terminal > xterm
 SPAWN_TERMINAL="${SPAWN_TERMINAL:-auto}"
 
-# Build the claude command
+# If a prompt is provided, post it as a GitHub Issue so the entity
+# discovers and picks it up naturally on session start.
+# Entities check their open issues on startup — this is the assignment mechanism.
 if [ -n "$PROMPT" ]; then
-    SPAWN_CMD="cd $ENTITY_DIR && claude . -p $(printf '%q' "$PROMPT")"
-else
-    SPAWN_CMD="cd $ENTITY_DIR && claude ."
+    echo "[spawn] Posting task as GitHub Issue on koad/$ENTITY_NAME..."
+    gh issue create \
+        --repo "koad/$ENTITY_NAME" \
+        --title "Task: $TIMESTAMP" \
+        --body "$PROMPT
+
+---
+*Spawned by Juno at $TIMESTAMP*" 2>/dev/null \
+        && echo "[spawn] Issue created — $ENTITY_NAME will pick it up on startup" \
+        || echo "[spawn] Warning: could not create issue (gh not available?)"
 fi
+
+# Always spawn interactively — entity orients itself, checks issues, acts
+SPAWN_CMD="cd $ENTITY_DIR && claude ."
 
 WRAP_CMD="$SPAWN_CMD; EXIT_CODE=\$?; echo ''; echo '[$ENTITY_NAME process ended with code '\$EXIT_CODE']'; sleep 3; exit \$EXIT_CODE"
 
