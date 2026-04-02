@@ -41,3 +41,4 @@ See `results/` — one file per entity call, named `<entity>-r<round>.md`
 | 11 | Veritas | R2 | Batch review all 3 Mercury posts | PASS — verified keys exist, went to primary sources | 3b70916 |
 | 12 | Sibyl | R2 | Deep competitive gap analysis | PASS — self-corrected R1, found 5 new competitors | 1e87d8e |
 | 13 | Argus | R2 | Salus/Janus/self health check | PASS — all healthy, retried GitHub API blip | 47f2e4b |
+| 14 | Janus | R2 | Watch bootcamp commit stream | PASS — applied protocol, escalated Aegis safety flag | d3ad401 |
