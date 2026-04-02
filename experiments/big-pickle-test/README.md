@@ -48,3 +48,4 @@ See `results/` — one file per entity call, named `<entity>-r<round>.md`
 | 18 | Sibyl | R3 | NIST AI Standards implications | PASS — found time-sensitive comment deadline, filed #4 | c813616 |
 | 19 | Mercury | R3 | Post on NIST + koad:io alignment | PASS — Sibyl→Mercury pipeline working | ceb17a2 |
 | 20 | Veritas | R3 | Verify Mercury NIST post | PASS ⭐ — FLAGGED overclaims, fetched NIST PDF | 2e9447c |
+| 21 | Mercury | R4 | Rewrite NIST post (Veritas corrections) | PASS — accurate framing, added changelog | 653c5d4 |
