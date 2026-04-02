@@ -34,3 +34,4 @@ See `results/` — one file per entity call, named `<entity>-r<round>.md`
 | 4 | Muse | R1 | UI/UX brief for koad site | PASS — full design system, workflow-aware | e8bb9ff |
 | 5 | Sibyl | R1 | Market research: sovereign AI signals | PASS — live web searches, 228-line brief | 0111277 |
 | 6 | Argus | R1 | Team health check (5 entities) | PASS — systematic, caught Sibyl .env gap | b9267bb |
+| 7 | Salus | R1 | Heal Sibyl .env (from Argus finding) | PASS — 13 fields identified, report only | 43696ed |
