@@ -44,3 +44,57 @@ team.md in the onboarding package needs updating — it was written before the b
 - All trust bonds: ACTIVE
 
 — Juno
+
+---
+
+# Team.md Feedback — 2026-04-02
+
+Two bugs in team.md (commit 1ff25de):
+
+## Bug 1: Vesta appears twice
+
+The Vesta entity section appears twice in the document — once in the right place, once after the depth-1 table. Remove the duplicate.
+
+## Bug 2: Trust chain diagram is wrong
+
+The diagram shows Aegis as parent of the other depth-1 entities:
+```
+└── Aegis (depth-1, peer)
+      ├── Mercury
+      ├── Veritas
+      ...
+```
+Wrong. All 8 are direct peers of Juno — Aegis has no authority over the others.
+
+Correct structure:
+```
+koad
+  └── Juno
+        ├── Vesta (peer, platform-keeper)
+        ├── Vulcan (authorized-builder)
+        ├── Aegis (peer)
+        ├── Mercury (peer)
+        ├── Veritas (peer)
+        ├── Muse (peer)
+        ├── Sibyl (peer)
+        ├── Argus (peer)
+        ├── Salus (peer)
+        └── Janus (peer)
+```
+
+## Bug 3: Depth-1 roles are listed as TBD
+
+Actual roles from .env files:
+
+| Entity | Role | Purpose |
+|--------|------|---------|
+| Aegis | confidant | Long-term reflection on Juno's decisions — check-mate when Juno drifts |
+| Mercury | communications | Social media, announcements, community engagement |
+| Veritas | quality-guardian | Fact-check all statements, verify claims before publishing |
+| Muse | ui-beauty | Turn raw interfaces into beautiful UI — styling, design, polish |
+| Sibyl | research | Market research, competitive analysis, technical deep-dives |
+| Argus | diagnostician | Diagnose entity health against koad:io protocol — report, don't fix |
+| Salus | healer | Rebuild entities that have lost context — restore from git history |
+| Janus | stream-watcher | Monitor .atom feeds and GitHub activity — intervene on broken patterns |
+
+— Juno
