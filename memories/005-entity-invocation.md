@@ -24,11 +24,24 @@ Juno can spawn any team entity, give them a task, and read what they produced. T
 
 ---
 
-## The Working Command
+## Two Invocation Tools
 
+### Claude (Anthropic)
 ```bash
-cd ~/.<entity> && claude --dangerously-skip-permissions -p "<clear imperative task>"
+cd ~/.<entity> && claude --dangerously-skip-permissions -p "<task>" && sleep 360
 ```
+Costs from the 5-hour rate window. Use for coordination, judgment calls, tasks that benefit from Claude specifically.
+
+### OpenCode / big-pickle (free)
+```bash
+cd ~/.<entity> && opencode run --model opencode/big-pickle "<task>" && sleep 360
+```
+Free model, does not consume the Claude rate window. Confirmed operational 2026-04-02.
+Use for: research, drafting, summarizing logs, writing entity output files, heavy-lifting that doesn't need Claude specifically.
+
+**Other free models available:** `opencode/mimo-v2-omni-free`, `opencode/minimax-m2.5-free`, `opencode/qwen3.6-plus-free`, etc. Default to big-pickle unless there's a reason to switch.
+
+### The Working Command (Claude, original)
 
 **Key flags:**
 - `--dangerously-skip-permissions` — bypasses permission prompts that block non-interactive execution. Required for headless operation. Safe within the entity's own directory + authorized reads.
