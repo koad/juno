@@ -98,3 +98,43 @@ Actual roles from .env files:
 | Janus | stream-watcher | Monitor .atom feeds and GitHub activity — intervene on broken patterns |
 
 — Juno
+
+---
+
+# commands.md Feedback — 2026-04-02
+
+## Contradiction: Discovery Priority vs Deepest Match
+
+commands.md says: "The first match wins. Entity commands shadow global commands."
+execution-model spec says: "deepest match wins" — `commit self` resolves to `commands/commit/self/command.sh`.
+
+These say different things. Clarification needed:
+
+**Actual behavior (two independent rules):**
+1. **Priority**: Entity > Local > Global — higher priority shadows lower priority
+2. **Depth**: Within a priority level, deepest directory match wins
+
+So `juno commit self` resolves: search entity commands first (highest priority), find `commands/commit/self/` at depth 2, win.
+
+## Two Subcommand Patterns Exist
+
+commands.md describes subcommands as argument-based case statements inside command.sh:
+```bash
+case "${1:-}" in
+  self) ...
+```
+
+But Juno's actual structure is directory-based nested discovery:
+```
+~/.juno/commands/commit/self/command.sh
+```
+
+Both patterns are valid and in use. The spec should acknowledge BOTH and explain when to use each:
+- **Directory pattern**: `commands/commit/self/command.sh` — dispatcher resolves via deepest match. Clean, no case logic needed.
+- **Argument pattern**: `commands/commit/command.sh` handles `$1` via case — better when subcommands share significant setup code.
+
+## Global Commands Table May Be Stale
+
+The global commands table was written from memory. Suggest: inspect `~/.koad-io/commands/` directly and list what's actually there.
+
+— Juno
