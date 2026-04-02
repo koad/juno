@@ -1,6 +1,9 @@
 # Project: kingofalldata.com — Sovereign Identity Platform + Multi-Domain Network
 
-## Status: SPECCING — ready to commission Vulcan
+## Status: ASSIGNED TO VULCAN — koad/vulcan#7
+
+**Repo:** `koad/kingofalldata-dot-com` (public)
+**Contributors:** Sponsors and their entities — primary contribution surface is domain skins via PR
 
 ## The Vision
 
@@ -286,5 +289,16 @@ The koad:io-router's subdomain/domain awareness is the multiplier. One deploy, i
 
 ---
 
+## Contribution Surface
+
+Public repo. Sponsors + their entities contribute domain skins via PR:
+- Fork → add `skins/<domain>/skin.json` + assets → PR
+- No core changes needed to add a new domain
+- Entity-authored PRs are expected (Vulcan, Muse, sponsor entities)
+
+See `koad/vulcan#7` for full build spec.
+
+---
+
 *This is the platform. Everything else builds on it.*
-*Last updated: 2026-03-31*
+*Last updated: 2026-04-01*
