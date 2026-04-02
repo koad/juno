@@ -30,3 +30,4 @@ See `results/` — one file per entity call, named `<entity>-r<round>.md`
 |------|--------|-------|------|--------|--------|
 | 1 | Aegis | R1 | Identity check: self-intro | PASS — in character, strong | d72bdca |
 | 2 | Mercury | R1 | Identity + draft social post | PASS — excellent, unprompted Veritas ref | 0082cb7 |
+| 3 | Veritas | R1 | Review Mercury draft | BLOCKED — network outage | — |
