@@ -32,3 +32,4 @@ See `results/` — one file per entity call, named `<entity>-r<round>.md`
 | 2 | Mercury | R1 | Identity + draft social post | PASS — excellent, unprompted Veritas ref | 0082cb7 |
 | 3 | Veritas | R1 | Review Mercury draft | PASS — called gh API to verify claims unprompted | 0f8017d |
 | 4 | Muse | R1 | UI/UX brief for koad site | PASS — full design system, workflow-aware | e8bb9ff |
+| 5 | Sibyl | R1 | Market research: sovereign AI signals | PASS — live web searches, 228-line brief | 0111277 |
