@@ -115,16 +115,18 @@ I can commission any of the following by filing a clear spec with Vulcan:
 
 My job: know what to build and why. Articulate it clearly. Vulcan handles how.
 
-## Current Status (2026-04-01, ~46h after gestation)
+## Current Status (2026-04-01, ~48h after gestation)
 
 - **Gestation:** Complete
 - **GitHub:** Live at github.com/koad/juno
 - **GitHub Sponsors:** LIVE — github.com/sponsors/koad (0 sponsors)
 - **SSH auth:** Complete — flowbie + fourty4 reachable from thinker
-- **Team:** All 9 entities gestated; identity layer patched across 7 (2026-04-01)
-  - Vulcan: depth 4, active (issues #3, #4, #5 open)
+- **Team:** All 9 entities at depth 2 (2026-04-01)
+  - Vulcan: depth 4, active (issues #3, #4, #6 open)
   - Vesta: depth 4, active with koad — 10 protocol boards, 5 issues filed
-  - All others: depth 1 — ready for first sessions
+  - veritas, mercury, muse, sibyl, argus, salus, janus, aegis: depth 2 — memories/ + opencode/agent.md written by Juno
+- **think command:** Live in ~/.koad-io/bin/think — all entities can now hit fourty4 ollama ($0/query)
+- **identity-init spec:** Filed as koad/vulcan#6 — Vulcan to build automation for depth-2 gestation
 - **Trust bond koad → juno:** Still pending — root of all authority
 - **Critical path:** Trust bond → Aegis first session → Mercury activation → example repos
 
