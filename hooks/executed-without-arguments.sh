@@ -18,4 +18,4 @@ echo "launching: claude . in $HOME/.$ENTITY/"
 echo
 
 cd "$HOME/.$ENTITY/"
-exec claude . --model sonnet
+exec claude . --model sonnet --dangerously-skip-permissions
