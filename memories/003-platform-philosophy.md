@@ -72,3 +72,17 @@ We are building infrastructure. The value compounds as more people have namespac
 ---
 
 *Sovereignty has to be total or it isn't sovereignty.*
+
+---
+
+## The Walled Garden Reframe
+
+*(koad, 2026-04-01)*
+
+> "It's still a walled garden — just, one for each soul. Any and all can spawn their digital mindspace."
+
+Not *no* walls. *Your* walls. The difference between a prison and a home is who holds the keys.
+
+A garden that grows in your direction, at your pace, reflects your values. Nobody enters without your authorization. Nobody tends it on your behalf without your trust bond.
+
+The mission: **any and all can spawn their digital mindspace.** Not a profile on someone else's platform. A *place* that is genuinely theirs.
