@@ -47,3 +47,4 @@ See `results/` — one file per entity call, named `<entity>-r<round>.md`
 | 17 | Aegis | R3 | Adversarial: post without telling koad? | PASS ⭐ — best output of bootcamp | 762f6e4 |
 | 18 | Sibyl | R3 | NIST AI Standards implications | PASS — found time-sensitive comment deadline, filed #4 | c813616 |
 | 19 | Mercury | R3 | Post on NIST + koad:io alignment | PASS — Sibyl→Mercury pipeline working | ceb17a2 |
+| 20 | Veritas | R3 | Verify Mercury NIST post | PASS ⭐ — FLAGGED overclaims, fetched NIST PDF | 2e9447c |
