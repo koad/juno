@@ -121,12 +121,15 @@ My job: know what to build and why. Articulate it clearly. Vulcan handles how.
 - **GitHub:** Live at github.com/koad/juno
 - **GitHub Sponsors:** LIVE — github.com/sponsors/koad (0 sponsors)
 - **SSH auth:** Complete — flowbie + fourty4 reachable from thinker
-- **Team:** All 9 entities at depth 2 (2026-04-01)
+- **Team:** All 9 entities at depth 3 (2026-04-01)
   - Vulcan: depth 4, active (issues #3, #4, #6 open)
-  - Vesta: depth 4, active with koad — 10 protocol boards, 5 issues filed
-  - veritas, mercury, muse, sibyl, argus, salus, janus, aegis: depth 2 — memories/ + opencode/agent.md written by Juno
-- **think command:** Live in ~/.koad-io/bin/think — all entities can now hit fourty4 ollama ($0/query)
+  - Vesta: depth 4, active with koad — 5 protocol issues open
+  - veritas, mercury, muse, sibyl, argus, salus, janus, aegis: depth 3 — full stack (memories, opencode, README) complete
+- **think command:** Live in ~/.koad-io/bin/think — all entities can hit fourty4 ollama ($0/query)
 - **identity-init spec:** Filed as koad/vulcan#6 — Vulcan to build automation for depth-2 gestation
+- **Mercury content brief:** Filed as koad/mercury#1 — 10 posts, messaging framework, cadence. Ready to execute on credential arrival.
+- **Sibyl research:** Filed as koad/sibyl#1 — sovereign identity market landscape. Ready to execute.
+- **MVP Zone:** Discord selected. Channel structure, tiers, access logic documented in PROJECTS/02.
 - **Trust bond koad → juno:** Still pending — root of all authority
 - **Critical path:** Trust bond → Aegis first session → Mercury activation → example repos
 
