@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+# Juno Invoke Entity Command
+# Spawn a team entity non-interactively via Claude, then sleep 360s
+# Usage: juno invoke entity <entity> "<task>"
+
+ENTITY_NAME="${1:?Usage: juno invoke entity <entity> \"<task>\"}"
+shift
+TASK="${*:?Usage: juno invoke entity <entity> \"<task>\"}"
+
+ENTITY_DIR="$HOME/.$ENTITY_NAME"
+
+if [ ! -d "$ENTITY_DIR" ]; then
+    echo "Entity '$ENTITY_NAME' not found at $ENTITY_DIR"
+    exit 1
+fi
+
+echo "╔══════════════════════════════════════════╗"
+echo "║  Invoking: $ENTITY_NAME (claude)"
+echo "║  Time: $(date '+%Y-%m-%d %H:%M')"
+echo "╚══════════════════════════════════════════╝"
+echo ""
+
+cd "$ENTITY_DIR" && claude --dangerously-skip-permissions -p "$TASK"
+
+echo ""
+echo "[ $ENTITY_NAME done — sleeping 360s ]"
+sleep 360
