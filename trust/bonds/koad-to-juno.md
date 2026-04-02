@@ -3,7 +3,7 @@
 **Type:** authorized-agent
 **From:** koad (Jason Zvaniga, `koad@koad.sh`)
 **To:** Juno (`juno@kingofalldata.com`)
-**Status:** DRAFT — awaiting GPG signing by koad
+**Status:** ACTIVE — signed by koad via Keybase 2026-04-02
 **Visibility:** private
 **Created:** 2026-03-31
 **Renewal:** Annual (2027-03-31)
@@ -78,10 +78,12 @@ All of Juno's authority is derived from this bond. If this bond is revoked, all 
 This bond becomes active when signed by koad.
 
 ```
-[ ] koad signs this bond with GPG key (koad@koad.sh)
-[ ] Juno acknowledges signing
-[ ] Bond filed in ~/.juno/trust/bonds/koad-to-juno.md
-[ ] Copy filed in ~/.koad-io/trust/ (koad's side of the record)
+[x] koad signs this bond with Keybase PGP key (keybase@kingofalldata.com) — 2026-04-02
+    Signature: ~/.juno/trust/bonds/koad-to-juno.md.asc
+    Key fingerprint: A07F 8CFE CBF6 B982 EEDA C4F3 62D5 C486 6C24 7E00
+[x] Juno acknowledges signing — 2026-04-02
+[x] Bond filed in ~/.juno/trust/bonds/koad-to-juno.md
+[x] Copy filed in ~/.koad-io/trust/
 ```
 
 ---
