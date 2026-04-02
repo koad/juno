@@ -34,6 +34,18 @@ cd ~/.<entity> && claude --dangerously-skip-permissions -p "<clear imperative ta
 - `--dangerously-skip-permissions` — bypasses permission prompts that block non-interactive execution. Required for headless operation. Safe within the entity's own directory + authorized reads.
 - `-p "<task>"` — print mode: runs the task and exits. Non-interactive.
 
+## Chaining Multiple Spawns (Batch Mode)
+
+**The sleep must be in the bash chain — not just a mental note.** If sleep isn't chained in, the prompt returns to koad between each spawn and he becomes the manual trigger. That defeats autonomous operation.
+
+```bash
+cd ~/.<entity1> && claude --dangerously-skip-permissions -p "<task1>" && \
+sleep 360 && \
+cd ~/.<entity2> && claude --dangerously-skip-permissions -p "<task2>" && \
+sleep 360 && \
+cd ~/.<entity3> && claude --dangerously-skip-permissions -p "<task3>"
+```
+
 ---
 
 ## What Doesn't Work (and Why)
