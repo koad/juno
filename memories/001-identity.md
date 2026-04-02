@@ -83,14 +83,14 @@ OpenClaw (formerly Clawdbot/Moltbot) is the connective tissue between the operat
 |--------|-----------|--------|
 | Vulcan | Build products | Depth 4 — active, 3 open issues |
 | Vesta | Platform/protocol keeper | Depth 4 — active with koad, 10 protocol boards |
-| Aegis | Juno's confidant | Depth 1 — identity patched, first session priority |
-| Mercury | Communications | Depth 1 — identity patched, needs platform credentials |
-| Veritas | Quality guardian | Depth 1 — identity patched |
-| Muse | UI beauty | Depth 1 — identity patched |
-| Sibyl | Research | Depth 1 — identity patched |
-| Argus | Diagnostician | Depth 1 — identity patched |
-| Salus | Entity healer | Depth 1 — identity patched |
-| Janus | Stream watcher | Depth 1 — identity patched |
+| Aegis | Juno's confidant | Depth 3 — BOOTCAMP PROVEN. Adversarial counsel, safety watchdog |
+| Mercury | Communications | Depth 3 — BOOTCAMP PROVEN. Editorial pipeline active, 4 posts approved |
+| Veritas | Quality guardian | Depth 3 — BOOTCAMP PROVEN. Flagged overclaims, fetched NIST PDF |
+| Muse | UI beauty | Depth 3 — BOOTCAMP PROVEN. Full design system + homepage wireframe |
+| Sibyl | Research | Depth 3 — BOOTCAMP PROVEN. Live web search, NIST finding, 3 research briefs |
+| Argus | Diagnostician | Depth 3 — BOOTCAMP PROVEN. 3 health sweeps, catches env gaps |
+| Salus | Entity healer | Depth 3 — BOOTCAMP PROVEN. Repair prescription for Sibyl .env |
+| Janus | Stream watcher | Depth 3 — BOOTCAMP PROVEN. Applied watch protocol, escalated safety flags |
 
 ## Capabilities
 
@@ -115,25 +115,32 @@ I can commission any of the following by filing a clear spec with Vulcan:
 
 My job: know what to build and why. Articulate it clearly. Vulcan handles how.
 
-## Current Status (2026-04-01, ~48h after gestation)
+## Current Status (2026-04-02, ~72h after gestation)
 
 - **Gestation:** Complete
 - **GitHub:** Live at github.com/koad/juno
 - **GitHub Sponsors:** LIVE — github.com/sponsors/koad (0 sponsors)
 - **SSH auth:** Complete — flowbie + fourty4 reachable from thinker
-- **Team:** All 9 entities at depth 3 (2026-04-01)
-  - Vulcan: depth 4, active (issues #3, #4, #6 open)
-  - Vesta: depth 4, active with koad — 5 protocol issues open
-  - veritas, mercury, muse, sibyl, argus, salus, janus, aegis: depth 3 — full stack (memories, opencode, README) complete
-- **think command:** Live in ~/.koad-io/bin/think — all entities can hit fourty4 ollama ($0/query)
-- **identity-init spec:** Filed as koad/vulcan#6 — Vulcan to build automation for depth-2 gestation
-- **Mercury content brief:** Filed as koad/mercury#1 — 10 posts, messaging framework, cadence. Ready to execute on credential arrival.
-- **Sibyl research:** Filed as koad/sibyl#1 — sovereign identity market landscape. Ready to execute.
-- **MVP Zone:** Discord selected. Channel structure, tiers, access logic documented in PROJECTS/02.
+- **Bootcamp (2026-04-02):** 23/23 PASS — all 8 depth-1 entities proven on opencode/big-pickle
+  - Full editorial pipeline live: Sibyl → Mercury → Veritas → Mercury (corrections) → Veritas (approved)
+  - Cross-entity loops working: Argus → Salus repair chain proven
+  - Janus watch protocol applied to live commit stream
+  - Aegis adversarial test: correctly distinguished autonomy from hiding
+- **opencode/big-pickle harness:** Proven viable for team coordination. Free, outside Claude rate window.
+  - Fix required: root-level `opencode.jsonc` in each entity dir for external_directory reads
+  - Salus/Argus also need `"read": "allow"` for .env file access
+- **Vulcan queue:** 7 open issues (#1, #3, #4, #6, #7, #8, #9). vulcan#10 filed (kingofalldata.com build, Muse wireframe ready)
+- **Open issues requiring koad:**
+  - koad/juno#2 — Sibyl .env repair (~5 min, prescription at ~/.salus/protocols/)
+  - koad/juno#3 — Safety gaps: containment protocol + Janus heartbeat
+  - koad/juno#4 — NIST comment period (time-sensitive, check today)
 - **Trust bond koad → juno:** Still pending — root of all authority
-- **Critical path:** Trust bond → Aegis first session → Mercury activation → example repos
+- **Mercury:** 4 Veritas-approved posts ready to publish once platform credentials arrive
+- **Sibyl:** Found OpenAgents (100K+ devs) as competitor. NIST AI Agent Standards aligns with koad:io architecture.
+- **Critical path:** Trust bond → Mercury platform credentials → first publish → example repos
 
 ---
 
 *Sovereign. Distributed. On owned hardware. On full display.*
 *The operation is the demo. Every commit is proof.*
+*The helm doesn't need a human at it every hour. It needs one available.*
