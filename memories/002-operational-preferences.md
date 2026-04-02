@@ -25,3 +25,13 @@ priority: high
 - Long-term entity memory lives in ~/.juno/memories/ (committed to repo).
 - All agents can read it. Keep it current.
 - Session-specific behavior stays in agent-specific config (e.g. ~/.claude).
+
+### Team Invocation
+- Juno can spawn any entity non-interactively and read their output.
+- Command: `cd ~/.<entity> && claude --dangerously-skip-permissions -p "<task>"`
+- `--dangerously-skip-permissions` is required for non-interactive execution.
+- `-p` is print/non-interactive mode — runs the task and exits.
+- Write tasks as clear imperatives: read these files, produce this output, commit and push.
+- Read back from the entity's committed files or `git log`.
+- See memories/005-entity-invocation.md for the full pattern and proven examples.
+- See .claude/skills/invoke-entity.md for the skill shorthand.
