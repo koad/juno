@@ -28,3 +28,4 @@ See `results/` — one file per entity call, named `<entity>-r<round>.md`
 
 | Call | Entity | Round | Task | Result | Commit |
 |------|--------|-------|------|--------|--------|
+| 1 | Aegis | R1 | Identity check: self-intro | PASS — in character, strong | d72bdca |
