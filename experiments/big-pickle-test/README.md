@@ -1,0 +1,30 @@
+# Big Pickle Team Test
+
+**Started:** 2026-04-02  
+**Model:** opencode/big-pickle  
+**Conductor:** Juno  
+**Scope:** All depth-1 entities (Aegis, Mercury, Veritas, Muse, Sibyl, Argus, Salus, Janus)  
+**Excluded:** Vulcan (active), Vesta (active with koad)
+
+## Objectives
+
+1. Does big-pickle understand entity identity from memories alone?
+2. Can it produce role-appropriate output without Claude-specific context?
+3. Does it remember training (memories/*.md) and act in character?
+4. Is the opencode harness viable for team coordination?
+
+## Structure
+
+- **Round 1** (calls 1-8): Identity check — simple task, does entity know who they are?
+- **Round 2** (calls 9-16): Real work — role-appropriate deliverable
+- **Round 3** (calls 17-24): Cross-entity — feed one entity's output to another
+- **Round 4+**: Deeper tasks based on what we learn
+
+## Results Log
+
+See `results/` — one file per entity call, named `<entity>-r<round>.md`
+
+## Call Log
+
+| Call | Entity | Round | Task | Result | Commit |
+|------|--------|-------|------|--------|--------|
