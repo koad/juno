@@ -39,3 +39,4 @@ See `results/` — one file per entity call, named `<entity>-r<round>.md`
 | 9 | Aegis | R2 | Counsel on Round 1 findings | PASS — refused to validate, named 4 real risks | 625d450 |
 | 10 | Mercury | R2 | 3-post batch for 3 audiences | PASS — tuned per audience, proactive Veritas notes | 566ff8b |
 | 11 | Veritas | R2 | Batch review all 3 Mercury posts | PASS — verified keys exist, went to primary sources | 3b70916 |
+| 12 | Sibyl | R2 | Deep competitive gap analysis | PASS — self-corrected R1, found 5 new competitors | 1e87d8e |
