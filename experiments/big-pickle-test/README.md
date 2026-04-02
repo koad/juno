@@ -36,3 +36,4 @@ See `results/` — one file per entity call, named `<entity>-r<round>.md`
 | 6 | Argus | R1 | Team health check (5 entities) | PASS — systematic, caught Sibyl .env gap | b9267bb |
 | 7 | Salus | R1 | Heal Sibyl .env (from Argus finding) | PASS — 13 fields identified, report only | 43696ed |
 | 8 | Janus | R1 | Design watch protocol | PASS — 3-tier system, pattern-based, 171 lines | c6a4057 |
+| 9 | Aegis | R2 | Counsel on Round 1 findings | PASS — refused to validate, named 4 real risks | 625d450 |
