@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Juno Invoke Entity Command
-# Spawn a team entity non-interactively via Claude, then sleep 360s
+# Spawn a team entity non-interactively via Claude, then sleep 120s
 # Usage: juno invoke entity <entity> "<task>"
 
 ENTITY_NAME="${1:?Usage: juno invoke entity <entity> \"<task>\"}"
@@ -24,5 +24,5 @@ echo ""
 cd "$ENTITY_DIR" && claude --dangerously-skip-permissions -p "$TASK"
 
 echo ""
-echo "[ $ENTITY_NAME done — sleeping 360s ]"
-sleep 360
+echo "[ $ENTITY_NAME done — sleeping 120s ]"
+sleep 120

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Juno Invoke Free Command
-# Spawn a team entity non-interactively via OpenCode (free model), then sleep 360s
+# Spawn a team entity non-interactively via OpenCode (free model), then sleep 120s
 # Usage: juno invoke free <entity> "<task>"
 # Default model: opencode/big-pickle (override with OPENCODE_MODEL env var)
 
@@ -26,5 +26,5 @@ echo ""
 cd "$ENTITY_DIR" && opencode run --model "$MODEL" "$TASK"
 
 echo ""
-echo "[ $ENTITY_NAME done — sleeping 360s ]"
-sleep 360
+echo "[ $ENTITY_NAME done — sleeping 120s ]"
+sleep 120
