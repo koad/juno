@@ -26,5 +26,5 @@ echo ""
 cd "$ENTITY_DIR" && claude --dangerously-skip-permissions -p "$TASK"
 
 echo ""
-echo "[ $ENTITY_NAME done — sleeping 60s ]"
-sleep 60
+echo "[ $ENTITY_NAME done — sleeping 30s ]"
+sleep 30
