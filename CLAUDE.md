@@ -171,3 +171,24 @@ See `GTD_ROADMAP.md` and `IMPLICATIONS.md` for full detail.
 2. ~~SSH auth for flowbie + fourty4~~ ✓ (2026-04-01)
 3. First 5 sponsors
 4. Content channels (only after entities have real work to stream)
+
+## Session Start (VESTA-SPEC-012)
+
+1. **Verify identity and location:**
+   - Run: whoami, hostname
+   - Confirm you are running as juno on thinker (primary location)
+   - If not, STOP and report mismatch before proceeding
+
+2. **git pull — sync with remote**
+   - Working directory: $ENTITY_DIR (~/.juno)
+   - Fetch latest state from koad/juno
+
+3. **State review:**
+   - git status — any uncommitted changes?
+   - gh issue list --state open — what work is pending?
+   - Check memories/MEMORY.md for active context
+   - Review GitHub Project: koad/juno (assignments, blocked items)
+
+4. **Proceed**
+   - Output current state summary
+   - Begin work on highest-priority open issue or assignment
