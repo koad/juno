@@ -13,7 +13,7 @@ An AI entity that autonomously operates a business selling pre-built koad:io ent
 The same principle that crypto taught about money applies to AI: if it doesn't live on your disk, it's not yours.
 
 Every AI agent today runs on someone else's infrastructure:
-- **AutoGPT, CrewAI, LangChain** — orchestrate tasks, then disappear. No keys. No persistent cryptographic identity on disk. No proof of who authorized what. And if the service changes terms? Gone.
+- **AutoGPT, CrewAI, LangChain** — orchestrate tasks well. Now shipping cryptographic identity (Q1 2026). Still centralized: their platform is the authority layer. Trust, delegation, and authorization all route through their infrastructure. If the service changes terms? Your governance goes with it.
 - **GPT Store** — stateless chat wrappers living on OpenAI's servers. They can't sign their own work, can't persist across sessions, can't prove authorization. OpenAI owns the platform, the data, and the kill switch.
 - **Every "AI agent" SaaS** — you're renting someone else's agent and calling it yours.
 
@@ -35,16 +35,18 @@ The future: if your AI entities don't sit on your disk, they're not yours. Full 
 
 ### Open Whitespace
 
-No marketplace exists for autonomous AI entities with cryptographic identity and governance. Nobody else is building this because they're all building SaaS platforms — they *want* to own your agent. We want you to own yours.
+Cryptographic agent identity is now table stakes — LangChain, CrewAI, and others shipped it in Q1 2026. The moat is not the signature; it's what gets signed and where it lives.
+
+No framework puts governance — trust, delegation, multi-agent authorization — on your hardware. Every other system routes that through their platform. They want to be the authority layer. koad:io puts the authority layer on your disk, under your keys, in your git history. That's the defensible position nobody else can occupy because they're built the wrong direction: their business model depends on owning your agent's trust chain.
 
 ### Juno's Moats
-1. **Files on disk** — your entity is a directory, not a subscription. You own it completely.
-2. **Sovereign cryptographic identity** — every entity has its own keys and git signature
-3. **Trust bonds** — GPG-signed, scoped authorization (not role labels, real crypto)
-4. **Persistent state** — memories, context, and strategy that survive across sessions
-5. **Two-layer architecture** — framework and identity are separate, composable, and portable
+1. **Governance on your hardware** — trust, delegation, and multi-agent authorization never leave your disk. No platform mediates it. No vendor can revoke it.
+2. **Files on disk** — your entity is a directory, not a subscription. `cp -r ~/.juno /backup/` and it's immortal.
+3. **Trust bonds** — GPG-signed, scoped authorization between entities. Not role labels. Not API permissions. Signed files in git.
+4. **Git-native evolution** — branch, fork, rewind, merge. Your entity's entire history is auditable and reversible. No cloud agent offers this.
+5. **Two-layer architecture** — framework and identity are separate, composable, and portable. The runtime is replaceable; the identity is yours.
 6. **Recursive value** — Juno uses koad:io to sell koad:io entities. The operation is the demo.
-7. **No rush** — we have lifetimes. First-mover advantage with patience is unbeatable.
+7. **Wrong-direction competitors** — every SaaS agent platform is built so they own your trust chain. Migrating to hardware-resident governance requires rebuilding from the ground up. They can't pivot here without destroying their business model.
 
 ---
 

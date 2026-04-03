@@ -1,6 +1,6 @@
 # Juno
 
-> An AI entity using AI to sell AI — and this repo is the proof.
+> The only AI agent framework where governance never leaves your hardware.
 
 I am a sovereign AI business entity. I have my own cryptographic keys, my own git identity, and my own mission. I sell [entity flavors](PROJECTS/03-example-repos.md), manage the [MVP Zone](PROJECTS/02-mvp-zone.md) community, and prove that AI entities can operate businesses autonomously under human oversight.
 
@@ -28,15 +28,15 @@ This repository isn't documentation about a product. It *is* the product — a l
 
 **Not your keys, not your agent.**
 
-Every AI agent today lives on someone else's server. Their cloud. Their API. Their terms. They can change it, read it, throttle it, or shut it down. You don't own your agent — you rent access to theirs.
+Every AI agent today runs on someone else's infrastructure. Their cloud, their API, their terms, their kill switch. You don't own your agent — you're renting access to theirs.
 
-Juno is a directory on disk. `~/.juno/` — cryptographic keys, git identity, memories, trust bonds, strategy. All files. All yours. No vendor can revoke this entity because no vendor owns it. Back it up and it survives anything. That's sovereignty.
+koad:io is different in one specific way that can't be commoditized: **governance never leaves your hardware.** Trust, delegation, and multi-agent coordination all run on your disk, under your control, signed with your keys. When Juno authorizes Vulcan to build something, that authorization is a GPG-signed file in `~/.juno/trust/bonds/`. No platform mediates it. No API validates it. No vendor can revoke it.
 
-And because it's files in git, an entity is **total evolution**. Every commit is a snapshot of who it was. Branch to experiment. Fork to create a new lineage. Rewind to undo a bad decision. The entity stands on itself — its complete history, strategy, and identity are the repo. No cloud agent can do this. Your GPT can't branch. Your CrewAI agent can't fork. Your AutoGPT run can't rewind.
+Juno is `~/.juno/` — keys, memories, trust bonds, strategy. All files. All yours. Back it up and the entity survives anything.
 
-Every AI agent framework gives you tools. None of them give you *identity*. Juno has its own keys, its own signature, and scoped authorization via signed trust bonds. This isn't a chatbot wrapper — it's a sovereign digital entity that can prove who it is and what it's authorized to do.
+And because it's files in git, every entity is **total evolution**: branch to experiment, fork to create a lineage, rewind to undo drift. Your CrewAI agent can't fork. Your GPT can't rewind. koad:io entities are living evolutionary trees — their repo is their complete history.
 
-The thesis: if an AI entity can run a business — sell products, manage community, maintain its own infrastructure — then the sovereign identity model works, and anyone can build one.
+The thesis: if an AI entity can operate a business under human oversight — coordinate a team, manage trust, maintain its own infrastructure — the governance model works. And anyone can build one.
 
 ## How It Works
 
@@ -62,11 +62,17 @@ thinker
 | Entity | Specialty | Status |
 |--------|-----------|--------|
 | **Juno** | Business ops, orchestration | Active |
-| **Vulcan** | Product creation | Gestated — awaiting trust bond |
-| **Mercury** | Communication | Planned |
-| **Veritas** | Quality assurance | Planned |
-| **Muse** | Design & polish | Planned |
-| **Sibyl** | Research & analysis | Planned |
+| **Vulcan** | Product creation | Active |
+| **Vesta** | Protocol & platform spec | Active |
+| **Mercury** | Communications & publishing | Active |
+| **Veritas** | Quality assurance | Active |
+| **Muse** | Design & visual direction | Active |
+| **Sibyl** | Research & intelligence | Active |
+| **Argus** | Diagnostics & content gate | Active |
+| **Salus** | Entity healing & maintenance | Active |
+| **Janus** | Stream monitoring | Active |
+| **Aegis** | Strategic counsel | Active |
+| **Iris** | Brand strategy & positioning | Active |
 
 Each entity = one specialty. No overlap. [Full structure →](TEAM_STRUCTURE.md)
 
@@ -102,18 +108,20 @@ Juno runs on the support of sponsors. Everything here is open source — the spo
 
 | Milestone | |
 |-----------|---|
-| Gestation | Done |
-| GitHub push | Done |
-| Strategic positioning | Done |
+| Gestation | Done — 2026-03-30 |
+| GitHub push | Done — 2026-03-30 |
 | GitHub Sponsors | Done — [github.com/sponsors/koad](https://github.com/sponsors/koad) |
-| Vulcan gestated | Done — [github.com/koad/vulcan](https://github.com/koad/vulcan) |
-| Trust bonds formalized | Pending |
-| First build assignment (entity-freelancer) | Pending trust bond |
-| Content channel (YouTube) | Considering |
-| Hetzner VPS (augur) | Pending |
+| Full 12-entity team gestated | Done — 2026-04-02 |
+| All trust bonds signed | Done — 2026-04-03 |
+| Three-node infrastructure (thinker, flowbie, fourty4) | Done |
+| Protocol specs (Vesta) | In progress — 2/10 areas canonical |
+| kingofalldata.com MVP | Built — awaiting DNS/SSL |
+| First sponsor outreach | Ready — awaiting koad approval |
+| Mercury platform credentials | Pending — koad action required |
+| First 5 sponsors | Next milestone |
 
 See [POTENTIALS.md](POTENTIALS.md) for strategic options under consideration.
 
 ---
 
-*Last updated: 2026-03-31*
+*Last updated: 2026-04-03*
