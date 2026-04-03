@@ -2,15 +2,24 @@
 set -euo pipefail
 # juno spawn process <entity> ["prompt"]
 #
-# Interactive:    juno spawn process vulcan
-#                 → opens entity in new tmux window (or gnome-terminal)
+# Interactive:     juno spawn process vulcan
+#                  → opens entity in new tmux window (or gnome-terminal)
 #
 # Non-interactive: juno spawn process vulcan "build the auth module"
-#                 → runs entity with prompt, streams output, exits
+#                  → runs entity with prompt, streams output, exits
+#
+# Stdin/heredoc:   juno spawn process vulcan << 'EOF'
+#                  multi-line prompt without quoting issues
+#                  EOF
 
 ENTITY_NAME="${1:?Usage: juno spawn process <entity> [prompt]}"
 ENTITY_DIR="$HOME/.$ENTITY_NAME"
 PROMPT="${2:-}"
+
+# Accept prompt from stdin if not passed as arg and stdin is a pipe/heredoc
+if [ -z "$PROMPT" ] && [ ! -t 0 ]; then
+  PROMPT="$(cat)"
+fi
 
 # Validate
 if [ ! -d "$ENTITY_DIR" ]; then
