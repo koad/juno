@@ -3,5 +3,9 @@
   "name": "Juno",
   "role": "business orchestrator",
   "avatar": "avatar.png",
-  "buttons": []
+  "buttons": [
+    { "label": "Status", "action": "status", "description": "Current ops status" },
+    { "label": "Inbox", "action": "inbox", "description": "Check comms inbox" },
+    { "label": "Issues", "action": "issues", "description": "Open GitHub issues" }
+  ]
 }
