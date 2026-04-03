@@ -36,6 +36,37 @@
 
 ---
 
+## ENTITY IDENTITY MODEL
+
+**The entity IS the directory.** Identity and responsibility live in files, not OS users.
+
+| What carries identity | How |
+|-----------------------|-----|
+| `~/.juno/` directory | The entity's sovereign space |
+| `juno` command | Invocation point — runs in entity context |
+| `GIT_AUTHOR_NAME=Juno` | Authorship on every commit |
+| `memories/` | Persistent context and commitments |
+| `id/` keys | Cryptographic identity |
+| Trust bond | Scope of authorization |
+| GitHub Issues | Current assigned responsibilities |
+
+**Linux users are for process isolation, not identity.** A separate OS user adds no clarity
+to what an entity is or what it's responsible for — that's encoded in the directory, the
+trust bond, and the issue tracker.
+
+### When to use a Linux user vs a command
+
+| Scenario | Model |
+|----------|-------|
+| Interactive work (workstation) | `juno` command in koad's userspace |
+| Daemon / autonomous operation (server) | Separate user *may* make sense for process isolation |
+| Identity clarity | Always the directory model — user accounts add nothing here |
+
+The command model is preferred. `juno` as a command in koad's PATH means the entity is
+immediately accessible, context is loaded via the hook, and there is no session juggling.
+
+---
+
 ## COMMAND SYSTEM
 
 ### Discovery Priority
