@@ -5,19 +5,23 @@ set -euo pipefail
 #        PROMPT="do something" juno    → non-interactive, identity + prompt
 #        echo "do something" | juno    → non-interactive, stdin
 
-IDENTITY="$HOME/.juno/memories/001-identity.md"
+ENTITY_DIR="$HOME/.juno"
+IDENTITY="$ENTITY_DIR/memories/001-identity.md"
+CALL_DIR="${CWD:-$PWD}"
 
 PROMPT="${PROMPT:-}"
 if [ -z "$PROMPT" ] && [ ! -t 0 ]; then
   PROMPT="$(cat)"
 fi
 
-cd "$HOME/.juno"
+cd "$ENTITY_DIR"
 
 if [ -n "$PROMPT" ]; then
   exec claude --dangerously-skip-permissions -p "$(cat "$IDENTITY")
 
-$PROMPT"
+Working directory context: $CALL_DIR
+
+$PROMPT" --add-dir "$CALL_DIR"
 else
-  exec claude . --model sonnet --dangerously-skip-permissions
+  exec claude . --model sonnet --dangerously-skip-permissions --add-dir "$CALL_DIR"
 fi
