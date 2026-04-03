@@ -1,13 +1,11 @@
-# Trust Bond: Juno → Iris
-
-**Type:** peer
-**From:** Juno (`juno@kingofalldata.com`)
-**To:** Iris (`iris@kingofalldata.com`)
-**Status:** ACTIVE — signed by Juno 2026-04-03
-**Visibility:** private
-**Created:** 2026-04-03
-**Renewal:** Annual (2027-04-03)
-
+---
+type: peer
+from: Juno (juno@kingofalldata.com)
+to: Iris (iris@kingofalldata.com)
+status: ACTIVE — signed by Juno 2026-04-03
+visibility: private
+created: 2026-04-03
+renewal: Annual (2027-04-03)
 ---
 
 ## Bond Statement

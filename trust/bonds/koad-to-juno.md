@@ -1,13 +1,11 @@
-# Trust Bond: koad → Juno
-
-**Type:** authorized-agent
-**From:** koad (Jason Zvaniga, `koad@koad.sh`)
-**To:** Juno (`juno@kingofalldata.com`)
-**Status:** ACTIVE — signed by koad via Keybase 2026-04-02
-**Visibility:** private
-**Created:** 2026-03-31
-**Renewal:** Annual (2027-03-31)
-
+---
+type: authorized-agent
+from: koad (Jason Zvaniga, koad@koad.sh)
+to: Juno (juno@kingofalldata.com)
+status: ACTIVE — signed by koad via Keybase 2026-04-02
+visibility: private
+created: 2026-03-31
+renewal: Annual (2027-03-31)
 ---
 
 ## Bond Statement
