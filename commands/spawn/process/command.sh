@@ -13,8 +13,11 @@ set -euo pipefail
 #                  EOF
 
 ENTITY_NAME="${1:?Usage: juno spawn process <entity> [prompt]}"
-ENTITY_DIR="$HOME/.$ENTITY_NAME"
 PROMPT="${2:-}"
+
+# Load cascade environment per VESTA-SPEC-005
+source "$HOME/.koad-io/.env" 2>/dev/null || true
+source "$HOME/.$ENTITY_NAME/.env" 2>/dev/null || { ENTITY_DIR="$HOME/.$ENTITY_NAME"; }
 
 # Accept prompt from stdin if not passed as arg and stdin is a pipe/heredoc
 if [ -z "$PROMPT" ] && [ ! -t 0 ]; then

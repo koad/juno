@@ -8,7 +8,9 @@ ENTITY_NAME="${1:?Usage: juno invoke entity <entity> \"<task>\"}"
 shift
 TASK="${*:?Usage: juno invoke entity <entity> \"<task>\"}"
 
-ENTITY_DIR="$HOME/.$ENTITY_NAME"
+# Load cascade environment per VESTA-SPEC-005
+source "$HOME/.koad-io/.env" 2>/dev/null || true
+source "$HOME/.$ENTITY_NAME/.env" 2>/dev/null || { ENTITY_DIR="$HOME/.$ENTITY_NAME"; }
 
 if [ ! -d "$ENTITY_DIR" ]; then
     echo "Entity '$ENTITY_NAME' not found at $ENTITY_DIR"
@@ -24,5 +26,5 @@ echo ""
 cd "$ENTITY_DIR" && claude --dangerously-skip-permissions -p "$TASK"
 
 echo ""
-echo "[ $ENTITY_NAME done — sleeping 120s ]"
-sleep 120
+echo "[ $ENTITY_NAME done — sleeping 60s ]"
+sleep 60

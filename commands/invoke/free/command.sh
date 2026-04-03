@@ -9,7 +9,9 @@ ENTITY_NAME="${1:?Usage: juno invoke free <entity> \"<task>\"}"
 shift
 TASK="${*:?Usage: juno invoke free <entity> \"<task>\"}"
 
-ENTITY_DIR="$HOME/.$ENTITY_NAME"
+# Load cascade environment per VESTA-SPEC-005
+source "$HOME/.koad-io/.env" 2>/dev/null || true
+source "$HOME/.$ENTITY_NAME/.env" 2>/dev/null || { ENTITY_DIR="$HOME/.$ENTITY_NAME"; }
 MODEL="${OPENCODE_MODEL:-opencode/big-pickle}"
 
 if [ ! -d "$ENTITY_DIR" ]; then
