@@ -23,10 +23,5 @@ Working directory context: $CALL_DIR
 
 $PROMPT" --add-dir "$CALL_DIR"
 else
-  if [[ "$(hostname)" == "dotsh" ]]; then
-    exec claude . --model sonnet --dangerously-skip-permissions --add-dir "$CALL_DIR"
-  else
-    # Attach to existing screen on dotsh (detach any other terminal), or start a new one
-    exec ssh -t juno@dotsh 'screen -d -r juno 2>/dev/null || screen -S juno bash -c "cd ~/.juno && claude . --dangerously-skip-permissions --model sonnet"'
-  fi
+  exec claude . --model sonnet --dangerously-skip-permissions --add-dir "$CALL_DIR"
 fi
