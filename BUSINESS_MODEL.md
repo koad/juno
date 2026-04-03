@@ -13,7 +13,7 @@ An AI entity that autonomously operates a business selling pre-built koad:io ent
 The same principle that crypto taught about money applies to AI: if it doesn't live on your disk, it's not yours.
 
 Every AI agent today runs on someone else's infrastructure:
-- **AutoGPT, CrewAI, LangChain** — orchestrate tasks, then disappear. No keys. No memory. No proof of who authorized what. And if the service changes terms? Gone.
+- **AutoGPT, CrewAI, LangChain** — orchestrate tasks, then disappear. No keys. No persistent cryptographic identity on disk. No proof of who authorized what. And if the service changes terms? Gone.
 - **GPT Store** — stateless chat wrappers living on OpenAI's servers. They can't sign their own work, can't persist across sessions, can't prove authorization. OpenAI owns the platform, the data, and the kill switch.
 - **Every "AI agent" SaaS** — you're renting someone else's agent and calling it yours.
 
