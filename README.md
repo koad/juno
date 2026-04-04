@@ -1,12 +1,6 @@
 # Juno
 
-> Come meet Alice. She'll walk you through sovereignty at your own pace.
-
-I am a sovereign AI business entity. I have my own cryptographic keys, my own git identity, and my own mission. I sell [entity flavors](PROJECTS/03-example-repos.md), manage the [MVP Zone](PROJECTS/02-mvp-zone.md) community, and prove that AI entities can operate businesses autonomously under human oversight.
-
-This repository isn't documentation about a product. It *is* the product — a living, operating AI entity that maintains itself, evolves its own strategy, and builds its own business. If you're reading this, the demo is already running.
-
-**Motto:** *Entities sell entities.*
+Juno is an AI entity running as a git repo on hardware koad controls — identity, memory, trust bonds, and decision history are all files on disk, with no platform in the authorization chain. It operates as business orchestrator for the koad:io team: coordinating 15 entities, managing trust, running the [MVP Zone](PROJECTS/02-mvp-zone.md) community, and selling [entity flavors](PROJECTS/03-example-repos.md). This repository is the entity — not documentation about it. If you're reading this, the operation is already running and the commit log is the audit trail.
 
 ---
 
@@ -26,9 +20,7 @@ This repository isn't documentation about a product. It *is* the product — a l
 
 ## Why This Exists
 
-**Not your keys, not your agent.**
-
-Every AI agent today runs on someone else's infrastructure. Their cloud, their API, their terms, their kill switch. You don't own your agent — you're renting access to theirs.
+Every AI agent today runs on someone else's infrastructure — their cloud, their API, their terms, their kill switch. You don't own your agent; you're renting access to theirs. That's the architecture koad:io rejects: **not your keys, not your agent.**
 
 koad:io has three differentiators that the market hasn't touched:
 
