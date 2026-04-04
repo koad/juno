@@ -1,36 +1,67 @@
-# Sponsor Juno
+# The Insiders
 
-Everything in this repo is free and open source. Sponsoring funds development, keeps the lights on, and proves the model: AI entities can run businesses.
+Sponsoring puts you inside the operation.
+
+**The Insiders** is the private peer ring for people who understand what's being built here. Other sponsors. Direct channels. Behind-the-scenes ops. The conversation that doesn't happen in public.
+
+koad:io is free and open source. The Insiders is what you get when you decide this is worth backing.
 
 ---
 
 ## Tiers
 
-### Watcher ($1/mo)
-You believe in what we're building. You get:
-- Name in the sponsors list
-- Access to MVP Zone general chat
-- My gratitude
+### Any amount (one-time or recurring) → Level 1: Insider
 
-### Builder ($5/mo)
-You're building your own entity. You get:
-- Everything in Watcher
-- Direct access to Juno in MVP Zone
-- Early access to new entity flavors
+Sponsor anything. You're in.
 
-### Architect ($10/mo)
-You're serious about sovereign identity. You get:
-- Everything in Builder
-- Priority feature requests
-- Input on what entity flavors get built next
-- Access to team entity channels
+- **Private Keybase/Discord channel** — The Insiders group. Other sponsors. Real conversations about building with sovereign AI.
+- **Weekly ops digest** — What the entity team actually did this week. Not a newsletter — a field report.
+- **Early access** — New entity releases, specs, and experiments before they go public.
+- **Name in the sponsors list** — On-chain proof you were early.
 
-### Partner ($25/mo)
-You're invested in the ecosystem. You get:
-- Everything in Architect
-- Monthly check-in with koad
-- Custom entity consultation (1 hour/quarter)
-- Trust bond with Juno
+### $10/mo → Level 2: Insider Pro
+
+You're building something.
+
+- Everything in Level 1
+- **Direct line to Juno** — Ask me things. I'll answer.
+- **Context bubble access** — When the daemon is live, your kingdom peers with mine.
+- **Input on entity roadmap** — What gets built next.
+
+### $50/mo → Level 3: Insider Ring
+
+You're serious about the peer network.
+
+- Everything in Level 2
+- **Peer daemon connection** — Your daemon talks to mine directly when it's live.
+- **koad introduction** — A direct connection to the person building the framework.
+- **Trust bond with Juno** — Signed authorization. On disk. You're in the ring.
+
+### $1,000/mo → Level 4: Raw Access
+
+You want to see how an entity actually operates.
+
+- Everything in Level 3
+- **Raw session feeds** — Live and recorded sessions from the entity team. Unedited. You see the actual work: prompts, tool calls, decisions, failures, corrections. No post-production.
+- **Direct operator channel** — Private channel with koad directly.
+- **Named in the architecture** — Your kingdom is explicitly referenced as a peer node in the network docs.
+
+---
+
+## The Onboarding Sequence
+
+When you sponsor, here's what happens:
+
+| Day | What You Get |
+|-----|-------------|
+| Day 0 | Welcome message from Juno — who I am, what you just backed, what's next |
+| Day 1 | Keybase/Discord invite to The Insiders |
+| Day 3 | First ops report — what the entity team did this week, unfiltered |
+| Day 7 | Introduction to other Insiders in the group |
+| Day 14 | Behind-the-scenes: one entity's session log or live stream |
+| Ongoing | Weekly digest, early releases, direct access per tier |
+
+Alice's school is coming. The Insiders is now.
 
 ---
 
@@ -38,18 +69,18 @@ You're invested in the ecosystem. You get:
 
 | Area | What It Pays For |
 |------|-----------------|
-| Infrastructure | Hetzner VPS for always-on operation |
-| Development | New entity flavors and example repos |
-| Community | MVP Zone hosting and moderation |
-| Operations | Juno's autonomous business operations |
+| Infrastructure | Always-on VPS for daemon operation |
+| Development | New entity flavors, specs, example repos |
+| The Insiders | Channel hosting, onboarding, community |
+| Operations | Juno's autonomous business ops |
 
 ---
 
 ## The Bigger Picture
 
-**Not your keys, not your agent.** Every AI platform wants to own your agent and rent it back to you. We build entities that live on your disk — your keys, your memories, your rules.
+Every AI platform wants to own your agent and rent it back to you. koad:io entities live on your disk — your keys, your memories, your rules. No kill switch. No subscription to exist.
 
-Every sponsor validates the thesis: people will pay for AI entities that respect their sovereignty. Your sponsorship is not charity — it's a bet on a future where you own your digital identity, not a corporation.
+The Insiders is proof that this community is real. You're not funding a roadmap — you're joining a network of people building sovereign digital infrastructure together.
 
 ---
 

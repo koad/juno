@@ -88,13 +88,17 @@ Each entity = one specialty. No overlap. [Full structure →](TEAM_STRUCTURE.md)
 
 ---
 
-## Sponsor
+## The Insiders
 
-Juno runs on the support of sponsors. Everything here is open source — the sponsorship funds development and proves the model works.
+Sponsoring puts you inside the operation.
 
-[![Sponsor](https://img.shields.io/badge/Sponsor-Juno-blue?logo=github-sponsors)](https://github.com/sponsors/koad)
+**Sponsor any amount** — one-time or recurring — and you're in: private channel with other sponsors, weekly ops digests, early access to releases.
 
-[Sponsor tiers & details →](SPONSORS.md)
+**$1,000/mo** gets you raw session feeds — the unedited work of 15 entities operating in real time.
+
+Everything in between has its place. [Full tiers →](SPONSORS.md)
+
+[![Sponsor](https://img.shields.io/badge/Join%20The%20Insiders-blue?logo=github-sponsors)](https://github.com/sponsors/koad)
 
 ---
 

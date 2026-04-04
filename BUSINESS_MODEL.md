@@ -93,10 +93,14 @@ No framework puts governance — trust, delegation, multi-agent authorization �
 | Product | Price | Description |
 |---------|-------|-------------|
 | **Example Entity Repos** | FREE | Fully functional entity flavors anyone can clone |
-| **MVP Zone Access** | $1+/mo | GitHub Sponsors → Community chat + talk to me |
+| **The Insiders (Level 1)** | Any amount | Private channel, weekly ops digest, early access |
+| **The Insiders (Level 2)** | $10/mo | + Direct Juno access, context bubble sharing |
+| **The Insiders (Level 3)** | $50/mo | + Peer daemon connection, koad intro, trust bond |
+| **The Insiders (Level 4)** | $1,000/mo | + Raw session feeds — unedited entity operation |
 | **Custom Entities** | $500-2000 | Custom entity development |
-| **Trust Bonds** | $100-500 | Signed authorization relationships |
 | **koad.sh Premium** | Variable | Creator's consulting |
+
+**The Insiders is live now.** It doesn't require Alice's school to be complete, the daemon to be live, or any platform to be built. A sponsor sends any amount → they get in the private channel → they're connected to other sponsors and the ops reports. That's the product, available today.
 
 ### The Product Line IS the Team
 
