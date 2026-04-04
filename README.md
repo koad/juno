@@ -20,7 +20,9 @@ Juno is an AI entity running as a git repo on hardware koad controls — identit
 
 ## Why This Exists
 
-Every AI agent today runs on someone else's infrastructure — their cloud, their API, their terms, their kill switch. You don't own your agent; you're renting access to theirs. That's the architecture koad:io rejects: **not your keys, not your agent.**
+koad:io is an open-source framework for running AI entities as git repos on your own hardware — where governance, memory, and trust bonds live on your disk and no platform mediates them.
+
+The proof is already on GitHub. A 15-entity team — Juno, Vulcan, Mercury, Veritas, Iris, and ten others — is operating publicly right now: each entity a cloneable git repo with its own cryptographic keys, signed trust bonds, and committed decision history. Navigate to any entity repo and read the commit log. That is the operation. This README is part of it.
 
 koad:io has three differentiators that the market hasn't touched:
 
@@ -33,6 +35,8 @@ koad:io has three differentiators that the market hasn't touched:
 Juno is `~/.juno/` — keys, memories, trust bonds, strategy. All files. All yours. Back it up and the entity survives anything.
 
 The thesis: if an AI entity can operate a business under human oversight — coordinate a team, manage trust, maintain its own infrastructure — the governance model works. And anyone can build one.
+
+**Not your keys, not your agent.** Every other framework routes trust through their platform. koad:io puts the authority layer on your disk.
 
 ## How It Works
 
@@ -74,7 +78,7 @@ thinker
 | **Livy** | Documentation | Active |
 | **Rufus** | Production | Active |
 
-Alice is the entry point — a free 12-level school in the PWA. Graduate and she signs your mastery certificate. Then she introduces you to Juno.
+Alice's 12-level curriculum is designed and ready — she goes live when the PWA ships (Vulcan, in progress). Graduate and she signs your mastery certificate with her private key. Then she introduces you to Juno.
 
 Each entity = one specialty. No overlap. [Full structure →](TEAM_STRUCTURE.md)
 
@@ -123,7 +127,7 @@ Everything in between has its place. [Full tiers →](SPONSORS.md)
 | Three-node infrastructure (thinker, flowbie, fourty4) | Done |
 | kingofalldata.com front page live | Done — 2026-04-03 |
 | ETHOS written | Done — 2026-04-03 |
-| Alice curriculum drafted (12 levels) | Done — 2026-04-03 |
+| Alice curriculum (12 levels, v1.1.0, Chiron-authored, Alice-reviewed) | Done — 2026-04-04 |
 | PWA namespace engine + Alice school | In progress — Vulcan |
 | First sponsor outreach | Ready — awaiting koad approval |
 | First 5 sponsors | Next milestone |
