@@ -8,12 +8,24 @@ set -euo pipefail
 # Non-interactive: juno spawn process vulcan "build the auth module"
 #                  → runs entity with prompt, streams output, exits
 #
+# Windowed:        juno spawn process vulcan --window "build the auth module"
+#                  → opens new tmux window / gnome-terminal, sends prompt inside it
+#
 # Stdin/heredoc:   juno spawn process vulcan << 'EOF'
 #                  multi-line prompt without quoting issues
 #                  EOF
 
-ENTITY_NAME="${1:?Usage: juno spawn process <entity> [prompt]}"
-PROMPT="${2:-}"
+ENTITY_NAME="${1:?Usage: juno spawn process <entity> [--window] [prompt]}"
+shift
+
+# Parse --window flag
+WINDOWED=false
+if [ "${1:-}" = "--window" ]; then
+  WINDOWED=true
+  shift
+fi
+
+PROMPT="${1:-}"
 
 # Load cascade environment per VESTA-SPEC-005
 source "$HOME/.koad-io/.env" 2>/dev/null || true
@@ -31,26 +43,32 @@ if [ ! -d "$ENTITY_DIR" ]; then
   exit 1
 fi
 
-# Non-interactive: prompt provided — run directly, stream output
+# Build the claude command
 if [ -n "$PROMPT" ]; then
+  CLAUDE_CMD="claude --dangerously-skip-permissions -p $(printf '%q' "$PROMPT") --add-dir $ENTITY_DIR"
+else
+  CLAUDE_CMD="claude . --dangerously-skip-permissions"
+fi
+
+SPAWN_CMD="cd $ENTITY_DIR && $CLAUDE_CMD"
+
+# Non-interactive with no window: run directly, stream output
+if [ -n "$PROMPT" ] && [ "$WINDOWED" = false ]; then
   exec claude \
     --dangerously-skip-permissions \
     -p "$PROMPT" \
     --add-dir "$ENTITY_DIR"
 fi
 
-# Interactive: no prompt — open a live session
+# Interactive or windowed: open a terminal
 SESSION="$ENTITY_NAME"
-SPAWN_CMD="cd $ENTITY_DIR && claude . --dangerously-skip-permissions"
 
 if [ -n "${TMUX:-}" ]; then
-  # Inside tmux: open new window
-  tmux new-window -n "$SESSION" "$SPAWN_CMD"
+  tmux new-window -n "$SESSION" "bash -c '$SPAWN_CMD; exec bash'"
 elif command -v gnome-terminal &>/dev/null; then
-  gnome-terminal --title="$ENTITY_NAME" -- bash -c "$SPAWN_CMD; exec bash"
+  gnome-terminal --title="$ENTITY_NAME" -- bash -c "$SPAWN_CMD; exec bash" &
 elif command -v xterm &>/dev/null; then
   xterm -title "$ENTITY_NAME" -e bash -c "$SPAWN_CMD; exec bash" &
 else
-  # Fallback: run in current shell
   exec bash -c "$SPAWN_CMD"
 fi
