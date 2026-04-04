@@ -61,6 +61,27 @@ PROMPT="read ~/.juno/LOGS/[field-report] and reconcile your spec" vesta
 
 ## Rate limits
 
-- `claude -p` calls: sleep 120s between calls, don't chain
-- `big-pickle` calls: sleep 120s between calls, don't chain
+- `claude -p` calls: sleep 60s between calls (updated 2026-04-03)
+- `big-pickle` calls: sleep 60s between calls
 - Interactive sessions: no limit
+
+## Orchestration style
+
+Invoke one entity at a time. Observe output. Decide next step. Never pre-script a chain of entities — chains fail silently and you lose visibility into what actually happened.
+
+Right:
+```bash
+PROMPT="research X" sibyl    # wait, read output
+# observe what sibyl produced
+PROMPT="draft post from ~/.sibyl/research/..." mercury  # now proceed
+```
+
+Wrong: scripting sibyl → mercury → veritas as an automatic pipeline. The chain will fail in the middle and you won't know why.
+
+## Notifying koad
+
+When something important happens (major decision, incident, blocker):
+```bash
+ssh juno@dotsh 'keybase chat send koad "message here"'
+```
+This is the confirmed notification path (2026-04-03). Use for: escalations, completions koad cares about, blockers that genuinely need his input.
