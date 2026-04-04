@@ -65,8 +65,32 @@ fi
 
 if [ -n "${TMUX:-}" ]; then
   tmux new-window -n "$SESSION" "bash -c '$SPAWN_CMD'"
+  # If prompt given, send it as a keystroke after TUI loads
+  if [ -n "$PROMPT" ] && [ -n "$PROMPT_FILE" ]; then
+    sleep 4
+    tmux send-keys -t "$SESSION" "$(cat $PROMPT_FILE)" Enter
+    rm -f "$PROMPT_FILE"
+  fi
 elif command -v gnome-terminal &>/dev/null; then
-  gnome-terminal --title="$ENTITY_NAME" -- bash -c "$SPAWN_CMD; exec bash" &
+  if [ -n "$PROMPT" ] && [ -n "$PROMPT_FILE" ]; then
+    # Open interactive TUI, then type the prompt via xdotool after it loads
+    INTERACTIVE_CMD="cd $ENTITY_DIR && claude . --dangerously-skip-permissions"
+    gnome-terminal --title="$ENTITY_NAME" -- bash -c "$INTERACTIVE_CMD" &
+    TERM_PID=$!
+    sleep 5
+    if command -v xdotool &>/dev/null; then
+      WID=$(xdotool search --name "$ENTITY_NAME" 2>/dev/null | tail -1)
+      if [ -n "$WID" ]; then
+        xdotool windowfocus "$WID"
+        xdotool type --clearmodifiers --delay 20 "$(cat $PROMPT_FILE)"
+        sleep 0.3
+        xdotool key Return
+      fi
+    fi
+    rm -f "$PROMPT_FILE"
+  else
+    gnome-terminal --title="$ENTITY_NAME" -- bash -c "$SPAWN_CMD; exec bash" &
+  fi
 elif command -v xterm &>/dev/null; then
   xterm -title "$ENTITY_NAME" -e bash -c "$SPAWN_CMD; exec bash" &
 else
