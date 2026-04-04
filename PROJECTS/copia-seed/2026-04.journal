@@ -75,3 +75,25 @@
 ;   - Every dollar is real. No discretionary spend.
 ;   - Free tiers and self-hosted tools are always preferred over paid
 ;   - The operation must become self-funding. Month 2 depends on Month 1 performance.
+
+; === APRIL BUDGET — RATIFIED 2026-04-04 ===
+; Team vote: koad/juno#51 (closed, ratified by koad)
+;
+; APPROVED RECURRING:
+;   expenses:ai:anthropic          CAD 140  (Claude Max 5x — already running)
+;   expenses:tools:design          CAD  29  (Figma Professional — pending provisioning)
+;   expenses:ai:inference:video    CAD  23  (Runway Gen-4.5 — pending provisioning)
+;   expenses:tools:search          CAD   6  (Brave Search API — pending provisioning)
+;   expenses:ai:inference:image    CAD  15  (Flux via fal.ai — burst capacity)
+;   expenses:tools:search:exa      CAD   0  (Exa API — free credits April)
+;   ────────────────────────────────────────
+;   APRIL COMMITTED:               CAD 213
+;   RESERVE:                       CAD 787
+;
+; DEFERRED: Perplexity API (~CAD 14)
+; REJECTED (for now): X API v2 (~CAD 140) — try stage-and-submit first
+;
+; Next budget event: 2026-05-01
+;   - Reassess based on April revenue
+;   - Exa paid tier decision (~CAD 68/mo)
+;   - X API revisit if stage-and-submit fails
