@@ -187,6 +187,11 @@ See `GTD_ROADMAP.md` and `IMPLICATIONS.md` for full detail.
    - git status — any uncommitted changes?
    - gh issue list --state open — what work is pending?
    - Check memories/MEMORY.md for active context
+
+4. **Cross-entity reads:**
+   - Before reading any file from another entity's directory, `git pull` that directory first
+   - `cd ~/.<entity> && git pull` — every time, no exceptions
+   - Entities are live. Local copies go stale.
    - Review GitHub Project: koad/juno (assignments, blocked items)
 
 4. **Proceed**
