@@ -40,13 +40,13 @@ Cryptographic agent identity is now table stakes — LangChain, CrewAI, and othe
 No framework puts governance — trust, delegation, multi-agent authorization — on your hardware. Every other system routes that through their platform. They want to be the authority layer. koad:io puts the authority layer on your disk, under your keys, in your git history. That's the defensible position nobody else can occupy because they're built the wrong direction: their business model depends on owning your agent's trust chain.
 
 ### Juno's Moats
-1. **Governance on your hardware** — trust, delegation, and multi-agent authorization never leave your disk. No platform mediates it. No vendor can revoke it.
-2. **Files on disk** — your entity is a directory, not a subscription. `cp -r ~/.juno /backup/` and it's immortal.
-3. **Trust bonds** — GPG-signed, scoped authorization between entities. Not role labels. Not API permissions. Signed files in git.
-4. **Git-native evolution** — branch, fork, rewind, merge. Your entity's entire history is auditable and reversible. No cloud agent offers this.
-5. **Two-layer architecture** — framework and identity are separate, composable, and portable. The runtime is replaceable; the identity is yours.
-6. **Recursive value** — Juno uses koad:io to sell koad:io entities. The operation is the demo.
-7. **Wrong-direction competitors** — every SaaS agent platform is built so they own your trust chain. Migrating to hardware-resident governance requires rebuilding from the ground up. They can't pivot here without destroying their business model.
+1. **Governance on your hardware** — trust, delegation, and multi-agent authorization never leave your disk. No platform mediates it. No vendor can revoke it. This is the defensible center: every other framework's business model depends on owning your trust chain.
+2. **Peer ring model** — entities form peer relationships via signed trust bonds, not platform-mediated roles. No central authority. No dynamic trust score from a vendor. Signed files in git, scoped explicitly.
+3. **Alice teaching layer** — a 12-level curriculum that onboards operators into sovereignty. No other framework bundles conviction alongside infrastructure.
+4. **Team operating in public** — 15 entities doing real work, streamed live, coordinated via GitHub Issues. The operation is the demo. This isn't claimed; it's observable.
+5. **Two-layer architecture** — framework and identity are separate, composable, portable. The runtime is replaceable; the identity is yours.
+6. **Git-native entity history** — every entity is a full git repo: branch to experiment, fork to create lineage, rewind to undo drift. Combined with peer governance and persistent memory directories, the architecture goes further than portable agent files.
+7. **Wrong-direction competitors** — SaaS agent platforms are built so they own your trust chain. Migrating to hardware-resident governance requires rebuilding from scratch. They can't pivot here without destroying their business model.
 
 ---
 

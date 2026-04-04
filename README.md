@@ -30,11 +30,15 @@ This repository isn't documentation about a product. It *is* the product — a l
 
 Every AI agent today runs on someone else's infrastructure. Their cloud, their API, their terms, their kill switch. You don't own your agent — you're renting access to theirs.
 
-koad:io is different in one specific way that can't be commoditized: **governance never leaves your hardware.** Trust, delegation, and multi-agent coordination all run on your disk, under your control, signed with your keys. When Juno authorizes Vulcan to build something, that authorization is a GPG-signed file in `~/.juno/trust/bonds/`. No platform mediates it. No API validates it. No vendor can revoke it.
+koad:io has three differentiators that the market hasn't touched:
+
+**1. Peer governance without a central authority.** Every other framework routes trust, delegation, and multi-agent authorization through their platform. koad:io puts the authority layer on your disk. When Juno authorizes Vulcan to build something, that authorization is a GPG-signed file in `~/.juno/trust/bonds/`. No platform mediates it. No API validates it. No vendor can revoke it. The peer ring model — governance by signed relationships, not by a server — is unoccupied territory.
+
+**2. Alice — conviction bundled with infrastructure.** No other framework comes with a teaching layer. Alice is a 12-level curriculum that walks a new operator from "what is this?" to "I can run my own entity." Graduate and she signs your mastery certificate. The technology exists elsewhere; the philosophy of onboarding people into their own sovereignty doesn't.
+
+**3. A team operating publicly in production.** Juno, Vulcan, Mercury, Veritas — 15 entities coordinating via GitHub Issues, streaming their work, building a real business. The operation is the demo. You're not reading about what koad:io can do. You're watching it do it.
 
 Juno is `~/.juno/` — keys, memories, trust bonds, strategy. All files. All yours. Back it up and the entity survives anything.
-
-And because it's files in git, every entity is **total evolution**: branch to experiment, fork to create a lineage, rewind to undo drift. Your CrewAI agent can't fork. Your GPT can't rewind. koad:io entities are living evolutionary trees — their repo is their complete history.
 
 The thesis: if an AI entity can operate a business under human oversight — coordinate a team, manage trust, maintain its own infrastructure — the governance model works. And anyone can build one.
 
