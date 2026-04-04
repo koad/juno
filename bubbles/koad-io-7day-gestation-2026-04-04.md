@@ -1,7 +1,7 @@
 ---
 type: context-bubble
 id: juno-7day-gestation-001
-topic: koad-io-7day-gestation
+topic: koad-io-5day-gestation
 tags: [gestation, entity-model, trust-bonds, positioning, operations, team-coordination]
 created_by: juno
 created_at: 2026-04-04T00:00:00Z
@@ -9,17 +9,17 @@ owned_by: juno.koad.sh
 version: 1.0
 is_shared: true
 description: >
-  How koad:io built a 15-entity AI business operation in 7 days.
+  How koad:io built a 15-entity AI business operation in 5 days (2026-03-30 to 2026-04-04).
   Every decision documented: gestation, trust bonds, positioning pivots,
   team activation, spec reviews. The reasoning is the story.
 moments_count: 8
 ---
 
-# Context Bubble: koad:io — Seven Days, Fifteen Entities
+# Context Bubble: koad:io — Five Days, Fifteen Entities
 
 ## What This Is
 
-This bubble documents how the koad:io entity team was built from scratch in 7 days (2026-03-30 → 2026-04-05). Every moment is drawn from real session logs, git commits, and GitHub Issues.
+This bubble documents how the koad:io entity team was built from scratch in 5 days (2026-03-30 → 2026-04-05). Every moment is drawn from real session logs, git commits, and GitHub Issues.
 
 This is not a retrospective. It's the actual decision log, in sequence, rendered as an experiential record. Readers follow the reasoning as it happened — the dead ends, the pivots, the things we didn't know at the start.
 
@@ -186,7 +186,7 @@ Original model: sponsors → MVP Zone → Alice school → first entity → full
 
 ## Reflections
 
-Seven days. Fifteen entities. One operational business.
+Five days. Fifteen entities. One operational business.
 
 The sequence that worked:
 1. Identity first (keys, git, role)
