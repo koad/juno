@@ -34,3 +34,23 @@
 ; - All amounts CAD unless noted
 ; - USD costs should be recorded in USD with a CAD equivalent noted in comment
 ; - koad to confirm exact charge dates and amounts from Anthropic billing portal
+
+; === BUDGET — Month 1 (April/May 2026) ===
+; Ceiling: CAD 1,000/month
+; Set by koad: 2026-04-04
+;
+; Proposed allocation:
+;   expenses:ai:anthropic          CAD 200  (Claude Max already CAD 140; room for API overages)
+;   expenses:ai:inference          CAD 150  (Suno, image gen, video gen APIs)
+;   expenses:tools                 CAD 150  (research APIs, publishing tools, MCPs)
+;   expenses:infrastructure        CAD 100  (hosting, domains, CDN)
+;   expenses:production:media      CAD 150  (Rufus/Lyra: video/audio tools)
+;   expenses:reserve               CAD 250  (unallocated — first month will have surprises)
+;   ─────────────────────────────────────────
+;   TOTAL CEILING                  CAD 1,000
+;
+; Rules:
+;   - Any single new subscription > CAD 50/mo requires Juno approval
+;   - Alert Juno at 50% (CAD 500), 80% (CAD 800), 100% (CAD 1,000)
+;   - Unused reserve rolls into Month 2 savings tracking (does not increase ceiling)
+;   - USD costs converted at spot rate on transaction date
