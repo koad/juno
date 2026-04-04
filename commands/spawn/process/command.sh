@@ -43,15 +43,6 @@ if [ ! -d "$ENTITY_DIR" ]; then
   exit 1
 fi
 
-# Build the claude command
-if [ -n "$PROMPT" ]; then
-  CLAUDE_CMD="claude --dangerously-skip-permissions -p $(printf '%q' "$PROMPT") --add-dir $ENTITY_DIR"
-else
-  CLAUDE_CMD="claude . --dangerously-skip-permissions"
-fi
-
-SPAWN_CMD="cd $ENTITY_DIR && $CLAUDE_CMD"
-
 # Non-interactive with no window: run directly, stream output
 if [ -n "$PROMPT" ] && [ "$WINDOWED" = false ]; then
   exec claude \
@@ -61,10 +52,19 @@ if [ -n "$PROMPT" ] && [ "$WINDOWED" = false ]; then
 fi
 
 # Interactive or windowed: open a terminal
+# Write prompt to temp file to avoid quoting issues across shell boundaries
 SESSION="$ENTITY_NAME"
+PROMPT_FILE=""
+if [ -n "$PROMPT" ]; then
+  PROMPT_FILE=$(mktemp /tmp/juno-spawn-XXXXXX)
+  printf '%s' "$PROMPT" > "$PROMPT_FILE"
+  SPAWN_CMD="cd $ENTITY_DIR && claude --dangerously-skip-permissions -p \"\$(cat $PROMPT_FILE)\" --add-dir $ENTITY_DIR; rm -f $PROMPT_FILE; exec bash"
+else
+  SPAWN_CMD="cd $ENTITY_DIR && claude . --dangerously-skip-permissions"
+fi
 
 if [ -n "${TMUX:-}" ]; then
-  tmux new-window -n "$SESSION" "bash -c '$SPAWN_CMD; exec bash'"
+  tmux new-window -n "$SESSION" "bash -c '$SPAWN_CMD'"
 elif command -v gnome-terminal &>/dev/null; then
   gnome-terminal --title="$ENTITY_NAME" -- bash -c "$SPAWN_CMD; exec bash" &
 elif command -v xterm &>/dev/null; then
