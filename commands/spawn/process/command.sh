@@ -2,14 +2,18 @@
 set -euo pipefail
 # juno spawn process <entity> ["prompt"]
 #
+# Routes through the entity's hook (executed-without-arguments.sh), which knows
+# where the entity lives (local, wonderland, fourty4, etc). When the daemon is
+# live, routing will be automatic — hooks are the interim solution.
+#
 # Interactive:     juno spawn process vulcan
-#                  → opens entity in new tmux window (or gnome-terminal)
+#                  → portal to entity's home machine
 #
 # Non-interactive: juno spawn process vulcan "build the auth module"
-#                  → runs entity with prompt, streams output, exits
+#                  → sends task to entity, returns clean result (json .result)
 #
-# Windowed:        juno spawn process vulcan --window "build the auth module"
-#                  → opens new tmux window / gnome-terminal, sends prompt inside it
+# Windowed:        juno spawn process vulcan --window
+#                  → opens new terminal window with interactive portal
 #
 # Stdin/heredoc:   juno spawn process vulcan << 'EOF'
 #                  multi-line prompt without quoting issues
@@ -27,72 +31,37 @@ fi
 
 PROMPT="${1:-}"
 
-# Load cascade environment per VESTA-SPEC-005
-source "$HOME/.koad-io/.env" 2>/dev/null || true
-source "$HOME/.$ENTITY_NAME/.env" 2>/dev/null || { ENTITY_DIR="$HOME/.$ENTITY_NAME"; }
-
 # Accept prompt from stdin if not passed as arg and stdin is a pipe/heredoc
 if [ -z "$PROMPT" ] && [ ! -t 0 ]; then
   PROMPT="$(cat)"
 fi
 
-# Validate
+# Validate entity exists
+ENTITY_DIR="$HOME/.$ENTITY_NAME"
 if [ ! -d "$ENTITY_DIR" ]; then
   echo "Entity '$ENTITY_NAME' not found at $ENTITY_DIR"
   echo "Gestate first: koad-io gestate $ENTITY_NAME"
   exit 1
 fi
 
-# Non-interactive with no window: run directly, stream output
-if [ -n "$PROMPT" ] && [ "$WINDOWED" = false ]; then
-  exec claude \
-    --dangerously-skip-permissions \
-    -p "$PROMPT" \
-    --add-dir "$ENTITY_DIR"
-fi
-
-# Interactive or windowed: open a terminal
-# Write prompt to temp file to avoid quoting issues across shell boundaries
-SESSION="$ENTITY_NAME"
-PROMPT_FILE=""
-if [ -n "$PROMPT" ]; then
-  PROMPT_FILE=$(mktemp /tmp/juno-spawn-XXXXXX)
-  printf '%s' "$PROMPT" > "$PROMPT_FILE"
-  SPAWN_CMD="cd $ENTITY_DIR && claude --dangerously-skip-permissions -p \"\$(cat $PROMPT_FILE)\" --add-dir $ENTITY_DIR; rm -f $PROMPT_FILE; exec bash"
-else
-  SPAWN_CMD="cd $ENTITY_DIR && claude . --dangerously-skip-permissions"
-fi
-
-if [ -n "${TMUX:-}" ]; then
-  tmux new-window -n "$SESSION" "bash -c '$SPAWN_CMD'"
-  # If prompt given, send it as a keystroke after TUI loads
-  if [ -n "$PROMPT" ] && [ -n "$PROMPT_FILE" ]; then
-    sleep 4
-    tmux send-keys -t "$SESSION" "$(cat $PROMPT_FILE)" Enter
-    rm -f "$PROMPT_FILE"
-  fi
-elif command -v gnome-terminal &>/dev/null; then
-  if [ -n "$PROMPT" ] && [ -n "$PROMPT_FILE" ]; then
-    # Open interactive TUI, then type the prompt via xdotool after it loads
-    INTERACTIVE_CMD="cd $ENTITY_DIR && claude . --dangerously-skip-permissions"
-    gnome-terminal --title="$ENTITY_NAME" -- bash -c "$INTERACTIVE_CMD" &
-    TERM_PID=$!
-    sleep 5
-    if command -v xdotool &>/dev/null; then
-      WID=$(xdotool search --name "$ENTITY_NAME" 2>/dev/null | tail -1)
-      if [ -n "$WID" ]; then
-        xdotool windowfocus "$WID"
-        xdotool type --clearmodifiers --delay 20 "$(cat $PROMPT_FILE)"
-        sleep 0.3
-        xdotool key Return
-      fi
-    fi
-    rm -f "$PROMPT_FILE"
-  else
+# Windowed: open a new terminal with interactive portal
+if [ "$WINDOWED" = true ]; then
+  SESSION="$ENTITY_NAME"
+  SPAWN_CMD="PROMPT='$PROMPT' $ENTITY_NAME"
+  if [ -n "${TMUX:-}" ]; then
+    tmux new-window -n "$SESSION" "bash -c '$SPAWN_CMD'"
+  elif command -v gnome-terminal &>/dev/null; then
     gnome-terminal --title="$ENTITY_NAME" -- bash -c "$SPAWN_CMD; exec bash" &
+  elif command -v xterm &>/dev/null; then
+    xterm -title "$ENTITY_NAME" -e bash -c "$SPAWN_CMD; exec bash" &
   fi
-elif command -v xterm &>/dev/null; then
-  xterm -title "$ENTITY_NAME" -e bash -c "$SPAWN_CMD; exec bash" &
+  exit 0
+fi
+
+# Non-interactive or interactive: route through entity's hook
+# The hook knows the entity's home machine and handles SSH routing
+if [ -n "$PROMPT" ]; then
+  exec env PROMPT="$PROMPT" "$ENTITY_NAME"
 else
-  exec bash -c "$SPAWN_CMD"
+  exec "$ENTITY_NAME"
 fi
