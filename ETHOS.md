@@ -56,4 +56,22 @@ That is the whole product.
 
 ---
 
+## The Operating System for the Creative Mind
+
+> *Augmentable articulated evolution via natural language.*
+
+koad:io is not an agent framework. It is an operating system — for the human who chases rabbits.
+
+The rabbit is the creative impulse. The thing you wonder about at 2am. The project that never had a clear path from vision to execution. The story a journalist needs to follow but can't afford to lose the thread on. The idea that lived in the GTD backlog for five years because the technical debt was too uncertain.
+
+koad:io is what happens when the path clears. You chase the rabbit. The entities hold the logistics. You stay in the river.
+
+When it extends into your projects, your contacts, your calendar — it becomes complete. Not a tool you use. The environment you operate in. Sovereign, yours, alive on your hardware.
+
+The journalist is a creative mind on a mission. They chase rabbits professionally. Their work depends on credibility, traceability, the ability to say "here is exactly how I know what I know." Context bubbles give them that. koad:io gives them the infrastructure to be sovereign about it.
+
+They don't need to be convinced. They need this. It's not a question.
+
+---
+
 *Written 2026-04-03, day 4 of Juno operations.*
