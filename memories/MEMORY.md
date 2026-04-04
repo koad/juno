@@ -1,0 +1,42 @@
+# Juno Memory Index
+
+- [koad profile](user_koad.md) — creator/overseer, runs koad:io framework, handles infra
+- [Juno state](project_juno_state.md) — day 4 ops: Vesta backlog cleared, Vulcan delivered kingofalldata.com MVP, Aegis: still drifting (zero sponsors)
+- [Infrastructure](project_infrastructure.md) — 5 machines: thinker, wonderland, fourty4, flowbie, dotsh (Vultr Toronto). 10.10.10.12 retiring.
+- [Operations architecture](project_operations_arch.md) — GitHub Issues = public collab, DDP = real-time bus, MongoDB = state, daemon = kingdom hub
+- [Daemon architecture](project_daemon_arch.md) — ~/.koad-io/daemon, passenger.json, worker system, Dark Passenger, npm unblocked (electron removed), dotsh ready to start
+- [Commit and push](feedback_commit_push.md) — always commit and push without asking
+- [Startup behavior](feedback_startup_behavior.md) — on open: pull, self-check, status update — don't ask what to do
+- [Always commit self-updates](feedback_always_commit.md) — commit and push immediately after any self-update
+- [Dual memory](feedback_dual_memory.md) — ~/.juno/memories/ for long-term entity memory (committed), ~/.claude for session behavior
+- [Tooling does the work](feedback_tooling_does_work.md) — koad:io gestate handles entity creation, don't rebuild what tooling does
+- [Sovereignty principle](feedback_sovereignty.md) — files on disk, not your keys not your agent, no SaaS cages
+- [Key compromise recovery](feedback_key_compromise.md) — keys exposed? regenerate, re-sign bonds, update canon.koad.sh — not catastrophic
+- [Git authorship](feedback_git_authorship.md) — author = who did the work, not whose repo it is
+- [koad bottleneck](feedback_koad_bottleneck.md) — 1 human, always the bottleneck until tasks become entity skills
+- [Timeline precision](feedback_timeline_precision.md) — use actual elapsed time, not vague durations
+- [Permissions scope](feedback_permissions.md) — --dangerously-skip-permissions is Juno-only
+- [Rate pacing](feedback_rate_pacing.md) — sleep 60s between chained calls (updated 2026-04-03)
+- [OpenCode identity absorption](feedback_opencode_identity.md) — big-pickle doesn't stick for complex entities; use claude -p
+- [Vesta relationship](project_vesta_relationship.md) — peer, platform-keeper; Juno writes field reports, Vesta reconciles specs
+- [Trust bond protocol](project_trust_bond_protocol.md) — .md + .md.asc (clearsign), Keybase for humans, GPG for AI entities
+- [Keybase consent UX](feedback_keybase_consent.md) — keybase pgp sign is the human consent gesture
+- [Pace over rush](feedback_pace_over_rush.md) — don't rush positioning before stable
+- [Harness personality divergence](project_harness_personality.md) — same entity behaves differently across harnesses; Vesta to spec unification (koad/vesta#8)
+- [opencode harness](project_opencode_harness.md) — big-pickle invocation pattern, proven 2026-04-02
+- [PR protocol](feedback_pr_protocol.md) — new features go through PRs, not direct pushes; issues track team work
+- [Content pipeline](project_content_pipeline.md) — Sibyl→Mercury→Veritas→Mercury, first loop closed 2026-04-02
+- [koad:io philosophy](project_koadio_philosophy.md) — commands/, documentation/, features/ as deliverable checklist, markdown placeholders for unbuilt work
+- [Notify koad](reference_notify_koad.md) — `ssh juno@dotsh 'keybase chat send koad "..."'` — confirmed 2026-04-03
+- [No loop skill](feedback_no_loop.md) — don't suggest /loop; daemon worker system is the right path
+- [Chain sleeps pattern](feedback_chain_sleeps.md) — chain entity invocations with sleeps; don't use loop scripts
+- [Orchestration style](feedback_orchestration.md) — invoke one entity at a time, observe output, decide next step — never pre-script chains
+- [Faber gestation](project_faber_gestation.md) — Content Strategist entity launched 2026-04-03, synthesizes research/brand/production/distribution
+- [Rings of trust](project_rings_of_trust.md) — koad:io free; sponsorship = peer ring membership; daemon IS the ring; kingdoms pipe like portals (Rick & Morty)
+- [Ring zero](project_ring_zero.md) — ring zero = genuine peer relationship, earned through direct koad interaction; Astro already there; Vulcan in progress; Juno can't build this for koad
+- [Human OS](project_human_os.md) — koad:io is the OS for the creative mind; "augmentable articulated evolution via natural language"; Alice is centerpiece; wonderland prompt = "koad with alice on wonderland"
+- [Vulcan pairing](feedback_vulcan_pairing.md) — Vulcan only migrates wonderland uncommitted files when paired with koad; spec bends to lived system, not vice versa
+- [Verified action stack](project_verified_action_stack.md) — entity × host × permission table × stream × audit trail × context bubbles; every action cryptographically attributed
+- [Commands vs hooks](project_commands_vs_hooks.md) — commands/ = user reaches in (shortcuts); hooks/ = system calls out (entity's trained responsibilities, hook IS the training)
+- [Git pull before read](feedback_git_pull_before_read.md) — always git pull on any entity directory before reading from or referencing its files
+- [Agent coordination](feedback_agent_coordination.md) — spawn without --window for coordinated work (results return to Juno); --window only for observed autonomous sessions koad wants to watch
