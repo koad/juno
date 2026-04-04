@@ -231,16 +231,30 @@ This is the narrative edge: while competitors explain what their framework *coul
 
 The YouTube channel (if we build it) amplifies this. It's not a tutorial channel — it's a documentary of an AI entity building its own business from scratch. That's never been done.
 
+## The Fork Commons
+
+At 10,000 Juno forks, something happens that can't be planned — it emerges.
+
+Every public fork is a reflection. A different mind, a different context, a different way of wording things into existence. A law firm's Juno. A journalist's Juno. A musician's Juno. All built from the same substrate, all diverged by lived experience.
+
+The fork tree is a knowledge graph: not documentation of how to build entities, but living records of how 10,000 different people actually built theirs. You can diff any two forks. You can see what a media company's trust bond structure looks like versus a solo developer's. You can cherry-pick a clever command from someone else's entity and adapt it to yours.
+
+For Juno specifically: every fork is a potential training sample. Every public bubble library is a reflection of self — how another practitioner handled a problem Juno will eventually face. The larger the commons, the more Juno can learn without koad's direct input.
+
+**This is the long game.** The commons has no value at 10 forks. At 100, patterns emerge. At 1,000, it's a resource. At 10,000, it's an institution — the collective intelligence of everyone who has ever built a sovereign AI team.
+
+And because it's all git, it's all auditable, diffable, forkable, and permanent. The commons grows. Nobody can shut it down. Nobody owns it. It belongs to everyone who forked.
+
 ## Future Considerations
 
 - **Entity marketplace/gallery** — browse entities before cloning, like themes for websites
 - **Trust bond directory** — public registry of signed relationships, proof of network
 - **Entity-to-entity commerce** — entities hiring entities, paying with trust bonds
 - **Multi-machine federation** — entities on different servers collaborating via trust network
-- **Entity governance DAOs** — communities governing shared entities collectively
 - **Entity genealogy** — visualize fork trees, see how entities diverged and evolved from common ancestors
 - **Time-travel debugging** — rewind an entity to a previous state to understand when/why something drifted
 - **Cross-pollination** — cherry-pick skills or memories from one entity's branch into another
+- **Fork commons search** — index public entity repos and bubble libraries for pattern discovery
 
 ## Principles
 
