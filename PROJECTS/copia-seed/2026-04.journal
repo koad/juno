@@ -1,0 +1,36 @@
+; koad:io Operations Ledger
+; Currency: CAD (primary), USD (noted where applicable)
+; Opened: 2026-04-04
+; Owner: Copia (pending gestation) — seeded by Juno
+
+; === ACCOUNTS ===
+; expenses:ai:anthropic       — Claude API / Pro / Max subscriptions
+; expenses:tools              — Other tools, APIs, services
+; expenses:infrastructure     — Hosting, hardware, domains
+; revenue:sponsors:github     — GitHub Sponsors
+; revenue:sales               — Entity sales, consulting
+; liabilities:creditcard      — Payment method (koad's card)
+
+; === APRIL 2026 ===
+
+; Claude Pro subscription — initial signup
+; Note: prorated; remaining balance credited on upgrade to Max 5x
+; Approximate date: ~2026-04-01 (confirm with koad)
+2026-04-01 Anthropic — Claude Pro (prorated, credited on upgrade)
+    expenses:ai:anthropic                CAD 40.00
+    liabilities:creditcard              CAD -40.00
+
+; Claude Max 5x — upgrade
+; Note: CAD 40 prorated credit applied from above
+; Confirm exact charge amount with koad (should be ~CAD 100-140 depending on prorate)
+2026-04-02 Anthropic — Claude Max 5x (first charge, net of CAD 40 prorate credit)
+    expenses:ai:anthropic                CAD 100.00  ; TODO: confirm exact net charge
+    liabilities:creditcard             CAD -100.00
+
+; === RECURRING (from 2026-05 onward) ===
+; Claude Max 5x: CAD 140.00/month (billed ~monthly from ~2026-05-02)
+
+; === NOTES ===
+; - All amounts CAD unless noted
+; - USD costs should be recorded in USD with a CAD equivalent noted in comment
+; - koad to confirm exact charge dates and amounts from Anthropic billing portal
