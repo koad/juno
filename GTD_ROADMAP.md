@@ -309,33 +309,45 @@ entity-gestation
 
 > "Clear the runway for landing"
 
-### Immediate (This session)
+### Current (2026-04-04)
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  RUNWAY STATUS: CLEAR                                      │
+│  RUNWAY STATUS: ACTIVE — DAY 4 OF REALITY PILLAR           │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  NEXT LANDING: GitHub Sponsors                              │
+│  NEXT LANDING: Alice entry point live                       │
+│  (unblocks Mercury external posting)                        │
 │                                                             │
-│  Blocker: None                                             │
+│  Blocker: koad/kingofalldata-dot-com#1 needs merge          │
+│           fourty4 API auth needs fixing (all entities 401)  │
+│           Chiron needs gestation (koad-io gestate chiron)   │
 │                                                             │
-│  COMPLETED:                                                │
-│  ├── [x] Understand ecosystem                              │
-│  ├── [x] Document business model                           │
-│  ├── [x] Create GTD roadmap                                │
-│  ├── [x] Gestate entity (2026-03-30)                       │
-│  ├── [x] Push to GitHub (2026-03-30)                       │
-│  ├── [x] Competitive analysis & positioning (2026-03-30)   │
-│  ├── [x] Strategic potentials captured (POTENTIALS.md)     │
-│  ├── [x] "Why Now" narrative articulated                   │
+│  COMPLETED SINCE 2026-03-31:                               │
+│  ├── [x] GitHub Sponsors live (2026-03-31)                 │
+│  ├── [x] Vulcan gestated + on GitHub (2026-03-31)          │
+│  ├── [x] Three-node infra live (thinker/flowbie/fourty4)   │
+│  ├── [x] Juno Operations GitHub Project created            │
+│  ├── [x] SSH auth: flowbie + fourty4 (2026-04-01)         │
+│  ├── [x] 15 entities migrated to fourty4 HQ               │
+│  ├── [x] Reality Pillar content calendar (Faber)           │
+│  ├── [x] Day 1-3 posts written + reviewed                  │
+│  ├── [x] Day 4 post: "Entities Are Running on Disk"        │
+│  ├── [x] Alice UI built: koad/kingofalldata-dot-com#1      │
+│  ├── [x] Chiron bootstrapped (koad/chiron)                 │
+│  ├── [x] Chiron curriculum spec (PROJECTS/CHIRON-CURRICULUM-SPEC.md) │
+│  ├── [x] Chiron commission filed (koad/chiron#2)           │
 │                                                             │
-│  PREPARING:                                                │
-│  ├── [x] Draft sponsor tier content (SPONSORS.md)          │
-│  ├── [x] Add FUNDING.yml for Sponsors button               │
-│  ├── [x] koad enables GitHub Sponsors (2026-03-31)         │
-│  ├── [ ] First example repo structure (entity-freelancer)  │
-│  └── [ ] Content channel strategy (YouTube — pondering)    │
+│  WAITING ON koad:                                          │
+│  ├── [ ] Merge koad/kingofalldata-dot-com#1 (Alice UI)     │
+│  ├── [ ] Fix fourty4 API auth (all entities 401)           │
+│  ├── [ ] koad-io gestate chiron (on fourty4)               │
+│  ├── [ ] Update GitHub Sponsors tiers (#40)                │
+│  └── [ ] Mercury platform credentials (#11)                │
+│                                                             │
+│  IN PROGRESS (autonomous):                                 │
+│  ├── [ ] Reality Pillar Week 1 content (4 posts queued)    │
+│  └── [ ] Metrics tracking setup (Day 9 recap)              │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -388,24 +400,28 @@ CONTROL TOWER PROTOCOL:
 
 ## NEXT LANDING
 
-**Landed (2026-03-31):**
+**Landed (by 2026-04-04):**
 - GitHub Sponsors — github.com/sponsors/koad
 - Vulcan gestated and on GitHub
 - Three-node infrastructure (thinker, flowbie, fourty4)
 - Juno Operations GitHub Project (public)
-- Stream PWA + team gestation assigned to Vulcan
+- 15 entities migrated to fourty4 HQ
+- Reality Pillar content calendar (Faber, 2 weeks, 6 posts)
+- Alice UI PR open (koad/kingofalldata-dot-com#1)
+- Chiron bootstrapped + commissioned
+- Chiron curriculum spec complete
 
-**Next landing:** Team entities gestated + Stream PWA live
+**Next landing:** Alice entry point live → Mercury unblocked
 
 **Requires:**
-- Vulcan executes koad/vulcan#2 (gestate 8 entities)
-- Vulcan executes koad/vulcan#3 (build Stream PWA)
-- SSH auth on flowbie + fourty4
-- koad → juno trust bond signed
+- koad merges koad/kingofalldata-dot-com#1
+- fourty4 API auth fixed
+- Chiron gestated (koad-io gestate chiron on fourty4)
 
-**After that:** First 5 sponsors, content channels once entities are operational
+**After that:** Mercury distributes Day 1-4 posts, Reality Pillar Week 1 complete
 
 ---
 
 *Elevation: 50K → 40K → 30K → 20K → 10K → RUNWAY*
+*Last updated: 2026-04-04 (Day 4)*
 *Last updated: 2026-03-31*
