@@ -273,6 +273,113 @@ Social Platform Proofs
 
 ---
 
+## SELECTIVE DISCLOSURE AND ADDRESSABLE SIGNATURES
+
+### The Core Idea
+
+Profiles and proof documents list **CIDs** — content-identifiers — without embedding the underlying claims. The CID is a handle for a claim, not the claim itself. No URL, no signature text, no claim content — just the identifier.
+
+When a verifier wants to see a specific claim, they request the CID. The owner evaluates who is asking and why, then decides whether to reveal the mapping. The same owner may reveal a CID to one party and decline for another — **disclosure is selective per requester, not just per claim**.
+
+This separates two things that naive identity systems conflate:
+- **The shape of identity** — what categories of claims exist
+- **The substance of identity** — the actual claim content
+
+```
+Profile / proof document
+├── CID: bafk... (employment claim)
+├── CID: bafk... (domain ownership)
+├── CID: bafk... (trust bond with koad)
+└── (no URLs, no signatures, no claim text — just handles)
+
+Verifier A asks: "Can I see bafk... (employment claim)?"
+Owner decides: yes — Verifier A has standing
+Owner sends: { cid: "bafk...", claim: { ... }, signature: "..." }
+
+Verifier B asks: "Can I see bafk... (employment claim)?"
+Owner decides: no — not their business
+Owner: declines, no reason required
+```
+
+### Unified CID Namespace for Signatures
+
+All signatures — trust bonds, proofs, claims, commits — pass through the same `koad.generate.cid` function. This means **every signature type lives in the same address space**. There is no separate namespace for "bond CIDs" vs "proof CIDs" vs "claim CIDs". One generator. One `_id` format.
+
+Consequences:
+- A CID in a profile could be any type of signed claim — the shape doesn't reveal the type
+- Cross-type references work naturally (a trust bond CID can appear in a proof document)
+- Audit logs use the same `_id`s as profiles — no translation layer needed
+
+### Signatures Are Addressable Objects
+
+Every signature run through `koad.generate.cid` produces a deterministic `_id`. This means:
+
+- Signatures can be **stored, retrieved, and referenced by ID**
+- Two parties who witnessed the same signature independently arrive at the same `_id`
+- You can reference a signature without embedding it — just the CID
+- The CID is a stable pointer even if the underlying data is stored elsewhere or revealed later
+
+```javascript
+// Every signature becomes an addressable object
+koad.generate.cid(signature)
+  → Returns: deterministic _id (e.g. "bafkrei...")
+
+// Two witnesses of the same event independently:
+alice.generate.cid(sig) === bob.generate.cid(sig)  // true
+// They can coordinate around the same _id without sharing the content
+// or even knowing what the content says
+```
+
+### Proof Exchange Flow (Two-Step)
+
+```
+Step 1 — Advertisement
+  Owner publishes profile with CID list (no claim content, no URLs, no signatures)
+  "I have proofs with these identifiers: [CID-A, CID-B, CID-C]"
+
+Step 2 — Selective Reveal
+  Verifier requests: "Please reveal CID-B"
+  Owner evaluates: who is asking? what do they need it for?
+  Owner responds: (reveals claim + signature) OR (declines, silently or with explanation)
+
+CID-B is now shared. CID-A and CID-C were never exposed.
+The verifier learns nothing about CID-A or CID-C from this exchange.
+```
+
+### Why This Matters
+
+| Property | What It Enables |
+|----------|----------------|
+| CIDs in profiles without claims | Reveal the shape of identity, not the substance |
+| No URL or full signature in profile | Nothing leaked from a profile read alone |
+| Selective reveal per requester | Employment proof to employers; domain proof to registrars; trust bond proof to partners only |
+| Deterministic CID from signature | Independent parties converge on same reference without coordination |
+| Signatures as storable objects | Audit logs, cross-references, replays — without re-embedding content |
+| Unified CID namespace | All claim types share one address space — no translation needed |
+
+### Relation to W3C Verifiable Credentials
+
+This is the same primitive as W3C Verifiable Credentials and ZK selective disclosure, but native to the koad:io addressing layer. The `_id` from `koad.generate.cid` is the content-address; the trust bond or kbpgp signature is the proof; the profile is the presentation layer that advertises handles without claims.
+
+The key difference from W3C VCs: there is no separate credential exchange protocol. The CID is just an identifier — the transport, storage, and reveal mechanism are left to the entity and its runtime. This keeps the primitive composable rather than prescriptive.
+
+### Implementation Notes
+
+```
+trust/bonds/           ← signed bonds stored on disk (each has a CID)
+id/*.pub               ← public keys for verification
+CONTEXT/02-IDENTITY.md ← this spec
+
+Future API:
+  koad.generate.cid(signature) → deterministic _id
+  koad.identity.publishCID(claim, signature) → _id
+  koad.identity.revealCID(_id, recipientPublicKey) → encrypted claim
+  koad.identity.profileWithCIDs([_id, ...]) → proof document (handles only)
+  koad.identity.requestCID(_id, ownerPublicKey) → request reveal from owner
+```
+
+---
+
 ## WHAT THIS MEANS FOR MO-MONEY
 
 ### My Identity

@@ -40,3 +40,4 @@
 - [Commands vs hooks](project_commands_vs_hooks.md) — commands/ = user reaches in (shortcuts); hooks/ = system calls out (entity's trained responsibilities, hook IS the training)
 - [Git pull before read](feedback_git_pull_before_read.md) — always git pull on any entity directory before reading from or referencing its files
 - [Agent coordination](feedback_agent_coordination.md) — spawn without --window for coordinated work (results return to Juno); --window only for observed autonomous sessions koad wants to watch
+- [Selective disclosure](project_selective_disclosure.md) — CID handles in profiles reveal claim shape without content; koad.generate.cid makes every signature an addressable object with deterministic _id; two-step proof exchange: advertise CIDs → reveal on consent
