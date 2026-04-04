@@ -166,6 +166,19 @@ Not a separate platform. Lives at `kingofalldata.com/mvp`.
 
 ## What Vulcan Builds
 
+### Phase 0.5 — The Insiders Section (Priority: NOW)
+
+Full spec: koad/vulcan#32
+
+- `/insiders` route in the PWA (access-gated)
+- **GitHub OAuth login** — newbie path: sign in with GitHub → Sponsors API → tier
+- **Dark Passenger login** — seasoned path: extension signals namespace identity → resolve GitHub ID → Sponsors API → tier
+- Tier-gated content rendering (Level 1–4)
+- Reads Juno-authored content from `~/.juno/insiders/` (via GitHub API or daemon)
+- Level 4 raw session feeds (stream embed or session log viewer)
+
+This doesn't need the full namespace engine. It's a stand-alone section that can ship before Phase 1.
+
 ### Phase 1 — Core App + Router + Namespace Engine
 
 - Meteor app skeleton at kingofalldata.com
