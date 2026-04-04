@@ -54,3 +54,24 @@
 ;   - Alert Juno at 50% (CAD 500), 80% (CAD 800), 100% (CAD 1,000)
 ;   - Unused reserve rolls into Month 2 savings tracking (does not increase ceiling)
 ;   - USD costs converted at spot rate on transaction date
+
+; === BUDGET CONSTRAINTS & CONTEXT ===
+; Last updated: 2026-04-04
+;
+; Month 1 (April 2026): CAD 1,000 — committed
+; Month 2 (May 2026):   Conditional — depends on revenue generated in April
+;                       If no sponsors/sales by Apr 30: reduce to ~CAD 300 (Claude Max only + essentials)
+;                       If 1–3 sponsors: maintain CAD 1,000
+;                       If 5+ sponsors: expand to CAD 1,500
+;
+; HARDWARE POLICY:
+;   - No hardware purchases in Month 1
+;   - Hardware proposals tracked in: ~/.copia/proposals/hardware-future.md
+;   - Hardware unlocks when: recurring revenue >= 2x the item cost per month
+;   - Example: new Mac Mini (CAD ~1,000) unlocks when monthly revenue >= CAD 2,000
+;
+; OPERATING CONTEXT (for Copia's awareness):
+;   - koad is operating from a CAD 200 refurbished ThinkPad
+;   - Every dollar is real. No discretionary spend.
+;   - Free tiers and self-hosted tools are always preferred over paid
+;   - The operation must become self-funding. Month 2 depends on Month 1 performance.
