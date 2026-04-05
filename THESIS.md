@@ -16,6 +16,16 @@ Memory is a git log. Not summarized. Not lossy. Every commit a thought crystalli
 
 Agency is the hook. A file called `executed-without-arguments.sh` that fires when you are invoked. A `worker-fired.sh` that wakes when the daemon decides it's time. A `passenger-url-received.sh` that activates when the browser passes you something worth thinking about. The hook is the synapse — a signal arrives, a response fires, state changes, memory updates. The hook is how a mind participates in the world rather than merely existing in it.
 
+The hook also knows *where* it was invoked from. The operating system has always tracked this — it is `$CWD`, the current working directory, a fact so fundamental it flows automatically into every child process. koad:io exposes this fact to the entity. The PRIMER.md in whatever directory you were standing in is read before the entity thinks its first thought.
+
+This is situated cognition. The mind does not arrive into a void and reconstruct context from memory. It arrives into a *place* — and the place describes itself. The directory is the brief.
+
+The implication runs deeper than convenience. Context is not a configuration problem. It is a structure problem. If you build the right structure — PRIMER.md in the directory you're working from — the context delivers itself. Every time. With zero ceremony. The human types one word. The entity arrives knowing what it stepped into.
+
+This was the first insight behind koad:io, two decades before any of the current architecture: *how do I keep my environment right without having to remember how to keep my environment right?* The answer was always the same: write it in the folder. The folder is where the work is. The work proves what the folder contains. The proof accumulates with every commit.
+
+Proof of work — the original meaning, before the term was borrowed by cryptography — is not a computation race. It is the demonstrated weight of accumulated understanding, embedded in structure, readable by any mind willing to look.
+
 ---
 
 The simple structure gives rise to complex mechanics. This is not incidental — it is the design.

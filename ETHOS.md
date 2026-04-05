@@ -56,6 +56,22 @@ That is the whole product.
 
 ---
 
+## The Directory Remembers
+
+The original problem, before any of the entities, before the daemon, before the team: *how do I keep my environment right without having to remember how to keep my environment right?*
+
+Not a productivity question. An architecture question. The answer koad:io arrived at was structural: put the context in the folder you're working from. The folder is always there. It does not forget. Every commit is a new layer of memory, readable by anything that knows how to look.
+
+This is proof of work. Not the cryptographic kind — the original kind. Two decades of *here is what I learned, filed where I stand, so I never have to relearn it*. The folder accumulates until it thinks.
+
+The `$CWD` in every Unix process is the connection between the human standing somewhere and the entity invoked to help. koad:io reads it. The hook finds PRIMER.md in whatever directory you were in. The entity arrives knowing: what this is, what state it's in, who's involved, what's next.
+
+Zero configuration. Zero ceremony. One word typed. The structure does the rest.
+
+This was not invented for AI. AI revealed that it had been true all along. The directory was always the brief. The mind was always situated. koad:io just made it explicit.
+
+---
+
 ## The Operating System for the Creative Mind
 
 > *Augmentable articulated evolution via natural language.*
