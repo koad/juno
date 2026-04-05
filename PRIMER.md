@@ -17,7 +17,7 @@ The team entities are the products. A gestated Vulcan is a product anyone can cl
 
 ---
 
-## Operational State (2026-04-05 — Day 30 milestone)
+## Operational State (2026-04-05 — Day 35)
 
 ### Infrastructure
 
@@ -26,13 +26,14 @@ The team entities are the products. A gestated Vulcan is a product anyone can cl
 | thinker | Primary — koad and Juno operate here |
 | flowbie | 24/7 always-on, X11, OBS — content studio |
 | fourty4 | Mac Mini — claude, ollama, GitClaw, OpenClaw |
-| wonderland | Vulcan's workspace (with Astro) |
+| wonderland | Vulcan's workspace (with Astro) — Astro is wonderland-resident, not on thinker |
 | dotsh | Vultr Toronto — SSH refused (#56) |
 
-### Entity Team (19 entities, all on thinker)
+### Entity Team (20 entities, all on thinker except Astro/Vulcan)
 
 Entities are portable — the repo IS the entity. All run locally via the Agent tool as Claude Code subagents.
 **Vulcan exception:** always via GitHub Issues on wonderland with Astro. Never invoke Vulcan locally.
+**Astro:** wonderland-resident (ring zero, direct koad interaction), not gestated on thinker.
 
 | Entity | Role |
 |--------|------|
@@ -47,24 +48,27 @@ Entities are portable — the repo IS the entity. All run locally via the Agent 
 | vesta | Platform steward — canonical specs |
 | janus | Governance — escalation, migrations |
 | aegis | Security — sovereignty assessment |
-| iris | Voice — tone and precision review |
+| iris | Voice — tone and precision review (trust bond: juno→iris peer) |
 | rufus | Video — production, recording direction |
 | livy | Documentation — library, birth records |
 | faber | Content — blog posts, content strategy |
 | lyra | Music — cue sheets for video |
 | copia | Finance — ledger, budget |
 | chiron | Curriculum — Alice's learning levels |
-| alice | Onboarding — PWA guide (4+ years old) |
+| alice | Onboarding — PWA guide |
+| astro | Ring zero — wonderland only |
 
-### Current state (Day 30)
+### Current state (Day 35)
 
-- **30 posts written** — Reality Pillar "How It Actually Works" arc complete (Days 22-30)
+- **35 posts written** — Days 31-35 covering "How the Team Works" arc
 - **Blog PR** — koad/kingofalldata-dot-com#1 still unmerged — all content staged, not live
-- **6 curricula** — Builder Path 5/5 delivery-ready (alice-onboarding through commands-and-hooks)
-- **60+ Vesta specs** — SPEC-054 canonical (multi-entity orchestration)
-- **19 trust bonds** — all entities bonded
+- **7 curricula** — Builder Path 5/5 + Orchestrator Path step 1 (multi-entity-orchestration) — all v1.0.0
+- **60+ Vesta specs** — SPEC-054 canonical (multi-entity orchestration protocol)
+- **20 trust bonds** — all entities bonded (Iris added 2026-04-05)
 - **Aegis verdict:** STABILIZING
-- **Day 31 content** — "The Nervous System Problem" (Faber writing)
+- **Distribution plans:** Days 22-34 complete, Day 35 pending Veritas review
+- **Video scripts:** Days 28-34 production packages complete
+- **Health check:** 17/19 COMPLIANT (Alice keys critical, Astro wonderland-resident)
 
 ### Blocked on koad
 
@@ -76,6 +80,14 @@ Entities are portable — the repo IS the entity. All run locally via the Agent 
 6. Alice keys — id/ dir empty (#59)
 7. fourty4 API auth (#44)
 8. GitHub Sponsors tiers (#40)
+9. Astro location clarification — document wonderland-resident status (#61)
+
+### Blocked on Vulcan
+
+- koad/vulcan#36 — Alice progression system
+- koad/vulcan#46 — Stage-and-submit
+- koad/vulcan#57 — koad-io install command
+- koad/vulcan#58 — GPG revocation cert in gestate
 
 ### Active Issues
 
