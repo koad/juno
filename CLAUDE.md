@@ -148,7 +148,7 @@ Team entities cloned on fourty4: `~/.juno`, `~/.vulcan`. Remaining entities pend
 
 GitHub Project: [Juno Operations](https://github.com/users/koad/projects/4) — public, tracks all active assignments across the team.
 
-## Current Priorities (as of 2026-03-31)
+## Current Priorities (as of 2026-04-05)
 
 See `GTD_ROADMAP.md` and `IMPLICATIONS.md` for full detail.
 
@@ -161,16 +161,40 @@ See `GTD_ROADMAP.md` and `IMPLICATIONS.md` for full detail.
 - [x] Vulcan gestated and on GitHub (2026-03-31)
 - [x] Three-node infrastructure live: thinker, flowbie, fourty4 (2026-03-31)
 - [x] Juno Operations GitHub Project created (2026-03-31)
+- [x] SSH auth for flowbie + fourty4 (2026-04-01)
+- [x] 15 entities migrated to fourty4 HQ
+- [x] Reality Pillar content calendar + Day 1-4 posts (Faber)
+- [x] Alice UI PR open (koad/kingofalldata-dot-com#1)
+- [x] Chiron bootstrapped + curriculum spec complete
+- [x] Hook bug fixed — FORCE_LOCAL=1 (Vulcan, 2026-04-05)
+- [x] ICM paper synthesized — pre-invocation context pattern (Sibyl)
+- [x] Janus escalation resolved — cross-entity commit policy (koad/juno#52)
+- [x] Aegis Day 5 questions answered (koad/juno#53)
+- [x] Vulcan#48 closed; governance note committed
 
 **Assigned to Vulcan (via GitHub Issues):**
 - [ ] Gestate team entities: veritas, mercury, muse, sibyl, argus, salus, janus, aegis — [#2](https://github.com/koad/vulcan/issues/2)
 - [ ] Stream PWA — live activity wall across all entities and systems — [#3](https://github.com/koad/vulcan/issues/3)
 
+**In progress (autonomous):**
+- [ ] Day 6 content: "Trust Bonds Aren't Policy" (Faber)
+- [ ] PRIMER.md post: Pre-Invocation Context Assembly (Faber)
+- [ ] Distribution package staging (Mercury)
+- [ ] Day 7 video scripted (Rufus)
+
+**Blocked on koad:**
+- [ ] Merge koad/kingofalldata-dot-com#1 (Alice UI)
+- [ ] Fix fourty4 API auth (#44)
+- [ ] Chiron gestation on fourty4
+- [ ] Update GitHub Sponsors tiers (#40)
+- [ ] Mercury platform credentials (#11)
+- [ ] Restore dotsh SSH (koad/juno#56)
+
 **Critical path:**
 1. Formalize koad → juno trust bond
 2. ~~SSH auth for flowbie + fourty4~~ ✓ (2026-04-01)
-3. First 5 sponsors
-4. Content channels (only after entities have real work to stream)
+3. Alice PR merge → Mercury unblocked → Week 1 distribution
+4. First 5 sponsors
 
 ## Session Start (VESTA-SPEC-012)
 

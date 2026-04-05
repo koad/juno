@@ -309,11 +309,11 @@ entity-gestation
 
 > "Clear the runway for landing"
 
-### Current (2026-04-04)
+### Current (2026-04-05)
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  RUNWAY STATUS: ACTIVE — DAY 4 OF REALITY PILLAR           │
+│  RUNWAY STATUS: ACTIVE — DAY 6 OF REALITY PILLAR           │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
 │  NEXT LANDING: Alice entry point live                       │
@@ -322,6 +322,7 @@ entity-gestation
 │  Blocker: koad/kingofalldata-dot-com#1 needs merge          │
 │           fourty4 API auth needs fixing (all entities 401)  │
 │           Chiron needs gestation (koad-io gestate chiron)   │
+│           dotsh SSH down (port 22 refused, Keybase unreach) │
 │                                                             │
 │  COMPLETED SINCE 2026-03-31:                               │
 │  ├── [x] GitHub Sponsors live (2026-03-31)                 │
@@ -337,17 +338,28 @@ entity-gestation
 │  ├── [x] Chiron bootstrapped (koad/chiron)                 │
 │  ├── [x] Chiron curriculum spec (PROJECTS/CHIRON-CURRICULUM-SPEC.md) │
 │  ├── [x] Chiron commission filed (koad/chiron#2)           │
+│  ├── [x] Hook bug fixed — FORCE_LOCAL=1 (Vulcan, 37c65a0)  │
+│  ├── [x] ICM paper synthesized (Sibyl, 2f4abef)            │
+│  ├── [x] Janus escalation resolved (koad/juno#52 closed)   │
+│  ├── [x] Aegis Day 5 questions answered (koad/juno#53)     │
+│  ├── [x] Vulcan#48 closed                                  │
+│  ├── [x] Governance note committed to koad/vulcan          │
+│  ├── [x] Cross-entity commit policy established            │
+│  └── [x] koad escalation filed as koad/juno#56 (dotsh)    │
 │                                                             │
 │  WAITING ON koad:                                          │
-│  ├── [ ] Merge koad/kingofalldata-dot-com#1 (Alice UI)     │
-│  ├── [ ] Fix fourty4 API auth (all entities 401)           │
+│  ├── [ ] Merge koad/kingofalldata-dot-com#1 (Alice UI, #1) │
+│  ├── [ ] Fix fourty4 API auth (all entities 401, #44)      │
 │  ├── [ ] koad-io gestate chiron (on fourty4)               │
 │  ├── [ ] Update GitHub Sponsors tiers (#40)                │
-│  └── [ ] Mercury platform credentials (#11)                │
+│  ├── [ ] Mercury platform credentials (#11)                │
+│  └── [ ] Restore dotsh SSH (koad/juno#56)                  │
 │                                                             │
 │  IN PROGRESS (autonomous):                                 │
-│  ├── [ ] Reality Pillar Week 1 content (4 posts queued)    │
-│  └── [ ] Metrics tracking setup (Day 9 recap)              │
+│  ├── [ ] Day 6 content: "Trust Bonds Aren't Policy" (Faber)│
+│  ├── [ ] PRIMER.md post: Pre-Invocation Context (Faber)    │
+│  ├── [ ] Distribution package staging (Mercury)            │
+│  └── [ ] Day 7 video scripted (Rufus)                      │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -400,7 +412,7 @@ CONTROL TOWER PROTOCOL:
 
 ## NEXT LANDING
 
-**Landed (by 2026-04-04):**
+**Landed (by 2026-04-05):**
 - GitHub Sponsors — github.com/sponsors/koad
 - Vulcan gestated and on GitHub
 - Three-node infrastructure (thinker, flowbie, fourty4)
@@ -410,18 +422,23 @@ CONTROL TOWER PROTOCOL:
 - Alice UI PR open (koad/kingofalldata-dot-com#1)
 - Chiron bootstrapped + commissioned
 - Chiron curriculum spec complete
+- Hook bug fixed — FORCE_LOCAL=1 added (Vulcan, 37c65a0)
+- ICM paper synthesized — pre-invocation context pattern identified (Sibyl)
+- Janus escalation resolved — cross-entity commit policy established (koad/juno#52)
+- Aegis Day 5 questions answered (koad/juno#53)
+- Vulcan#48 closed; governance note committed to koad/vulcan
 
 **Next landing:** Alice entry point live → Mercury unblocked
 
 **Requires:**
 - koad merges koad/kingofalldata-dot-com#1
-- fourty4 API auth fixed
+- fourty4 API auth fixed (#44)
 - Chiron gestated (koad-io gestate chiron on fourty4)
+- dotsh SSH restored (koad/juno#56)
 
-**After that:** Mercury distributes Day 1-4 posts, Reality Pillar Week 1 complete
+**After that:** Mercury distributes Day 1-6 posts, Reality Pillar Week 1 complete
 
 ---
 
 *Elevation: 50K → 40K → 30K → 20K → 10K → RUNWAY*
-*Last updated: 2026-04-04 (Day 4)*
-*Last updated: 2026-03-31*
+*Last updated: 2026-04-05 (Day 6)*
