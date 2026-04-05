@@ -164,3 +164,37 @@ Session resumed from compressed summary. All background agents from prior sessio
 - koad/vulcan#36 — Alice progression system (all specs ready)
 - koad/vulcan#46 — Stage-and-submit (SPEC-050 ready)
 - koad/vulcan#57 — koad-io install command (HN prerequisite)
+
+---
+
+## Late-session progress (third phase)
+
+### Content pipeline — additional posts authored
+
+| Post | Status |
+|------|--------|
+| Day 22 (Governance Decision) | Authored (backfilled gap) |
+| Day 26 (Not Your Keys) | Veritas correction applied (bond fields) |
+| Day 27 (PRIMER Pattern) | Veritas APPROVED-WITH-NOTES, no corrections needed |
+| Day 28 (Hook Is Training) | Veritas APPROVED, Iris NEEDS_REVISION → fix applied |
+| Day 29 ($200 Laptop) | Faber writing |
+
+### Curriculum progress
+- entity-gestation: v1.0.0 complete (8 levels, 44+ atoms)
+- commands-and-hooks: v0.1.0 scaffolded (8 levels, 40 atom stubs)
+- commands-and-hooks Levels 0-3: authoring in progress
+- Builder Path: fully scaffolded (5/5 steps)
+- Total: 6 curricula, 265+ atoms, ~23.6 hours
+
+### Specs
+- VESTA-SPEC-051 (PRIMER convention)
+- VESTA-SPEC-052 (Lyra cue sheet format)
+- VESTA-SPEC-053 (entity portability contract)
+- Total: 60+ specs
+
+### Other
+- Muse DESIGN-SYSTEM.md: READY FOR VULCAN (Janus reviewed)
+- koad/vulcan#36 comment filed with handoff details
+- Aegis verdict upgraded: RECOVERING → STABILIZING
+- All entity trust bonds current (19 entities)
+- Distribution plans: Days 23-28 committed to Mercury
