@@ -14,6 +14,13 @@ if [ -z "$PROMPT" ] && [ ! -t 0 ]; then
   PROMPT="$(cat)"
 fi
 
+# Inject project PRIMER.md from CWD if present — gives entity context about
+# where it was called from without needing a CLAUDE.md in the project directory
+if [ -f "${CWD:-}/PRIMER.md" ]; then
+  PROJECT_PRIMER="$(cat "$CWD/PRIMER.md")"
+  PROMPT="$(printf 'Project context (from %s/PRIMER.md):\n%s\n\n---\n\n%s' "$CWD" "$PROJECT_PRIMER" "$PROMPT")"
+fi
+
 cd "$ENTITY_DIR"
 
 if [ -n "$PROMPT" ]; then
