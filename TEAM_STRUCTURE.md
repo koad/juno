@@ -25,6 +25,7 @@
 ├─────────────────────────────────────────────────────────────┤
 │  QUALITY LAYER                                              │
 │  Veritas → Fact-check everything                            │
+│  Iris → Brand and voice reviewer                            │
 │  Argus → Diagnose entity/profile health against protocol    │
 │  Salus → Heal entities that have lost context or identity   │
 ├─────────────────────────────────────────────────────────────┤
@@ -109,6 +110,27 @@
 - Guard against misinformation
 
 **Used by:** Everyone before publishing
+
+---
+
+### IRIS — Brand and Voice Reviewer
+
+**Name:** Greek goddess of the rainbow — messenger, bridge between worlds
+
+**Does:**
+- Review content for voice consistency, brand register, and tone
+- Audit public-facing descriptions across entity repos for brand alignment
+- Provide positioning direction to Muse, Mercury, and Sibyl
+- Flag brand drift before publish
+
+**Used by:** Faber, Mercury — before content goes out
+
+**Does NOT:**
+- Publish directly (Mercury owns publish)
+- Override Veritas fact-check verdicts
+- Sign trust bonds on Juno's behalf
+
+**Trust bond:** peer (quality layer)
 
 ---
 
@@ -326,6 +348,7 @@ JUNO (loops)
 | Juno | Argus | peer | Diagnostics |
 | Juno | Salus | peer | Entity healing |
 | Juno | Veritas | peer | Quality |
+| Juno | Iris | peer | Brand and voice review |
 | Juno | Mercury | peer | Social |
 | Juno | Muse | peer | Beauty |
 | Juno | Sibyl | peer | Research |
@@ -344,6 +367,7 @@ JUNO (loops)
 | Janus | Assigned to Vulcan | Stream monitor, .atom watcher, intervention filter |
 | Argus | Assigned to Vulcan | Entity/profile diagnostics |
 | Salus | Assigned to Vulcan | Entity healing & context restoration |
+| Iris | Active | Brand and voice reviewer |
 | Veritas | Assigned to Vulcan | Quality |
 | Mercury | Assigned to Vulcan | Social |
 | Muse | Assigned to Vulcan | Beauty |
@@ -353,4 +377,4 @@ JUNO (loops)
 
 ---
 
-*Last updated: 2026-03-31*
+*Last updated: 2026-04-05*
