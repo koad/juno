@@ -171,6 +171,7 @@ See `GTD_ROADMAP.md` and `IMPLICATIONS.md` for full detail.
 - [x] Janus escalation resolved — cross-entity commit policy (koad/juno#52)
 - [x] Aegis Day 5 questions answered (koad/juno#53)
 - [x] Vulcan#48 closed; governance note committed
+- [x] Alice Phase 2A live on kingofalldata.com (Vulcan, commit 7d95c39)
 
 **Assigned to Vulcan (via GitHub Issues):**
 - [ ] Gestate team entities: veritas, mercury, muse, sibyl, argus, salus, janus, aegis — [#2](https://github.com/koad/vulcan/issues/2)
@@ -183,7 +184,7 @@ See `GTD_ROADMAP.md` and `IMPLICATIONS.md` for full detail.
 - [ ] Day 7 video scripted (Rufus)
 
 **Blocked on koad:**
-- [ ] Merge koad/kingofalldata-dot-com#1 (Alice UI)
+- [ ] Merge koad/kingofalldata-dot-com#1 (blog infrastructure — /blog route)
 - [ ] Fix fourty4 API auth (#44)
 - [ ] Chiron gestation on fourty4
 - [ ] Update GitHub Sponsors tiers (#40)
