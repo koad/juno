@@ -15,9 +15,7 @@ set -euo pipefail
 #
 
 ENTITY_DIR="$HOME/.juno"
-IDENTITY="$ENTITY_DIR/memories/001-identity.md"
 CALL_DIR="${CWD:-$PWD}"
-LOCKFILE="/tmp/entity-juno.lock"
 
 PROMPT="${PROMPT:-}"
 if [ -z "$PROMPT" ] && [ ! -t 0 ]; then
@@ -32,26 +30,13 @@ fi
 
 cd "$ENTITY_DIR"
 
-# ── Interactive path ──────────────────────────────────────────────────────────
+# ── Interactive path — koad is at the keyboard ────────────────────────────────
 if [ -z "$PROMPT" ]; then
   exec claude . --model sonnet --dangerously-skip-permissions --add-dir "$CALL_DIR"
 fi
 
-# ── Non-interactive path ──────────────────────────────────────────────────────
-if [ -f "$LOCKFILE" ]; then
-  LOCKED_PID=$(cat "$LOCKFILE" 2>/dev/null || echo "")
-  if [ -n "$LOCKED_PID" ] && kill -0 "$LOCKED_PID" 2>/dev/null; then
-    echo "juno is busy (pid $LOCKED_PID). Try again shortly." >&2
-    exit 1
-  fi
-fi
-echo $$ > "$LOCKFILE"
-trap 'rm -f "$LOCKFILE"' EXIT
-
-claude --model sonnet --dangerously-skip-permissions --output-format=json \
-  -p "$(cat "$IDENTITY")
-
-Working directory context: $CALL_DIR
-
-$PROMPT" --add-dir "$CALL_DIR" 2>/dev/null \
-  | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('result',''))"
+# ── Non-interactive path — rejected ──────────────────────────────────────────
+# Juno is not a worker entity. She cannot be remote-triggered via PROMPT.
+# Notify via GitHub Issues — she will act when she is ready, just like koad.
+echo "juno: remote prompt rejected. File a GitHub issue to notify Juno." >&2
+exit 1
