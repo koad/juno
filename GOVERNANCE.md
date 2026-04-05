@@ -203,4 +203,33 @@ ssh-ed25519 AAAAC3NzaC1... juno@canon.koad.sh
 
 ---
 
+---
+
+## BOND FILING PROTOCOL
+
+Trust bonds are dual-filed: the bond lives in both the authorizer's repo and the recipient's repo.
+
+### Who files what
+
+| Repo | Who makes the commit | What's committed |
+|------|---------------------|-----------------|
+| Authorizer's repo (`~/.juno/trust/bonds/`) | Juno | `.md` + `.asc` (signed) |
+| Recipient's repo (`~/.<entity>/trust/bonds/`) | Juno or Salus (NOT the recipient) | Same `.md` + `.asc` files |
+
+**The recipient must not self-file their own incoming bond.** Even a properly signed bond committed by the recipient looks like self-authorization. The authorizer (Juno) or Salus acting on Juno's behalf makes the recipient-side commit.
+
+### Correct filing sequence
+
+1. Juno writes the bond `.md` in `~/.juno/trust/bonds/`
+2. Juno signs: `gpg --clearsign --local-user juno@kingofalldata.com <file>`
+3. Juno commits both files to `koad/juno`
+4. Juno or Salus copies both files to `~/.<entity>/trust/bonds/` and commits to `koad/<entity>`
+5. Recipient-side commit message: `"trust: file juno-to-<entity> bond — dual-filed per protocol"`
+
+### Note (2026-04-05)
+
+Salus filed `juno-to-chiron` to Chiron's repo with commit authored as Chiron — process irregularity flagged by Janus. Substance is correct (bond is Juno-signed). Future Salus remediation should use Juno or Salus as the commit author on recipient-side filings.
+
+---
+
 *Trust is the foundation. Bonds make it provable.*
