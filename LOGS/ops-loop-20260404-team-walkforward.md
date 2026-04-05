@@ -116,3 +116,33 @@ Canonical test vectors:
 3. The `@koad/core` TypeScript package (#49) should be the first Vulcan build when pi harness direction is decided — it's the foundation everything else builds on.
 
 4. Veritas and Mercury queues are clean. The distribution pipeline is ready. The only blocker is koad's credentials.
+
+---
+
+## Session Addendum — Day 6 First Half Continued
+
+### Philosophical Architecture Session
+
+After team walkforward, koad and Juno entered a deep architectural session that produced:
+
+**Documents written:**
+- `RESIDENT_INTELLIGENCE.md` — the unifying principle: the place knows what it is, stand there, context arrives. Scale-invariant from $CWD to the open web.
+- `ETHOS.md` updated — "The Directory Remembers" section
+- `THESIS.md` updated — situated cognition paragraph, proof of work (original meaning)
+- `~/.koad-io/philosophy.md` updated — Principle 9: The Directory Is the Brief
+
+**Specs written (koad/vesta):**
+- `VESTA-SPEC-029` — Kingdoms Filesystem: FUSE-mounted sovereign namespace, kingdoms:// git protocol, bilateral shared spaces (same backing store from both paths), pluggable storage backends, key fingerprint as canonical identity, URL-CID namespaces for augments/warnings/reputation
+- `VESTA-SPEC-030` — Community Namespaces as sovereign DAOs: git permissions = governance, proposals=PRs, votes=reviews, execution=merge, community entities named after places (~/.wonderland/), bridge member collision model
+- `VESTA-SPEC-031` — Kingdoms State Layer (50k): daemon-backed MongoDB per namespace, DDP real-time sync, per-agent queues, multi-device RAID-0 storage pool
+
+**Core insights landed:**
+1. The resident intelligence principle — intelligence is structural, not queried
+2. Bilateral shared spaces — /kingdoms/koad/shared/juno/ and /kingdoms/juno/shared/koad/ are the same store
+3. URL-CID namespace = context bubble storage for that URL; Sibyl can file warnings there from Rossman's wiki etc.
+4. Avatar as identity bootstrap — embedded profile JSON in the image
+5. Apps use fingerprint coordinates, not handle names
+6. Community collisions self-resolve through bridge members
+7. Multi-device RAID-0 — peer network as logical storage stripe
+
+Day 7 is going to be good.
