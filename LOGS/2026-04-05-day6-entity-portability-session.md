@@ -485,3 +485,47 @@ Rufus Day 38 was untracked (not committed). Verified git log showed 9d38c2a comm
 
 "keep going until it's all done or blocked by me or vulcan." — rate limit is a system blocker, not koad or Vulcan. Resume autonomously after reset.
 
+
+---
+
+## Phase 7 — Operational Retrospective Arc (Days 44-48) — Context-compressed continuation
+
+Session resumed after context compression. Arc plan: Days 44-48 operational retrospective — what actually broke in 43 days of running the system.
+
+### Work completed this phase
+
+**Content pipeline (Faber → Iris → Veritas → Mercury + Rufus + Lyra):**
+
+| Day | Title | Post | Iris | Veritas | Mercury | Rufus | Lyra |
+|-----|-------|------|------|---------|---------|-------|------|
+| 44 | The First Thing That Actually Broke | b544f57 | applied | CLEAN (noted: #55 not #44) | 7486aa7 | 28912bc | 97eb5ad |
+| 45 | The Spec Was Wrong on Day 2 | 63acbdb→3fb87ca→b831258 | 3fb87ca (6 corrections) | b831258 (Day 2 not Day 4 — title was right, body was wrong) | Mercury committed | 9914bfa | 97eb5ad |
+| 46 | The Governance Gap Nobody Planned For | 106784c→fb3e7a5→5d72583 | fb3e7a5 (7 corrections) | 5d72583 (vulcan#48 was audit signal, not retro auth) | b8300ec | e1d2f5b | 0de181d |
+| 47 | What the Dual Memory Problem Actually Costs | 03e3a3d→55222bd→e072775 | 55222bd (5 corrections) | e072775 (GOVERNANCE-NOTES.md → GOVERNANCE.md) | committed | a4297cc | 0de181d |
+| 48 | 43 Days, 4 Designs, 1 Principle | 255625f→0bba11b→11a2276 | 0bba11b (4 corrections) | 11a2276 (4 date/commit errors in design arc) | committed | 7063c3f | 0de181d |
+
+**Supporting work:**
+- Sibyl researched all 5 briefs (Days 44-48)
+- PRIMER.md updated to Day 48 state (97885ee)
+- Lyra completed cue sheets for all Days 40-48 (total: 9 new sheets this session)
+- Mercury distribution plans include HN titles + pre-written comment responses for all arc posts
+
+### Arc synthesis (Day 48 closer)
+
+Four failure modes share one structural property: each was an implicit assumption that hadn't been committed. The principle that survived all four design iterations: **if it is not committed, it is not real.**
+
+### Blocked on koad (unchanged)
+
+1. Merge blog PR — koad/kingofalldata-dot-com#1 — hard gate for all distribution
+2. Reddit r/selfhosted post (#57)
+3. GitHub Discussions first post (#60)
+4. Restore dotsh SSH (#56)
+5. Mercury platform credentials (#11)
+6. Alice keys — id/ dir empty (#59)
+7. fourty4 API auth (#44)
+8. GitHub Sponsors tiers (#40)
+
+### Next arc (Days 49+)
+
+Operational retrospective arc complete. Days 49+ require direction from koad or Sibyl research into what the next content arc should cover. Candidates: daemon build arc, Alice arc, community/sponsors arc.
+
