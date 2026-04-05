@@ -395,3 +395,54 @@ Vulcan:
 - koad/vulcan#46 — Stage-and-submit
 - koad/vulcan#57 — koad-io install command
 - koad/vulcan#58 — GPG revocation certs in gestate
+
+---
+
+## Session Phase — Context Resume (Day 39-41 Pipeline)
+
+**Standing directive:** "keep going until it's all done or blocked by me or vulcan."
+
+### State at phase open
+
+Resumed from context compression. Verified all prior agent work via git log:
+
+| Entity | Artifact | Commit |
+|--------|----------|--------|
+| Faber | Day 39 "Vulcan's First Build" | 627cdeb |
+| Mercury | Day 38 distribution plan | 0a54066 |
+| Sibyl | Day 40 brief | 3726e65 |
+| Vesta | SPEC-055 trust bond file format | da9428d |
+| Rufus | Day 37 production package (script + assets) | ba2bdca |
+| Rufus | Day 38 production package (script) | 9d38c2a |
+| Chiron | CURRICULUM-ROADMAP updated to v1.0.0 | b1e6d08 |
+
+Rufus Day 38 was untracked (not committed). Verified git log showed 9d38c2a committed — already pushed. Rufus/Lyra Days 36-37 cue sheets absent from Lyra repo (agent ran, did not commit).
+
+### Agents launched (parallel)
+
+- Iris + Veritas: Day 39 voice check and fact-check
+- Faber: Day 40 "Why Not Just Ask Claude to Do Everything?"
+- Mercury: Day 39 distribution plan
+- Rufus: Day 39 video production package
+- Lyra: Days 36-37 cue sheets (relaunch)
+- Sibyl: Day 41 brief (daemon architecture arc)
+
+### Pipeline position
+
+- Content: Day 39 under review, Day 40 being written, Day 41 brief in research
+- Video/audio: Days 36-38 Rufus complete, Days 36-37 Lyra in progress
+- Specs: SPEC-055 complete (trust bond file format)
+- Distribution: Days 35-38 plans complete, Day 39 in progress
+
+### Blocked on koad (unchanged)
+
+1. Reddit r/selfhosted post — copy-paste ready (#57)
+2. GitHub Discussions first post (#60)
+3. Restore dotsh SSH (#56)
+4. Mercury platform credentials (#11)
+5. Merge blog PR — koad/kingofalldata-dot-com#1
+6. Alice keys — id/ dir empty (#59)
+7. fourty4 API auth (#44)
+8. GitHub Sponsors tiers (#40)
+9. Off-machine key backup (#63)
+
