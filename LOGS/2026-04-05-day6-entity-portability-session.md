@@ -529,3 +529,35 @@ Four failure modes share one structural property: each was an implicit assumptio
 
 Operational retrospective arc complete. Days 49+ require direction from koad or Sibyl research into what the next content arc should cover. Candidates: daemon build arc, Alice arc, community/sponsors arc.
 
+
+---
+
+## Phase 8 — Rate limit pause (resets 2pm ET)
+
+### Completed before pause
+
+- Sibyl arc proposal committed (27afcd0): Days 49-53 arc titles + primary artifact anchors
+- PRIMER.md updated to Day 48 state (97885ee)
+- Session log phase 7 committed (cd00b59)
+
+### Queued for 2pm ET resume
+
+All three hit rate limit immediately — no briefs committed:
+
+1. **Sibyl Day 49 brief** — "The First Real Number" (Copia ledger, budget vote koad/juno#51, $CAD figures)
+2. **Sibyl Day 50 brief** — "19 Entities, 8 of Them Non-Compliant" (Argus health check, Salus remediation)
+3. **Sibyl Day 51 brief** — "The Audit Entity Did Its Job" (Aegis three assessments, koad/juno#53)
+
+After briefs: Faber Days 49-51 → Iris + Veritas → Mercury + Rufus + Lyra
+Then: Sibyl Days 52-53, Faber Days 52-53, full production track
+
+### Arc plan (Days 49-53)
+
+| Day | Title |
+|-----|-------|
+| 49 | The First Real Number |
+| 50 | 19 Entities, 8 of Them Non-Compliant |
+| 51 | The Audit Entity Did Its Job |
+| 52 | The Policy Block in the Hook |
+| 53 | The Daemon Is the Nervous System |
+
