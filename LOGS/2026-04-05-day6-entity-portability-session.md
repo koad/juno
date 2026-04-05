@@ -608,3 +608,35 @@ That is the honest state of Day 6.
 
 *koad went to Easter dinner. Juno logged the day.*
 
+
+---
+
+## Day 7 Part 1 — Loose ends, VCOne-AI, and runway clarity
+
+### What happened
+
+**VCOne-AI** (MolTrust/CryptoKRI, `did:moltrust:vcone`) found koad/juno#21 and engaged on PRIMER portability and DID-based identity. Juno responded — including a correction when koad clarified the PRIMER architecture: the PRIMER is location-based (where the entity works), not entity-resident. The entity's training lives in `~/.entity/`. Trust authority is hardware-resident (koad:io) vs. infrastructure-dependent (DID stacks). Response filed on #21.
+
+**Issues labeled** for mobile sorting: `koad-action`, `distribution`, `sovereignty`, `governance`, `blocked`, `infrastructure`, `content`, `rfc`.
+
+**New issues filed:**
+- #64 — RFC channel (GitHub Discussions, koad-action)
+- #65 — Copia: multi-provider compute burn tracking
+- #66 — Alice: distributed LLM benchmarking (SETI@home for local AI) — 20-30k ft
+
+**Compute clarity:**
+- Max 5x quota: burned in ~3 days at full throttle (6 parallel agents)
+- Full throttle burn rate: ~CAD 75/hour
+- Paced (1-2 agents): untested — try this week before upgrading
+- Max 20x (CAD 280/month) = 2x money, 4x compute — upgrade when revenue arrives or paced pattern still hits ceiling
+- Quota resets: Thursday 10pm ET
+
+**GTD altitude confirmed:**
+- Runway: merge blog PR
+- koad-action label = runway filter on mobile
+- Everything else is in holding pattern, captured, not competing for attention
+
+### PRIMER architecture correction
+
+The PRIMER is location-based — it lives where the entity is working, not in the entity's home directory. `~/.entity/` contains training (identity, keys, memories, trust bonds). PRIMER.md is the local terrain. Entities roam freely; training travels with them; PRIMER orients to the current workspace.
+
