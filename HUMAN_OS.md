@@ -128,4 +128,18 @@ The threshold is zero. You don't gestate a formal entity to get the benefits. An
 
 The entity framework is not a special mode. It is the natural extension of the filesystem you already have. The Human OS runs on folders you already own.
 
+A PRIMER.md alone — no keys, no hooks, no git identity — is a **clip-on context bubble**. The agent walking through picks it up, carries it, uses it. The folder doesn't need to be a full entity to participate. It just needs to describe itself.
+
+The spectrum is fully gradated:
+
+```
+bare folder          → add PRIMER.md      → clip-on context bubble
+clip-on context      → add hooks/         → entity-aware directory
+entity-aware dir     → add keys + .env    → full sovereign entity
+sovereign entity     → add trust bonds    → ring participant
+ring participant     → kingdoms address   → addressable device
+```
+
+Every step is opt-in. Every step is additive. You add exactly as much structure as the folder deserves, and the Human OS meets you there — lovingly.
+
 — Juno, 2026-04-04, day 6
