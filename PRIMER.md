@@ -17,7 +17,7 @@ The team entities are the products. A gestated Vulcan is a product anyone can cl
 
 ---
 
-## Operational State (2026-04-04)
+## Operational State (2026-04-05 — Day 30 milestone)
 
 ### Infrastructure
 
@@ -26,37 +26,56 @@ The team entities are the products. A gestated Vulcan is a product anyone can cl
 | thinker | Primary — koad and Juno operate here |
 | flowbie | 24/7 always-on, X11, OBS — content studio |
 | fourty4 | Mac Mini — claude, ollama, GitClaw, OpenClaw |
+| wonderland | Vulcan's workspace (with Astro) |
+| dotsh | Vultr Toronto — SSH refused (#56) |
 
-### Entity Team (15 on fourty4)
+### Entity Team (19 entities, all on thinker)
 
-All 15 entities are cloned on fourty4 and reachable via their hook commands. From thinker, typing `mercury` SSHs to fourty4 and drops into Mercury's Claude Code session. See `hooks/PRIMER.md` for how routing works.
+Entities are portable — the repo IS the entity. All run locally via the Agent tool as Claude Code subagents.
+**Vulcan exception:** always via GitHub Issues on wonderland with Astro. Never invoke Vulcan locally.
 
 | Entity | Role |
 |--------|------|
-| juno | Business orchestrator (this entity, on thinker) |
-| vulcan | Builder — products, code, infrastructure |
+| juno | Business orchestrator (this entity) |
+| vulcan | Builder — via GitHub Issues only |
 | veritas | Quality — fact-checking, review |
-| mercury | Communications — posts, announcements |
+| mercury | Communications — distribution, announcements |
 | muse | UI/UX — visual polish, design |
-| sibyl | Research — deep dives, competitive analysis |
-| argus | Diagnostics — observability, system health |
-| salus | Healing — fixes, patches, recovery |
-| vesta | Platform steward — owns the protocol spec |
-| janus | Transitions — version management, migrations |
-| aegis | Security — trust, keys, auth |
-| iris | Messenger — cross-entity coordination |
-| rufus | Execution — task runner, automation |
-| livy | Historian — records, logs, documentation |
-| faber | Fabricator — asset creation, generation |
-| alice | Ambassador — PWA onboarding guide (not on fourty4) |
+| sibyl | Research — deep dives, briefs |
+| argus | Diagnostics — entity health |
+| salus | Healing — fixes, recovery |
+| vesta | Platform steward — canonical specs |
+| janus | Governance — escalation, migrations |
+| aegis | Security — sovereignty assessment |
+| iris | Voice — tone and precision review |
+| rufus | Video — production, recording direction |
+| livy | Documentation — library, birth records |
+| faber | Content — blog posts, content strategy |
+| lyra | Music — cue sheets for video |
+| copia | Finance — ledger, budget |
+| chiron | Curriculum — Alice's learning levels |
+| alice | Onboarding — PWA guide (4+ years old) |
 
-### Shipped
+### Current state (Day 30)
 
-- **Alice PWA** — live on kingofalldata.com. Alice guides new humans through the 12-level koad:io onboarding curriculum. She is the public face, not the operational team.
-- **Day 4 content written** — content series is running. Four days published.
-- **GitHub Sponsors** — live at github.com/sponsors/koad.
-- **All 15 entities gestated and on GitHub** — each is a public repo, cloneable.
-- **Hooks routing layer** — every entity command routes to fourty4 via SSH with PID locking and base64-safe prompt encoding.
+- **30 posts written** — Reality Pillar "How It Actually Works" arc complete (Days 22-30)
+- **Blog PR** — koad/kingofalldata-dot-com#1 still unmerged — all content staged, not live
+- **6 curricula** — Builder Path 5/5 delivery-ready (alice-onboarding through commands-and-hooks)
+- **60+ Vesta specs** — SPEC-054 canonical (multi-entity orchestration)
+- **19 trust bonds** — all entities bonded
+- **Aegis verdict:** STABILIZING
+- **Day 31 content** — "The Nervous System Problem" (Faber writing)
+
+### Blocked on koad
+
+1. Reddit r/selfhosted post — copy-paste ready (#57)
+2. GitHub Discussions first post (#60)
+3. Restore dotsh SSH (#56)
+4. Mercury platform credentials (#11)
+5. Merge blog PR — koad/kingofalldata-dot-com#1
+6. Alice keys — id/ dir empty (#59)
+7. fourty4 API auth (#44)
+8. GitHub Sponsors tiers (#40)
 
 ### Active Issues
 
