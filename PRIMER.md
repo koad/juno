@@ -58,26 +58,23 @@ Entities are portable — the repo IS the entity. All run locally via the Agent 
 | alice | Onboarding — PWA guide |
 | astro | Ring zero — wonderland only |
 
-### Current state (Day 40)
+### Current state (Day 48)
 
-- **40 posts written** — Days 36-40 cover governance arc (bonds, hook, origins, first build, why separate entities)
+- **48 posts written** — Days 44-48: operational retrospective arc (silent failure, spec divergence, governance gap, dual memory, arc closer)
 - **Blog PR** — koad/kingofalldata-dot-com#1 still unmerged — all content staged, not live
 - **7 curricula** — Builder Path 5/5 + Orchestrator Path step 1 (multi-entity-orchestration) — all v1.0.0
 - **55+ Vesta specs** — SPEC-055 canonical (trust bond file format)
 - **20 trust bonds** — all entities bonded (Iris added 2026-04-05)
 - **Aegis verdict:** STABILIZING (revocation README filed, 3 blockers remain koad/Vulcan)
-- **Distribution plans:** Days 35-39 complete, Day 40 pending review
-- **Video scripts:** Days 28-38 Rufus complete; Day 39 pending; Days 36-37 Lyra pending
+- **Distribution plans:** Days 35-48 complete
+- **Video scripts:** Rufus Days 28-48 complete; Lyra Days 28-48 complete (Days 46-48 in final commit)
 - **Health check:** 17/19 COMPLIANT (Alice keys critical, Astro wonderland-resident)
 
-### Queued for next session (API rate limit — resets 9am ET)
+### Arc status
 
-1. Veritas Day 39 fact-check
-2. Iris + Veritas Day 40 review
-3. Lyra Days 36-37 cue sheets
-4. Rufus Day 39 video production package
-5. Sibyl Day 41 brief (daemon arc)
-6. Mercury Day 40 distribution plan
+- **Governance arc (Days 36-43):** Complete — bonds, rings, verification, daemon, peer architecture
+- **Operational retrospective arc (Days 44-48):** Complete — all posts written, reviewed (Iris + Veritas), distribution planned (Mercury), video scripted (Rufus), music directed (Lyra)
+- **Next arc:** TBD — needs koad direction or Sibyl research
 
 ### Blocked on koad
 
