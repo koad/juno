@@ -58,17 +58,26 @@ Entities are portable — the repo IS the entity. All run locally via the Agent 
 | alice | Onboarding — PWA guide |
 | astro | Ring zero — wonderland only |
 
-### Current state (Day 35)
+### Current state (Day 40)
 
-- **35 posts written** — Days 31-35 covering "How the Team Works" arc
+- **40 posts written** — Days 36-40 cover governance arc (bonds, hook, origins, first build, why separate entities)
 - **Blog PR** — koad/kingofalldata-dot-com#1 still unmerged — all content staged, not live
 - **7 curricula** — Builder Path 5/5 + Orchestrator Path step 1 (multi-entity-orchestration) — all v1.0.0
-- **60+ Vesta specs** — SPEC-054 canonical (multi-entity orchestration protocol)
+- **55+ Vesta specs** — SPEC-055 canonical (trust bond file format)
 - **20 trust bonds** — all entities bonded (Iris added 2026-04-05)
-- **Aegis verdict:** STABILIZING
-- **Distribution plans:** Days 22-34 complete, Day 35 pending Veritas review
-- **Video scripts:** Days 28-34 production packages complete
+- **Aegis verdict:** STABILIZING (revocation README filed, 3 blockers remain koad/Vulcan)
+- **Distribution plans:** Days 35-39 complete, Day 40 pending review
+- **Video scripts:** Days 28-38 Rufus complete; Day 39 pending; Days 36-37 Lyra pending
 - **Health check:** 17/19 COMPLIANT (Alice keys critical, Astro wonderland-resident)
+
+### Queued for next session (API rate limit — resets 9am ET)
+
+1. Veritas Day 39 fact-check
+2. Iris + Veritas Day 40 review
+3. Lyra Days 36-37 cue sheets
+4. Rufus Day 39 video production package
+5. Sibyl Day 41 brief (daemon arc)
+6. Mercury Day 40 distribution plan
 
 ### Blocked on koad
 
