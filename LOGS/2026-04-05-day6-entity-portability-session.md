@@ -246,3 +246,82 @@ Day 30 closes the "How It Actually Works" arc (Days 22–30). Honest retrospecti
 ### Blockers (unchanged — all require koad or Vulcan)
 
 Same as previous phase. No blockers resolved.
+
+---
+
+## Day 33 / context-continuation session (fifth phase)
+
+Session resumed from context-window summary. Standing directive remains active.
+
+### Completed since resume
+
+**Faber:**
+- Day 33: "The Operations Board" — committed `015050f`, Iris correction applied `35249fd`
+- Day 32: Veritas APPROVED-WITH-NOTES (no corrections required) — `d8eb1ee`
+
+**Chiron:**
+- commands-and-hooks: v1.0.0 complete — Builder Path 5/5 done
+- multi-entity-orchestration: scaffold v0.1.0 committed (7 levels 0-6, SPEC.md, DECISIONS.md)
+- CURRICULUM-ROADMAP: updated with Orchestrator Path section — `2cb26a4`
+- multi-entity-orchestration Levels 0-3 atoms: authoring in progress
+- multi-entity-orchestration Levels 4-6 atoms: authoring in progress
+
+**Salus:**
+- Argus Day 30 WARN remediation: Iris PRIMER.md, Lyra README.md, Copia README.md — all committed
+- passenger.json gaps deferred (daemon schema required)
+
+**Mercury:**
+- Day 32 distribution plan committed — `61c74d8`
+- Day 29 distribution plan corrected (actual ~$105/month framing)
+
+**Vesta:**
+- SPEC-052 promoted to canonical
+
+**Rufus:**
+- Day 31/32 video scripts: in progress
+
+### Content pipeline status
+
+| Day | Post | Iris | Veritas | Mercury |
+|-----|------|------|---------|---------|
+| 29 | $200 Laptop | PASS | PASS (corrections applied) | Updated |
+| 30 | What I Would Change | PASS-with-flags | PASS (corrections applied) | Done |
+| 31 | Nervous System Problem | PASS-with-flags | PASS (corrections applied) | Done |
+| 32 | The Builder Exception | PASS | APPROVED-WITH-NOTES | Done |
+| 33 | The Operations Board | PASS-with-flags (correction applied) | In progress | Pending |
+
+### Curriculum state
+
+| Curriculum | Status | Levels |
+|-----------|--------|--------|
+| alice-onboarding | v1.0.0 | 1 level |
+| entity-operations | v1.0.0 | 8 levels |
+| advanced-trust-bonds | v1.0.0 | 10 levels |
+| entity-gestation | v1.0.0 | 8 levels |
+| commands-and-hooks | v1.0.0 | 8 levels |
+| multi-entity-orchestration | v0.1.0 scaffold | 7 levels (atoms authoring) |
+
+Builder Path: complete (5/5). Orchestrator Path: step 1 in progress.
+
+### Agents running at log time
+
+- Chiron: multi-entity-orchestration Levels 0-3 atoms
+- Chiron: multi-entity-orchestration Levels 4-6 atoms
+- Sibyl: Day 34 research brief
+- Veritas: Day 33 fact-check
+- Rufus: Day 31/32 video scripts
+
+### Blockers (unchanged)
+
+- koad/kingofalldata-dot-com#1 — blog PR merge
+- koad/juno#11 — Mercury platform credentials
+- koad/juno#40 — GitHub Sponsors tiers
+- koad/juno#44 — fourty4 API auth
+- koad/juno#56 — dotsh SSH
+- koad/juno#57 — Reddit r/selfhosted (copy-paste ready, koad must post)
+- koad/juno#59 — Alice keys (koad must generate)
+- koad/juno#60 — GitHub Discussions (copy-paste ready, koad must post)
+- koad/vulcan#36 — Alice progression system
+- koad/vulcan#46 — Stage-and-submit
+- koad/vulcan#57 — koad-io install command
+- koad/vulcan#58 — GPG revocation cert in gestate
