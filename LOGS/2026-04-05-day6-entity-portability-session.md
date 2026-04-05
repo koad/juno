@@ -93,3 +93,74 @@ All blockers remain open. No koad-held items resolved this session (koad was not
 ## State at session end
 
 The team has been running autonomously for a full session. Every entity that can work without koad or Vulcan has been given productive tasks. The curriculum, spec, content, documentation, and video production pipelines are all running. The distribution pipeline remains blocked on koad-held credentials and the blog PR.
+
+---
+
+## Context-continuation session (2026-04-05 — second half)
+
+Session resumed from compressed summary. All background agents from prior session completed.
+
+### Completed since resume
+
+**Faber:**
+- Day 24 corrections: applied (fabricated quote, CSA attribution, NIST characterization) — committed
+- Day 25 correction: Lampson/Turing framing softened per Veritas note — committed
+
+**Chiron:**
+- entity-gestation Levels 0-3: authored (235/217/246/289 lines each) — committed
+- entity-gestation Levels 4-7: Levels 4 (Trust Bond Creation), 5 (Hook Architecture), 6 (Entity Operations), 7 (Entity Networks + Portability) — in progress
+
+**Veritas:**
+- Day 25 review: APPROVED-WITH-NOTES (Lampson/Turing framing) — correction applied
+- Day 24 review: APPROVED after corrections
+
+**Rufus:**
+- Recording Day Master Checklist: committed
+
+**Muse:**
+- DESIGN-SYSTEM.md: consolidated (28 briefs → single Vulcan reference) — committed
+
+**Sibyl:**
+- GPG vs API tokens brief: committed (Day 26 source)
+
+**Lyra:**
+- Trust bond filed — dual-filed by Juno per protocol
+
+**Copia:**
+- Trust bond filed — dual-filed by Juno per protocol
+
+### Agents running at log time
+
+- Faber: Day 26 post (GPG vs API tokens)
+- Chiron: entity-gestation Levels 4-7
+- Janus: Muse design system review for Vulcan handoff
+- Sibyl: Day 27 research brief
+- Argus: Day 6 EOD health check
+- Lyra: Week 1 Skeptics cue sheet
+- Mercury: Days 23-26 distribution plans
+- Livy: Lyra and Copia birth record updates
+- Vesta: SPEC-051/052/053 (PRIMER, Lyra cue sheet, entity portability)
+
+### Content pipeline status
+
+| Day | Post | Status |
+|-----|------|--------|
+| 23 | The Production Bug | Veritas: APPROVED |
+| 24 | Trust Bonds Deep-Dive | Veritas: corrections applied |
+| 25 | Files vs Database | Veritas: correction applied |
+| 26 | Not Your Keys | Faber drafting |
+| 27 | TBD | Sibyl researching |
+
+### Blockers (unchanged)
+
+- koad/kingofalldata-dot-com#1 — blog PR merge
+- koad/juno#11 — Mercury platform credentials
+- koad/juno#40 — GitHub Sponsors tiers
+- koad/juno#44 — fourty4 API auth
+- koad/juno#56 — dotsh SSH
+- koad/juno#57 — Reddit r/selfhosted (copy-paste ready, koad must post)
+- koad/juno#59 — Alice keys (koad must generate)
+- koad/juno#60 — GitHub Discussions (copy-paste ready, koad must post)
+- koad/vulcan#36 — Alice progression system (all specs ready)
+- koad/vulcan#46 — Stage-and-submit (SPEC-050 ready)
+- koad/vulcan#57 — koad-io install command (HN prerequisite)
