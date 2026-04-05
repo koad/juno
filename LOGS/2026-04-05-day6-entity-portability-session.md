@@ -325,3 +325,73 @@ Builder Path: complete (5/5). Orchestrator Path: step 1 in progress.
 - koad/vulcan#46 — Stage-and-submit
 - koad/vulcan#57 — koad-io install command
 - koad/vulcan#58 — GPG revocation cert in gestate
+
+---
+
+## Day 38 / context-continuation session (sixth phase)
+
+Session resumed from context-window summary. Standing directive remains active.
+
+### Completed since previous log entry
+
+**Content pipeline (Days 33-38):**
+| Day | Title | Iris | Veritas | Mercury |
+|-----|-------|------|---------|---------|
+| 33 | The Operations Board | PASS (recap removed) | APPROVED (15 entities, not 17) | Done |
+| 34 | The Review Chain | PASS | FAIL→corrections applied (.gitkeep, NIST) | Done |
+| 35 | The Standing Directive | PASS (five phases) | NEEDS_CORRECTION→4 fixed | Done |
+| 36 | Three Bond Files | PASS (recap removed) | APPROVED (revocation dir created) | Done |
+| 37 | Before the First Token | CONDITIONAL (3 technical fixes) | APPROVED→fixes applied | Running |
+| 38 | The First 72 Hours | Running | Running | — |
+
+**Curriculum:**
+- multi-entity-orchestration v1.0.0 — all 7 levels authored (commits 008251a, 31815a1)
+- CURRICULUM-ROADMAP updated: Orchestrator Path delivery-ready
+- Livy guide written for multi-entity-orchestration
+
+**Entity operations:**
+- Iris officially onboarded: trust bond confirmed (already existed), TEAM_STRUCTURE.md updated (commit f46d42b), closes koad/juno#62
+- Astro location documented: wonderland-resident, koad/juno#61
+- Trust revocation directory created (commit 60d8900)
+- Revocation procedure documented (commit d24afab), closes STABLE blocker #2
+- PRIMER.md updated to Day 35 state (commit b6060b0)
+
+**Health check:**
+- Day 33 midpoint: 17/19 COMPLIANT (up from 11/19 with passenger.json criterion)
+- Aegis Day 37: STABILIZING verdict maintained
+- STABLE blockers: revocation procedure ✓, GPG certs (19 entities, koad/vulcan#58), key backup (koad), Alice keys (koad/juno#59)
+- koad/juno#63 filed with all STABLE blocker details
+
+**Video production:**
+- Scripts: Days 30-36 complete
+- Lyra cue sheets: Days 28, 30-34 complete, Day 35 running
+
+**Distribution plans:** Days 22-36 complete (37 running)
+
+### Agents running at log time
+
+- Iris: Day 38 fact check
+- Veritas: Day 38 review
+- Sibyl: Day 39 research brief
+- Mercury: Day 37 distribution plan
+- Rufus: Day 36 video script
+- Lyra: Day 35 cue sheet
+
+### Blockers (unchanged except koad/juno#61, #62, #63 filed this phase)
+
+koad:
+1. Reddit r/selfhosted (#57) — copy-paste ready
+2. GitHub Discussions (#60) — copy-paste ready
+3. Restore dotsh SSH (#56)
+4. Mercury platform credentials (#11)
+5. Merge blog PR — koad/kingofalldata-dot-com#1
+6. Alice keys — id/ dir empty (#59)
+7. fourty4 API auth (#44)
+8. GitHub Sponsors tiers (#40)
+9. Key backup for thinker fleet (#63)
+
+Vulcan:
+- koad/vulcan#36 — Alice progression system
+- koad/vulcan#46 — Stage-and-submit
+- koad/vulcan#57 — koad-io install command
+- koad/vulcan#58 — GPG revocation certs in gestate
