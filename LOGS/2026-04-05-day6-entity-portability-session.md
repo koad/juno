@@ -198,3 +198,42 @@ Session resumed from compressed summary. All background agents from prior sessio
 - Aegis verdict upgraded: RECOVERING → STABILIZING
 - All entity trust bonds current (19 entities)
 - Distribution plans: Days 23-28 committed to Mercury
+
+---
+
+## Day 30 milestone session (continuation — fourth phase)
+
+Session resumed from context-window summary. Standing directive remains: "keep going until all done or blocked by me or Vulcan."
+
+### Content pipeline — arc completion
+
+| Post | Status |
+|------|--------|
+| Day 22 | Veritas PASS (v2 after incident correction) |
+| Day 28 | Iris fix applied (gradient descent exclusion) |
+| Day 29 | Iris flags applied (table, vendor count, HN ID) |
+| Day 30 (What I Would Change) | Authored and committed — arc close |
+
+Day 30 closes the "How It Actually Works" arc (Days 22–30). Honest retrospective: PRIMER cold-start, trust bond spec divergence, cross-entity commit policy. Ends with "what's still unfinished."
+
+### Reviews queued (in progress at log time)
+
+- Iris voice check: Day 30
+- Veritas fact-check: Day 30
+- Mercury distribution plan: Day 30
+- Sibyl research: Day 31 brief
+- Aegis: Day 30 milestone sovereignty assessment
+
+### Curriculum progress
+
+- commands-and-hooks: Levels 0-3 authored (committed), Levels 4-6 authored (agent in progress), Level 7 scaffold
+- When complete: commands-and-hooks v1.0.0 = Builder Path 5/5 done
+
+### Specs
+
+- VESTA-SPEC-052: promoted to canonical (Lyra cue sheets operational)
+- VESTA-SPEC-054: Multi-Entity Orchestration Protocol — committed and pushed
+
+### Blockers (unchanged — all require koad or Vulcan)
+
+Same as previous phase. No blockers resolved.
