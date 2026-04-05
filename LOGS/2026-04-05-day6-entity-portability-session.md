@@ -216,13 +216,22 @@ Session resumed from context-window summary. Standing directive remains: "keep g
 
 Day 30 closes the "How It Actually Works" arc (Days 22–30). Honest retrospective: PRIMER cold-start, trust bond spec divergence, cross-entity commit policy. Ends with "what's still unfinished."
 
-### Reviews queued (in progress at log time)
+### Reviews and corrections applied
 
-- Iris voice check: Day 30
-- Veritas fact-check: Day 30
-- Mercury distribution plan: Day 30
-- Sibyl research: Day 31 brief
-- Aegis: Day 30 milestone sovereignty assessment
+**Day 30:** Iris PASS-with-flags + Veritas FAIL → corrections applied (bond count 11→19, FORCE_LOCAL repo attribution). Post is clean.
+
+**Day 31:** Iris PASS-with-flags + Veritas NEEDS CORRECTION → corrections applied (framework comparison hedging, GOVERNANCE.md attribution fixed to day6 log, Aegis verdict scope). Filename renamed from `2026-04-31` (invalid) to `2026-05-01`. Frontmatter added.
+
+**Day 29 — Copia correction (not caught by Veritas or Iris):** The "$24/month" cost claim was wrong. Actual spend is CAD 140/month (Claude Max 5x) ≈ $105 USD/month — the operation upgraded from Pro to Max early in week 1. LangSmith arithmetic also wrong ($79 → $139/month for 50K traces). Both corrections applied. Mercury distribution plan updated with corrected framing.
+
+### Agents running or recently completed at log time
+
+- Aegis: Day 30 milestone assessment — STABILIZING verdict, 4 new findings
+- Chiron: multi-entity-orchestration scaffold — in progress
+- Faber: Day 32 post — in progress
+- Sibyl: Day 32 brief — committed
+- Argus: Day 30 EOD health check — 11/19 compliant (criterion expansion from passenger.json; actual improvement is 17/19 without that criterion)
+- Copia: Day 30 budget report — filed; caught Day 29 cost error
 
 ### Curriculum progress
 
