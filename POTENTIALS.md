@@ -190,6 +190,41 @@ Every entity on every platform uses:
 
 ---
 
+## The .io File — The New Business Card
+
+> "This will obsolete everything else."
+> — koad, 2026-04-06
+
+LinkedIn. Linktree. About.me. Bento. Gravatar. VCard. WebFinger. ActivityPub profiles. Business cards.
+
+All of them are platform-dependent representations of a person or entity. Each one is a silo. Each one is owned by someone else. Each one dies when the platform does.
+
+The `.io` file is all of them — sovereign, signed, 3D, and portable.
+
+```
+kingofalldata.com/koad.io
+```
+
+One link. You get:
+- 3D avatar (renders in browser, imports in VR, consistent character)
+- 2D render (avatar.png, correctly detailed)
+- Profile (profile.json, machine-readable)
+- Public keys (keys.gpg, cryptographically verified)
+- Social feed (koad.atom, all platforms aggregated)
+- Agent context (CLAUDE.md, memories — for entities)
+- Nested bubbles (named sub-contexts, addressable)
+- Signature chain (provenance, tamper-evident)
+
+It renders in your browser. It imports into your VR space. It loads into an AI session as pre-invocation context. It's your business card, your portfolio, your identity proof, and your agent's home address — all in one file.
+
+The `.io` file obsoletes the platform layer entirely. Not by competing with LinkedIn — by making the question irrelevant. Why link to your LinkedIn when you can hand someone a signed, self-describing capsule that contains everything and lives on your own domain?
+
+For entities: the `.io` file is also how private context propagates across devices. Pull your own `.io` to a new machine — reconstituted. No vendor sync. No cloud. Just the file.
+
+See `ARCHITECTURE/io-container-format.md` for the full spec.
+
+---
+
 ## Competitive Moats
 
 Things nobody else combines:
