@@ -1,50 +1,56 @@
-# Sensitive Keys & Credentials
-id/
-ssl/
-keybase/
-*.key
-*.keys
+# Credentials / secrets
+.credentials
+.credentials.json
 
-# Environment & Secrets
-.env
-.env.*
-!.env.example
-credentials
-*.credentials
-
-# GPG Keys
-*.gpg
-*.pgp
-*.sec
-*.private
-
-# Node Dependencies
+# Runtime artifacts (regenerate on their own)
+.context
+.local/
 node_modules/
-package-lock.json
-
-# OS Files
 .DS_Store
 Thumbs.db
 *.swp
 *.swo
 *~
-
-# IDE
-.vscode/
-.idea/
-*.sublime-*
-
-# Logs
-*.log
-logs/
-
-# Temporary
-*.tmp
-*.temp
 .tmp/
+dist/
 
-# Archive (for gestate versioning)
-archive/
+# Entity GPG keyring — private keys, never commit
+keyring/
 
-# Don't ignore public keys file
-# juno.keys is public and can be shared
+# Claude Code plugins (upstream marketplace cache, not entity-owned)
+plugins/
+
+# Claude Code session artifacts (regenerated per session)
+backups/
+debug/
+file-history/
+image-cache/
+paste-cache/
+sessions/
+shell-snapshots/
+tasks/
+test-results/
+tooltips/
+history.jsonl
+projects
+
+# Runtime state — statusline probe dumps, session telemetry, pulse log
+state/
+
+# Generated media (lives in ~/.forge/brand-assets/)
+media/
+
+# Flight process state — machine-local, ephemeral
+# Durable history lives in the commit's `Flight-id:` trailer
+control/flights/*.json
+
+# Flight plans — ephemeral dispatch artifacts (durable record is commit trailer)
+flight-plans/
+
+# Claude Code harness artifacts (regenerated per session)
+.claude.json
+.claude/
+mcp-needs-auth-cache.json
+
+# Runtime state
+var/

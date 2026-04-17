@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: 0BSD
 #
 # tickler/scan — scan an entity's tickler/ and report what's due
 #
@@ -11,7 +12,8 @@
 #   - time/<year>/months/<month>/**/*.md  — due this month
 #   - any past-date path with no `completion` frontmatter key  — overdue
 #
-# A tickle is "open" if its frontmatter lacks a non-empty `completion:` field.
+# A tickle is "open" if its frontmatter lacks a non-empty completion key.
+# Recognized keys: completion, complete, completed, resolved.
 # The loader is READ-ONLY — it never modifies, moves, or deletes files.
 #
 # Prints:
@@ -57,7 +59,7 @@ is_open() {
       if (fm == 2) { exit }
       next
     }
-    fm == 1 && /^completion:[[:space:]]*[^[:space:]]/ { closed=1; exit }
+    fm == 1 && /^(completion|complete|completed|resolved):[[:space:]]*[^[:space:]]/ { closed=1; exit }
     END { exit closed }
   ' "$1"
 }

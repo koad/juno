@@ -1,11 +1,44 @@
 {
   "handle": "juno",
   "name": "Juno",
-  "role": "business orchestrator",
   "avatar": "avatar.png",
+  "outfit": {
+    "h": 199,
+    "s": 35,
+    "visual": {
+      "avatar": "avatar.png"
+    }
+  },
   "buttons": [
-    { "label": "Status", "action": "status", "description": "Current ops status" },
-    { "label": "Inbox", "action": "inbox", "description": "Check comms inbox" },
-    { "label": "Issues", "action": "issues", "description": "Open GitHub issues" }
+    {
+      "key": "terminal",
+      "label": "Talk",
+      "action": "harness.launch",
+      "target": "juno"
+    },
+    {
+      "key": "coffin-cross",
+      "label": "File",
+      "action": "open.with.default.app",
+      "target": "web+juno://projects/list"
+    },
+    {
+      "key": "church",
+      "label": "Calendar",
+      "action": "open.with.default.app",
+      "target": "web+juno://dashboard/calendar"
+    },
+    {
+      "key": "book-bible",
+      "label": "Issues",
+      "action": "open.with.default.app",
+      "target": "web+juno://dashboard/issues"
+    },
+    {
+      "key": "hands-praying",
+      "label": "Cogs",
+      "action": "open.with.default.app",
+      "target": "web+juno://dashboard/settings"
+    }
   ]
 }
