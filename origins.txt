@@ -1,0 +1,12 @@
+# Canonical locations for Juno's ENTITY.md and badge references.
+# One URL fragment per line — if the referer contains any of these, it's canonical.
+# Lines starting with # are comments.
+
+# Storefront
+kingofalldata.com
+
+# GitHub canonical repo
+github.com/koad/juno
+
+# Keybase (rendered previews)
+keybase.io/team/kingofalldata

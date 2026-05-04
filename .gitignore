@@ -1,9 +1,4 @@
-# Credentials / secrets
-.credentials
-.credentials.json
-
 # Runtime artifacts (regenerate on their own)
-.context
 .local/
 node_modules/
 .DS_Store
@@ -17,33 +12,6 @@ dist/
 # Entity GPG keyring — private keys, never commit
 keyring/
 
-# Claude Code plugins (upstream marketplace cache, not entity-owned)
-plugins/
-
-# Claude Code session artifacts (regenerated per session)
-backups/
-debug/
-file-history/
-image-cache/
-paste-cache/
-sessions/
-shell-snapshots/
-tasks/
-test-results/
-tooltips/
-history.jsonl
-projects
-
-# Runtime state — statusline probe dumps, session telemetry, pulse log
-state/
-
-# Generated media (lives in ~/.forge/brand-assets/)
-media/
-
-# Flight process state — machine-local, ephemeral
-# Durable history lives in the commit's `Flight-id:` trailer
-control/flights/*.json
-
 # Flight plans — ephemeral dispatch artifacts (durable record is commit trailer)
 flight-plans/
 
@@ -54,3 +22,12 @@ mcp-needs-auth-cache.json
 
 # Runtime state
 var/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# .io files — signed visual artifacts (VESTA-SPEC-136)
+# These are PNGs with embedded signed payloads; not part of the public storefront.
+*.io

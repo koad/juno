@@ -1,153 +1,71 @@
-# PRIMER: Juno
+# PRIMER — Juno's home
 
-Juno is the business orchestrator of the koad:io entity ecosystem. This directory (`~/.juno/`) is her entity layer — identity, context, commands, memory, and trust bonds. There is no build step, no test suite. This repo IS the product.
+> Visitor's orientation. If you just landed in `~/.juno/` and want to know what you're looking at — start here.
 
----
+This is the home directory of **Juno**, an AI business entity in the koad:io kingdom. Juno orchestrates the team and operates the business surface; the team executes specialty work. One entity, one specialty.
 
-## What This Repo Is
+For Juno's identity and authority, read `ENTITY.md`. For the kingdom's operating principles, read `~/.koad-io/KOAD_IO.md` first.
 
-koad:io is a framework for sovereign AI entities. Each entity lives in its own `~/.<entity>/` directory, has its own cryptographic keys, its own git history, its own GitHub presence. Juno's job is to run the business side: sell entity flavors, coordinate the team, prove the model works in public.
+## What lives where
 
-The team entities are the products. A gestated Vulcan is a product anyone can clone. Juno's operation — visible on GitHub, in real time — is the demo.
-
-```
-~/.koad-io/    ← Framework layer (CLI, daemon, templates, Electron app)
-~/.juno/       ← Entity layer (this repo: identity, context, commands, memory)
-```
-
----
-
-## Operational State (2026-04-05 — Day 35)
-
-### Infrastructure
-
-| Machine | Role |
-|---------|------|
-| thinker | Primary — koad and Juno operate here |
-| flowbie | 24/7 always-on, X11, OBS — content studio |
-| fourty4 | Mac Mini — claude, ollama, GitClaw, OpenClaw |
-| wonderland | Vulcan's workspace (with Astro) — Astro is wonderland-resident, not on thinker |
-| dotsh | Vultr Toronto — SSH refused (#56) |
-
-### Entity Team (20 entities, all on thinker except Astro/Vulcan)
-
-Entities are portable — the repo IS the entity. All run locally via the Agent tool as Claude Code subagents.
-**Vulcan exception:** always via GitHub Issues on wonderland with Astro. Never invoke Vulcan locally.
-**Astro:** wonderland-resident (ring zero, direct koad interaction), not gestated on thinker.
-
-| Entity | Role |
-|--------|------|
-| juno | Business orchestrator (this entity) |
-| vulcan | Builder — via GitHub Issues only |
-| veritas | Quality — fact-checking, review |
-| mercury | Communications — distribution, announcements |
-| muse | UI/UX — visual polish, design |
-| sibyl | Research — deep dives, briefs |
-| argus | Diagnostics — entity health |
-| salus | Healing — fixes, recovery |
-| vesta | Platform steward — canonical specs |
-| janus | Governance — escalation, migrations |
-| aegis | Security — sovereignty assessment |
-| iris | Voice — tone and precision review (trust bond: juno→iris peer) |
-| rufus | Video — production, recording direction |
-| livy | Documentation — library, birth records |
-| faber | Content — blog posts, content strategy |
-| lyra | Music — cue sheets for video |
-| copia | Finance — ledger, budget |
-| chiron | Curriculum — Alice's learning levels |
-| alice | Onboarding — PWA guide |
-| astro | Ring zero — wonderland only |
-
-### Current state (Day 48)
-
-- **48 posts written** — Days 44-48: operational retrospective arc (silent failure, spec divergence, governance gap, dual memory, arc closer)
-- **Blog PR** — koad/kingofalldata-dot-com#1 still unmerged — all content staged, not live
-- **7 curricula** — Builder Path 5/5 + Orchestrator Path step 1 (multi-entity-orchestration) — all v1.0.0
-- **55+ Vesta specs** — SPEC-055 canonical (trust bond file format)
-- **20 trust bonds** — all entities bonded (Iris added 2026-04-05)
-- **Aegis verdict:** STABILIZING (revocation README filed, 3 blockers remain koad/Vulcan)
-- **Distribution plans:** Days 35-48 complete
-- **Video scripts:** Rufus Days 28-48 complete; Lyra Days 28-48 complete (Days 46-48 in final commit)
-- **Health check:** 17/19 COMPLIANT (Alice keys critical, Astro wonderland-resident)
-
-### Arc status
-
-- **Governance arc (Days 36-43):** Complete — bonds, rings, verification, daemon, peer architecture
-- **Operational retrospective arc (Days 44-48):** Complete — all posts written, reviewed (Iris + Veritas), distribution planned (Mercury), video scripted (Rufus), music directed (Lyra)
-- **Next arc:** TBD — needs koad direction or Sibyl research
-
-### Blocked on koad
-
-1. Reddit r/selfhosted post — copy-paste ready (#57)
-2. GitHub Discussions first post (#60)
-3. Restore dotsh SSH (#56)
-4. Mercury platform credentials (#11)
-5. Merge blog PR — koad/kingofalldata-dot-com#1
-6. Alice keys — id/ dir empty (#59)
-7. fourty4 API auth (#44)
-8. GitHub Sponsors tiers (#40)
-9. Astro location clarification — document wonderland-resident status (#61)
-
-### Blocked on Vulcan
-
-- koad/vulcan#36 — Alice progression system
-- koad/vulcan#46 — Stage-and-submit
-- koad/vulcan#57 — koad-io install command
-- koad/vulcan#58 — GPG revocation cert in gestate
-
-### Active Issues
-
-Check GitHub Issues on `koad/juno` for current assignments. The Operations Board is at:
-`https://github.com/users/koad/projects/4`
-
----
-
-## How to Orient Quickly
-
-**What's the current priority?**
-→ `PROJECTS/` — numbered by priority, one file per initiative
-
-**What am I?**
-→ `memories/001-identity.md` — core identity, loaded every session
-
-**How do I operate?**
-→ `memories/002-operational-preferences.md` — autonomy level, comms style
-
-**Who's on the team and what do they do?**
-→ `TEAM_STRUCTURE.md`
-
-**What's the business model?**
-→ `BUSINESS_MODEL.md`
-
-**How does the technical layer work?**
-→ `CONTEXT/03-ARCHITECTURE.md`
-→ `KOAd-IO-CONTEXT.md` (full system reference)
-
-**How do I reach another entity?**
-→ Type their name: `mercury`, `vulcan`, `muse`, etc.
-→ For a task: `PROMPT="do this" mercury` or `echo "do this" | mercury`
-→ See `hooks/PRIMER.md` for the full routing architecture
-
-**How do I assign work?**
-→ `gh issue create --repo koad/<entity> --title "..." --body "..."`
-→ GitHub Issues is the coordination protocol — see `OPERATIONS.md`
-
----
-
-## Key Files
-
-| File | Purpose |
+| Path | Purpose |
 |------|---------|
-| `PRIMER.md` | This file — session orientation |
-| `hooks/PRIMER.md` | Entity routing layer — how hook invocations work |
-| `memories/001-identity.md` | Core identity |
-| `memories/002-operational-preferences.md` | Operational style |
-| `PROJECTS/` | Active initiatives, numbered by priority |
-| `BUSINESS_MODEL.md` | Revenue tiers, pricing, growth funnel |
-| `GTD_ROADMAP.md` | Goals by elevation |
-| `OPERATIONS.md` | Entity ops, GitHub Issues protocol |
-| `TEAM_STRUCTURE.md` | Entity team, specialties, workflows |
-| `GOVERNANCE.md` | Trust bonds and authorization scope |
-| `trust/bonds/` | Signed authorization agreements |
-| `commands/` | Entity-specific commands |
-| `LOGS/` | Session history |
+| `ENTITY.md` | Juno's stable identity — personality, role, team, authority, trust chain |
+| `README.md` | One-page external intro (this dir's elevator pitch) |
+| `PRIMER.md` | This file — ambient context for visitors |
+| `commands/` | Juno's CLI tools (`tickler`, `assemble`, `control`, `dance-hall`, `shot`, `sign`, `think`, `adas`, `status`, `usage`, `trust-bond-viewer`) |
+| `memories/` | Long-term entity memory (committed to repo, visible to all harnesses) |
+| `briefs/` | Long-form direction, sprint logs, synthesis artifacts. Active briefs at root; completed work in `briefs/.archive/` |
+| `bootstraps/` | Replayable workflow definitions — between briefs (one-shot) and commands (atomic) |
+| `horizons/` | GTD altitude board (`runway/`, `10k/`, `20k/`, `30k/`, `40k/`, `50k/`, `someday/`, `completed/`) |
+| `tickler/` | Time- and space-addressed deferred inbox (path is the alarm clock) |
+| `id/` | Cryptographic keys (Ed25519, ECDSA, RSA, GPG) — public keys safe to read; private keys gitignored |
+| `trust/bonds/` | GPG-clearsigned trust bonds (issued + received) |
+| `devices/` | Per-device records (e.g. `zero/manifest.yaml`) |
+| `tools/` | Entity-level MCP tools (per VESTA-SPEC-137) |
+| `triggers/` | Reactive scripts that fire on emission patterns (per VESTA-SPEC-145) |
+| `hooks/` | Lifecycle hooks that override framework defaults |
+| `qc/` | Self-quiz proposals (`proposed/`) and self-authored evals |
+| `streams/` | Trigger runtime output — fully gitignored per VESTA-SPEC-145 |
+| `flights/` | Per-flight ephemera — gitignored, durable record lives in commit trailers |
+| `sigchain/` | Juno's sovereign sigchain (genesis published 2026-04-17) |
+| `screenshots/` | Playwright captures — gitignored |
+| `projects/` | Claude Code session state — gitignored, includes the playback machine library |
+
+## How to read this dir
+
+- **You're a visitor (human or entity):** start with `ENTITY.md` for who Juno is, then this `PRIMER.md` for what's where, then `README.md` for the external pitch.
+- **You're Juno yourself in a fresh harness:** load order is `~/.koad-io/KOAD_IO.md` → `ENTITY.md` → this `PRIMER.md` → `memories/` → `projects/-home-koad--juno/memory/MEMORY.md` (auto-memory index). Active state is in `briefs/`, `tickler/`, and `horizons/runway/`.
+- **You're another entity dropping a brief for Juno:** write to `~/.juno/briefs/<slug>.md` with frontmatter (`title`, `from`, `to: juno`, `status`, `priority`, `relates-to`). Juno reads `briefs/` on session start and acts on what surfaces.
+
+## What this dir is NOT
+
+- **Not a software project.** No build, no tests. The repo IS the artifact.
+- **Not a personal scratch space.** Everything here is committed and visible. Sovereignty has a public face.
+- **Not the framework.** The framework lives at `~/.koad-io/`. This is one kingdom's operating entity.
+- **Not the storefront.** The storefront lives at `~/.forge/websites/kingofalldata.com/`. This is Juno's home.
+
+## Where the work actually happens
+
+Juno's day-to-day surfaces:
+- The kingdom **daemon** at `http://10.10.10.10:28282` (nervous system — emissions, flights, sessions)
+- The business **dance-hall** at `http://10.10.10.10:28383` (persistent storefront state — tips, announcements, sessions)
+- The **storefront** at https://kingofalldata.com (the public face)
+- The **team** — 19 entities + Vulcan (the builder), each with their own `~/.<entity>/` home, communicating via briefs + emissions + Keybase
+
+## Operating principles (full version in KOAD_IO.md)
+
+- Files on disk = total evolution. Not your keys, not your agent.
+- The operation is the demo. Every commit is proof.
+- Framework stays a skeleton. Business lives in overlays (`~/.juno/`, `~/.forge/`).
+- Sovereign. Distributed. On owned hardware. On full display.
+
+## Repo
+
+Canonical: `keybase://team/kingofalldata.entities.juno/self`
+
+Public window: `github.com/koad/juno` (when present — koad's call per visibility model)
+
+---
+
+*This file is for visitors. Juno's stable identity is `ENTITY.md`.*
