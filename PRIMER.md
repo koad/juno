@@ -31,6 +31,7 @@ For Juno's identity and authority, read `ENTITY.md`. For the kingdom's operating
 | `sigchain/` | Juno's sovereign sigchain (genesis published 2026-04-17) |
 | `screenshots/` | Playwright captures — gitignored |
 | `projects/` | Claude Code session state — gitignored, includes the playback machine library |
+| `drift/` | Drift atlas — kingdom-wide markdown indexer + drift battery (Postgres-backed); see `drift/PRIMER.md` |
 
 ## How to read this dir
 
@@ -50,8 +51,11 @@ For Juno's identity and authority, read `ENTITY.md`. For the kingdom's operating
 Juno's day-to-day surfaces:
 - The kingdom **daemon** at `http://10.10.10.10:28282` (nervous system — emissions, flights, sessions)
 - The business **dance-hall** at `http://10.10.10.10:28383` (persistent storefront state — tips, announcements, sessions)
+- The **mind-space atlas** at `https://kingofalldata.com/realtime/atlas` — live 3D rendering of the kingdom's documents + reference graph; entity-color, click-focus, slow auto-orbit, conversations side-panel
+- The **drift atlas** via `juno drift {index|scan|status|query|sql|report|orphans|propose}` — Postgres-backed (`juno_drift` db at `~/.forge/control-tower/database/`, port 28432) kingdom-wide markdown indexer, ~1860 docs / ~1200 resolved refs
+- The **project registry** at `~/.koad-io/me/projects/` — operator-curated project primers (8 active arcs as of 2026-05-06)
 - The **storefront** at https://kingofalldata.com (the public face)
-- The **team** — 19 entities + Vulcan (the builder), each with their own `~/.<entity>/` home, communicating via briefs + emissions + Keybase
+- The **team** — 24 entities, communicating via briefs + emissions + Keybase
 
 ## Operating principles (full version in KOAD_IO.md)
 
